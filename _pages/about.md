@@ -1,8 +1,21 @@
 ---
 permalink: /about/
 title: "About"
+excerpt: "This post should [...]"
+header:
+ image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.png
+ caption: "Photo credit: Andreea Popa"
+ actions:
+   - label: "More Info"
+     url: "https://unsplash.com/@elfcodobelf"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+As a teenager,  I spent most of my free time programming the family's home computer. 
+Life ( as it is wont to do ) takes you different places and coding fell by the way side.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+But I got curious again ( thanks to a Microbee emulator called uBee512 ) so I decided to limber up all the old if..then..else muscles and dive back in.
+As I started delving into Xcode and Swift/SwiftUI on my Mac Mini,  it occured to me that it might be worthwhile to document the journey.
+I did briefly consider a Youtube channel for this.
+
+After I came to my senses,  I realised I had a Google Site hanging around that wasn't not doing much and could be repurposed.
+So here we go ...

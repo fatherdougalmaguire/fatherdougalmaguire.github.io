@@ -1,5 +1,6 @@
 ---
 title: "Introducing LifeOnMars"
+show_date: true
 categories:
   - blog
 tags:
@@ -20,4 +21,6 @@ My implementation is called LifeOnMars.
 It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.
 
 LifeOnMars can be found here.
+
+![My helpful screenshot](/assets/images/pmarssdl.png)
  

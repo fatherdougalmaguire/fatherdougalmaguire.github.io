@@ -1,5 +1,6 @@
 ---
 title: "Introducing Abeja"
+show_date: true
 categories:
   - Blog
 tags:
@@ -23,3 +24,5 @@ My implementation is called Abeja.
 It is written for MacOS Sonoma using Swift/SwiftUI.
 
 Abeja can be found here.
+
+![My helpful screenshot](/assets/images/Microbee32K_IC.png)
