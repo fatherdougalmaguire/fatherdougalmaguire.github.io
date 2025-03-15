@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 excerpt: "This post should [...]"
 header:
- image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.png
+ image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
  caption: "Photo credit: Andreea Popa"
  actions:
    - label: "More Info"
