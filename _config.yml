@@ -18,13 +18,13 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: username
 github_username: fatherdougalmaguire
-minimal_mistakes_skin: air
+minimal_mistakes_skin: contrast
 #minimal_mistakes_skin:  "default", "sunrise", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", ,"air"
 search: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes@4.26.2
 
 logo:
 

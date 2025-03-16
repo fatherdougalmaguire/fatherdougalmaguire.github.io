@@ -1,0 +1,26 @@
+---
+title: "Introducing LifeOnMars"
+show_date: true
+categories:
+  - blog
+tags:
+  - LifeOnMars
+  - CoreWars
+  - MARS
+  - Swift
+  - SwiftUI
+  - macOS
+---
+
+Core War pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called M.A.R.S or Memory Array Redcode Simulator )
+
+Each program battles each other in attempt to stop the other executing and essentially "win"
+
+My implementation is called LifeOnMars.
+
+It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.
+
+LifeOnMars can be found here.
+
+![My helpful screenshot](/assets/images/pmarssdl.png)
+ 
