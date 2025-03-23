@@ -10,6 +10,10 @@ tags:
   - Swift
   - SwiftUI
   - macOS
+header:
+ image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
+ credit: Michael Rose #name of the person or site you want to credit
+ creditlink: http://mademistakes.com #url to their site or licensing
 ---
 
 Core War pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called M.A.R.S or Memory Array Redcode Simulator )

@@ -11,6 +11,14 @@ tags:
   - Z80
   - Emulator
   - Retro-computing
+header:
+ image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
+ height: 100
+ width : 100
+ caption: "Photo credit: Andreea Popa"
+ actions:
+   - label: "More Info"
+     url: "https://unsplash.com/@elfcodobelf"
 ---
 
 When I was a teenager,  my family owned a Microbee. 
