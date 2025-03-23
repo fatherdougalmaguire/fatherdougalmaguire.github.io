@@ -1,5 +1,5 @@
 ---
-permalink: /corewars
+permalink: /corewars/
 title: "CoreWars"
 excerpt: "This post should [...]"
 header:
