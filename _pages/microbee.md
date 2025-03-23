@@ -1,5 +1,5 @@
 ---
-permalink: /microbee
+permalink: /microbee/
 title: "Microbee"
 excerpt: "This post should [...]"
 header:
