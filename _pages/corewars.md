@@ -1,9 +1,7 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: false
+permalink: /corewars
+title: "CoreWars"
+excerpt: "This post should [...]"
 header:
  image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
  caption: "Photo credit: Andreea Popa"
@@ -11,6 +9,7 @@ header:
    - label: "More Info"
      url: "https://unsplash.com/@elfcodobelf"
 ---
+
 As a teenager,  I spent most of my free time programming the family's home computer. 
 Life ( as it is wont to do ) takes you different places and coding fell by the way side.
 

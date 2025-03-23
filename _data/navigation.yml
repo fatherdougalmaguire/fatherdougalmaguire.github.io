@@ -1,6 +1,8 @@
 main:
-  - title: "Bananas"
-    url: /bananas/
+  - title: "Microbee"
+    url: /microbee/
+  - title: "CoreWars"
+    url: /corewars/
   - title: "Posts"
     url: /posts/
  # - title: "Categories"

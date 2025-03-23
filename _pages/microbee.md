@@ -1,6 +1,6 @@
 ---
-permalink: /bananas
-title: "Bananas"
+permalink: /microbee
+title: "Microbee"
 excerpt: "This post should [...]"
 header:
  image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
