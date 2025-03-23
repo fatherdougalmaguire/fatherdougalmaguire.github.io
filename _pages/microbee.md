@@ -1,21 +1,29 @@
 ---
 permalink: /microbee/
 title: "Microbee"
-excerpt: "This post should [...]"
+excerpt: 
 header:
  image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
- caption: "Photo credit: Andreea Popa"
- actions:
-   - label: "More Info"
-     url: "https://unsplash.com/@elfcodobelf"
+ caption: "Andreea Popa (https://unsplash.com/@elfcodobelf)"
 ---
 
-As a teenager,  I spent most of my free time programming the family's home computer. 
-Life ( as it is wont to do ) takes you different places and coding fell by the way side.
+Back in the dim, dark, 1980's,  my family owned a Microbee. 
+The Microbee was an Australian designed and manufactured Z80-based home computer.
+ 
+I spent many happy hours messing about with it before time marched on and I moved into the PC world.
 
-But I got curious again ( thanks to a Microbee emulator called uBee512 ) so I decided to limber up all the old if..then..else muscles and dive back in.
-As I started delving into Xcode and Swift/SwiftUI on my Mac Mini,  it occured to me that it might be worthwhile to document the journey.
-I did briefly consider a Youtube channel for this.
+But I have always had a soft spot for the 'Bee.
 
-After I came to my senses,  I realised I had a Google Site hanging around that wasn't not doing much and could be repurposed.
-So here we go ...
+As retrocomputing has become a thing,  I have been mucking around with emulators of older computing platforms.
+
+I only ever found a handful of emulators built for the Microbee and none are targeted at MacOS.
+
+So I decided to roll my own
+
+My implementation is called Abeja ( Spanish for bee )
+
+It is written for MacOS Sonoma using Swift/SwiftUI.
+
+The GitHub repository for Abeja can be found [here](https://github.com/fatherdougalmaguire/Abeja "Abeja GitHub repository")
+
+![My first computer](/assets/images/Microbee32K_IC.png)

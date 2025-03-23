@@ -1,21 +1,16 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "This post should [...]"
+excerpt: 
 header:
  image: /assets/images/andreea-popa-6ST6S6i9IGM-unsplash.jpg
- caption: "Photo credit: Andreea Popa"
- actions:
-   - label: "More Info"
-     url: "https://unsplash.com/@elfcodobelf"
+ caption: "Andreea Popa (https://unsplash.com/@elfcodobelf)"
 ---
 
-As a teenager,  I spent most of my free time programming the family's home computer. 
-Life ( as it is wont to do ) takes you different places and coding fell by the way side.
+Contrary to what the the site title ( and image ) may lead you to believe, I am not an Irish priest living in exile on a windswept island.
 
-But I got curious again ( thanks to a Microbee emulator called uBee512 ) so I decided to limber up all the old if..then..else muscles and dive back in.
-As I started delving into Xcode and Swift/SwiftUI on my Mac Mini,  it occured to me that it might be worthwhile to document the journey.
-I did briefly consider a Youtube channel for this.
+I live in Sydney, Australia and work for the technology arm of a large financial institution.
 
-After I came to my senses,  I realised I had a Google Site hanging around that wasn't not doing much and could be repurposed.
-So here we go ...
+That being said, my skills are more technology adjacent.
+
+But I do own a beautiful black cat
