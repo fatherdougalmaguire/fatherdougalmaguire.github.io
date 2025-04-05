@@ -1,10 +1,11 @@
 ---
-title: Minima
+title: Getting started with Minima and GitHub pages
 layout: post
 tags:
- - jekyll
- - blog
- - GitHub Pages
+ - Blogging
+ - Jekyll
+ - Blog
+ - "GitHub Pages"
 ---
 On the face of it,  Minima is a fairly boring theme.
 

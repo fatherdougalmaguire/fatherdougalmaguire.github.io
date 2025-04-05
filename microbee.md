@@ -27,11 +27,15 @@ The GitHub repository for Abeja can be found [here](https://github.com/fatherdou
 
 ### Related posts
 
-<ul>
-  {% for post in site.posts %}
-      {{ post.date | date: date_format }}
-      <br>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-  {% endfor %}
+<ul class="post-list">
+{% for tag in site.tags %}
+  {% if tag[0] == "Microbee" %}
+     {% for post in tag[1] %}
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ post.date | date: date_format }}<br>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {{ post.excerpt }}
+     {% endfor %}
+  {% endif %}
+{% endfor %}
 </ul>
