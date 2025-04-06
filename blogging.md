@@ -1,29 +1,20 @@
 ---
 title: Blogging
 layout: post
-tags:
- - jekyll
- - Github pages
 ---
 I thought it my be a good idea to track the progress of my various software projects.
 
 Mainly as I am notoriously bad at documentation
 
-But also give me a way to track my progress (or lack thereof).
-And (maybe) provide something interest to any readers. 
+But also give me a way to track my progress. Or lack thereof.   
 
-After checking out the various bogging options, I stumbled across [GitHub Pages](https://pages.github.com/)
+After checking out the various bogging options available, I stumbled across [GitHub Pages](https://pages.github.com/)
 
-It ticked a few boxes:
+Not withstanding that it is free, I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/), an open source static site generator created especially with blogging in mind.  
 
-1. It was free
-2. It was open source
-3. I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/) as the engine to build a website with lots of bells and whistles
-4. It was free 
-
-There are a plethora of complex and visuallt appealing themes available ( at all price points ).
-
-A sample of some of these themes can be found at [Jekyllthemes.io](https://jekyllthemes.io)
+There is a large developer community that has built some very visually appealing "themes" or templates on top of Jekyll.
+<br>  
+Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
 
 ![Jekyllthemes.io](/assets/images/jekyllthemes.io.jpeg)
 

@@ -4,17 +4,26 @@ title: "CoreWars"
 layout: post
 ---
 
-Core War pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called M.A.R.S or Memory Array Redcode Simulator )
-
-Each program battles each other in attempt to stop the other executing and essentially "win"
-
-My implementation is called LifeOnMars.
-
-It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.
-
-LifeOnMars can be found [here](https://github.com/fatherdougalmaguire/LifeOnMARS "LifeOnMars GitHub repository")
-
 ![pMARS screenshot](/assets/images/pmarssdl.png "pMARS screenshot")
+
+<br>
+I first read about CoreWars in old back issues of Scientific American.  
+And I was hooked.
+
+CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called M.A.R.S or Memory Array Redcode Simulator )
+
+Each program battles each other in attempt to stop the other executing and essentially win the battle.
+
+Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.  
+
+Further,  genetic programming can be used to evolve warriors.
+
+I'm going to document my experience on building a MacOS MARS environment in these pages.
+
+Further information can be found at :
+
+- [Wikipedia](https://en.wikipedia.org/wiki/Core_War "Wikipedia")
+- [Core War - the Ultimate Programming Game](https://corewar.co.uk/ "Core War - the Ultimate Programming Game")
 
 ### Related posts
 

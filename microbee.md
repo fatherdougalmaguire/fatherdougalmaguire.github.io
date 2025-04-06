@@ -4,26 +4,43 @@ title: "Microbee"
 layout: post
 ---
 
-Back in the dim, dark, 1980's,  my family owned a Microbee. 
-The Microbee was an Australian designed and manufactured Z80-based home computer.
+![My first computer](/assets/images/Microbee32K_IC.png)
+Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
+
+<br>
+
+Back in distant past,  my family owned a Microbee. 
+
+The Microbee was an Australian designed and manufactured ( by a company called Applied Technology ) home computer, popular during the 1980's
+( partiulaly in schools ).
+
+Initially supplied as a kit ( and later fully assembled models ),  it was Z80 based and came with a relatively generous 16 or 32 Kb of ram.
+
+It came with BASIC installed and used audio cassettes to store programs and data. 
+
+Later models included floppy disk drives running CP/M 2.2 as well as upgrades to 64 or 128 Kb.
+
+The Microbee was distinct from it's competitors in having a relatively high resolution video output ( 64x16 characters or 512x256 pixels ).
+This was counterbalanced by lack of colour and limitations in the hi-res video mode. 
+And rather poor monophonic speaker output.
  
-I spent many happy hours messing about with it before time marched on and I moved into the PC world.
+I spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.
 
 But I have always had a soft spot for the 'Bee.
 
-As retrocomputing has become a thing,  I have been mucking around with emulators of older computing platforms.
+I came across a truly excellent PC-based emulator called [uBee512](https://www.microbee-mspp.org/repository/ "Microbee Software Preservation Project Repository")
 
-I only ever found a handful of emulators built for the Microbee and none are targeted at MacOS.
+Given I have a Macintosh at home,  I spent many hours trying to build the source code under MacOS.  
+I eventually succeeded but it led me to wonder whether or not I could build my own emulator.
 
-So I decided to roll my own
+So I have started on this massive undertaking and documenting my progress.
 
-My implementation is called Abeja ( Spanish for bee )
+Further information on the Microbee can be found at :
 
-It is written for MacOS Sonoma using Swift/SwiftUI.
-
-The GitHub repository for Abeja can be found [here](https://github.com/fatherdougalmaguire/Abeja "Abeja GitHub repository")
-
-![My first computer](/assets/images/Microbee32K_IC.png)
+- [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
+- [Microbee Software Preservation Project](https://microbee-mspp.org/forum/index.php "Microbee Software Preservation Project")
+- [Microbee Technology Forum](https://microbeetechnology.com.au/forum/ "Microbee Technology Forum")
+- [Microbee Users Group](https://www.facebook.com/groups/100158753790849/ "Microbee Users Group")
 
 ### Related posts
 
