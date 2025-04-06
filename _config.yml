@@ -1,11 +1,11 @@
-title: Go on, go on, go on
+title: That would be an ecumenical matter
 author:
   name: Tony Sanchez
   email: 
 
 description: >
  This is my site.  
- Nothing fancy,  just a place to jot down thoughts and musings that may be of interest to others
+ Nothing fancy,  just a place to jot down thoughts and musings.
 
 theme: minima
 
@@ -26,7 +26,7 @@ minima:
   #     * solarized-light    Light variant of solarized color scheme.
   #     * solarized-dark     Dark variant of solarized color scheme.
   #     * solarized          Adaptive skin for solarized color scheme skins.
-  skin: solarized
+  skin: classic
 
   # Specific pages for site navigation.
   #   If you wish to link only specific pages in the site-navigation, use this and list
