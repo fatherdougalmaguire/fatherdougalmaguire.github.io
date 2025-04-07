@@ -13,12 +13,14 @@ layout: home
 Photo credit : [Daniele Franchi](https://unsplash.com/@daniele_franchi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash "Unsplash")
 
 <br>
-As a teenager, I spent a lot of my free time mucking about with the family's home computer ( a [Microbee](microbee) ).  
+As a teenager, I spent a lot of my free time mucking about with the [family's home computer](microbee).   
+
 I built a bunch of cool things ( since lost to the ages )
 
-Life ( as it is wont to do ) takes you different places and coding fell by the way side.
+Life ( as it is want to do ) takes you different places and coding fell by the way side.
 
-In recent times,  I have wanted to pick up the baton again and get my head around things have changed.  
+In recent times,  I have wanted to pick up the baton again and get my head around how things have changed.
+
 A few projects have been bubbling around in my mind and I wanted to document what I will be doing so thing don't ( once again ) fall down the back of the metaphorical couch.
 
 I thought about a YouTube channel.  
@@ -27,6 +29,7 @@ I quickly came to my senses and decided that a blog might be the way to go.
 
 These pages will attempt to track my journey into this new world.
 
+Explore the links in the navigation menu for more details.
 <br>
 
-### Latest Posts
+## Latest Posts

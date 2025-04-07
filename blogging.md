@@ -6,13 +6,14 @@ I thought it my be a good idea to track the progress of my various software proj
 
 Mainly as I am notoriously bad at documentation
 
-But also give me a way to track my progress. Or lack thereof.   
+But also give me a way to track my progress.  
+Or lack thereof.   
 
 After checking out the various bogging options available, I stumbled across [GitHub Pages](https://pages.github.com/)
 
-Not withstanding that it is free, I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/), an open source static site generator created especially with blogging in mind.  
+Not withstanding the fact that it is free, I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/), an open source static site generator created especially with blogging in mind.  
 
-There is a large developer community that has built some very visually appealing "themes" or templates on top of Jekyll.
+There is a large developer community that has built some very visually appealing templates or "themes" on top of Jekyll.
 <br>  
 Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
 

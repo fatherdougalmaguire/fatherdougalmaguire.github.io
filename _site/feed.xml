@@ -1,19 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-06T18:46:02+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site.   Nothing fancy,  just a place to jot down thoughts and musings.
-</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja</title><link href="http://localhost:4000/2025/03/28/Introducing-Abeja.html" rel="alternate" type="text/html" title="Introducing Abeja" /><published>2025-03-28T00:00:00+11:00</published><updated>2025-03-28T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/28/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/2025/03/28/Introducing-Abeja.html"><![CDATA[<p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.<br />
-So I decided to roll my own</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-07T18:55:55+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site.   Nothing fancy,  just a place to jot down thoughts and musings.
+</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja</title><link href="http://localhost:4000/abeja/" rel="alternate" type="text/html" title="Introducing Abeja" /><published>2025-03-28T00:00:00+11:00</published><updated>2025-03-28T00:00:00+11:00</updated><id>http://localhost:4000/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/abeja/"><![CDATA[<p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.</p>
+
+<p>So I decided to roll my own</p>
 
 <p>My implementation is called <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a></p>
 
+<p>Which is Spanish for bee.</p>
+
 <p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
 
-<p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>]]></content><author><name>Tony Sanchez</name></author><category term="Microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS. So I decided to roll my own]]></summary></entry><entry><title type="html">Introducing LifeOnMars</title><link href="http://localhost:4000/2025/03/27/Introducing-LifeOnMars.html" rel="alternate" type="text/html" title="Introducing LifeOnMars" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/27/Introducing-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/2025/03/27/Introducing-LifeOnMars.html"><![CDATA[<p>I only ever found a handful of MARS enviroments built for MacOS.<br />
-So I decided to roll my own.</p>
+<p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>
+
+<p>Currently it doesn’t do a real lot.</p>
+
+<p>Whilst text display output works, only 1/3 of the Z80 instruction set is emulated.</p>
+
+<p>And neither sound nor data storage functionality is present.</p>
+
+<p>Subsequent posts will document how to got to this poin.</p>
+
+<p>And the challenges in moving forward to a fully working implementation.</p>]]></content><author><name>Tony Sanchez</name></author><category term="Microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.]]></summary></entry><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS enviroments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
+
+<p>So I decided to bite the bullet and finally complete one.</p>
 
 <p>My implementation is called <a href="https://github.com/fatherdougalmaguire/LifeOnMARS" title="LifeOnMars GitHub repository">LifeOnMars</a></p>
 
 <p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
 
-<p><img src="/assets/images/lifeonmars-0.25.png" alt="LifeOnMars" /></p>]]></content><author><name>Tony Sanchez</name></author><category term="CoreWars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I only ever found a handful of MARS enviroments built for MacOS. So I decided to roll my own.]]></summary></entry><entry><title type="html">Getting started with Minima and GitHub pages</title><link href="http://localhost:4000/2025/03/26/Minima-theme.html" rel="alternate" type="text/html" title="Getting started with Minima and GitHub pages" /><published>2025-03-26T00:00:00+11:00</published><updated>2025-03-26T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/26/Minima-theme</id><content type="html" xml:base="http://localhost:4000/2025/03/26/Minima-theme.html"><![CDATA[<p>On the face of it,  Minima is a fairly boring theme.</p>
+<p><img src="/assets/images/lifeonmars-0.25.png" alt="LifeOnMars" /></p>
+
+<p>It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other project ( <a href="\abeja">Abeja</a> )</p>]]></content><author><name>Tony Sanchez</name></author><category term="CoreWars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I had made abortive attempts at building MARS enviroments for the Microbee ( and later the PC ) but nothing ever came to fruition.]]></summary></entry><entry><title type="html">Getting started with Minima and GitHub pages</title><link href="http://localhost:4000/2025/03/26/Minima-theme.html" rel="alternate" type="text/html" title="Getting started with Minima and GitHub pages" /><published>2025-03-26T00:00:00+11:00</published><updated>2025-03-26T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/26/Minima-theme</id><content type="html" xml:base="http://localhost:4000/2025/03/26/Minima-theme.html"><![CDATA[<p>On the face of it,  Minima is a fairly boring theme.</p>
 
 <p>But I got hopelessly lost trying to modify the complex and visually appealing options.</p>
 
