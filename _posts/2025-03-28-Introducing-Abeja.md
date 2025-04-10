@@ -29,7 +29,7 @@ Whilst text display output works, only 1/3 of the Z80 instruction set is emulate
 
 And neither sound nor data storage functionality is present.
 
-Subsequent posts will document how to got to this poin.
+Subsequent posts will document how to got to this point.
 
 And the challenges in moving forward to a fully working implementation.
 

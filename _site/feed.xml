@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-07T19:07:38+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site.   Nothing fancy,  just a place to jot down thoughts and musings.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-10T22:53:15+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site.   Nothing fancy,  just a place to jot down thoughts and musings.
 </subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja</title><link href="http://localhost:4000/abeja/" rel="alternate" type="text/html" title="Introducing Abeja" /><published>2025-03-28T00:00:00+11:00</published><updated>2025-03-28T00:00:00+11:00</updated><id>http://localhost:4000/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/abeja/"><![CDATA[<p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.</p>
 
 <p>So I decided to roll my own</p>
@@ -17,7 +17,7 @@
 
 <p>And neither sound nor data storage functionality is present.</p>
 
-<p>Subsequent posts will document how to got to this poin.</p>
+<p>Subsequent posts will document how to got to this point.</p>
 
 <p>And the challenges in moving forward to a fully working implementation.</p>]]></content><author><name>Tony Sanchez</name></author><category term="Microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.]]></summary></entry><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS enviroments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
 
