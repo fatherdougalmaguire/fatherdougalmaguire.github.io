@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /abeja/
+title: Introducing Abeja
 tags:
  - Microbee
  - Z80

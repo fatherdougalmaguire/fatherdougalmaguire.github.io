@@ -22,7 +22,7 @@ Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to 
 
 The Microbee was distinct from it's competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).
 
-This was counterbalanced by lack of colour.  And the hi-res video mode was only partially bitmapped due to a lack of screen RAM.
+This was counterbalanced by lack of colour.  And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.
 
 Plus there was a rather poor monophonic speaker output ( compared to competitors such as the C64 )
  
