@@ -32,6 +32,14 @@ layout: base
     </div>
   </header>
 
+  <div style="text-align:center;">
+    {% for tag in page.tags %}
+    <span class="tag-highlight" style="color:limegreen;">{{ tag }}</span>
+    {% endfor %}
+  </div>
+
+  <br>
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -41,13 +49,17 @@ layout: base
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
 
-<div class="PageNavigation">
+  <div class="PageNavigation">
     {% if page.previous.url %}
         <a class="button" style="float:left" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url %}
         <a class="button" style="float:right" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
     {% endif %}
-</div>
+  </div>
+
+</article>
+
+
+

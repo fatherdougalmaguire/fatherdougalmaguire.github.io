@@ -2,12 +2,29 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 .button {
   background-color: #F0F3F4;
-  color: white;
+  max-width: 150px;
+  text-overflow: ellipsis;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 14px;
+  margin: 2px 2px;
   border-radius: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tag-highlight {
+  background-color: white;
+  colour: green;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 2px;
+  border-radius: 0px;
+  border: 2px solid #04AA6D; /* Green */
 }

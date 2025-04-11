@@ -65,29 +65,60 @@
     <h1 class="post-title p-name" itemprop="name headline">Introducing Abeja</h1>
     <div class="post-meta">
       <time class="dt-published" datetime="2025-03-28T00:00:00+11:00" itemprop="datePublished">
-        Mar-28-2025
+        Mar 28, 2025
       </time>
     </div>
   </header>
+
+  <div style="text-align:center;">
+    
+    <span class="tag-highlight" style="color:limegreen;">Microbee</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">Z80</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">Emulation</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">Retro Computing</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">MacOS</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">Swift</span>
+    
+    <span class="tag-highlight" style="color:limegreen;">SwiftUI</span>
+    
+  </div>
+
+  <br>
 
   <div class="post-content e-content" itemprop="articleBody">
     <p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.</p>
 
 <p>So I decided to roll my own</p>
 
-<p>My implementation is called <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a></p>
-
-<p>Which is Spanish for bee.</p>
+<p>My implementation is called <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a><br />
+Which is Spanish for <strong>bee</strong> ( a nod to my heritage ).</p>
 
 <p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
 
 <p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>
 
-<p>Currently it doesn’t do a real lot.</p>
+<p>Currently state of play :</p>
 
-<p>Whilst text display output works, only 1/3 of the Z80 instruction set is emulated.</p>
+<ul>
+  <li>It will attempt to start executing the BASIC interpreter in ROM</li>
+  <li>It will show the contents of memory and registers during execution</li>
+  <li>It show show a disassembly of the executing code</li>
+  <li>You can step through executing code.</li>
+  <li>A Metal shader is used to write output to the screen</li>
+</ul>
 
-<p>And neither sound nor data storage functionality is present.</p>
+<p>However :</p>
+
+<ul>
+  <li>Only 1/3 of the Z80 instruction set is currently emulated.  So the CPU emulation quickly goes pear shaped</li>
+  <li>No I/O functionality has been emulated. So there is no sound/keyboard/data storage as of yet.</li>
+  <li>It’s particularly slow.</li>
+</ul>
 
 <p>Subsequent posts will document how to got to this point.</p>
 
@@ -95,14 +126,21 @@
 
 
   </div><a class="u-url" href="/abeja/" hidden></a>
-</article>
 
-<div class="PageNavigation">
+  <div class="PageNavigation">
     
         <a class="button" style="float:left" href="/2025/03/27/Is-there-LifeOnMars.html">&laquo; Is there LifeOnMars ?</a>
     
     
-</div>
+        <a class="button" style="float:right" href="/2025/04/11/Abejas-structure.html">How is Abeja structured ? &raquo;</a>
+    
+  </div>
+
+</article>
+
+
+
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
