@@ -754,4 +754,50 @@ table td {
   border-radius: 0px;
 }
 
+/* Styling for the search box */
+#search-input {
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+#search-input:focus {
+  border-color: #0078d4;
+}
+
+/* Styling for the search results */
+#search-results {
+  list-style-type: none;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search-results li {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px;
+}
+
+#search-results li:last-child {
+  border-bottom: none;
+}
+
+#search-results a {
+  text-decoration: none;
+  color: #333;
+}
+
+#search-results a:hover {
+  color: #0078d4;
+}
+
 /*# sourceMappingURL=style.css.map */

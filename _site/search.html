@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>How is Abeja structured ? | An ecumenical matter</title>
+<title>Search | An ecumenical matter</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="How is Abeja structured ?" />
+<meta property="og:title" content="Search" />
 <meta name="author" content="Tony Sanchez" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is my site. It’s nothing fancy." />
 <meta property="og:description" content="This is my site. It’s nothing fancy." />
-<link rel="canonical" href="http://localhost:4000/2025-04-09-Shaders.html" />
-<meta property="og:url" content="http://localhost:4000/2025-04-09-Shaders.html" />
+<link rel="canonical" href="http://localhost:4000/search.html" />
+<meta property="og:url" content="http://localhost:4000/search.html" />
 <meta property="og:site_name" content="An ecumenical matter" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="How is Abeja structured ?" />
+<meta property="twitter:title" content="Search" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"How is Abeja structured ?","url":"http://localhost:4000/2025-04-09-Shaders.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Search","url":"http://localhost:4000/search.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
@@ -28,7 +28,11 @@
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
 <link rel="shortcut icon" href="/assets/images/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
-<link rel="manifest" href="/assets/images/site.webmanifest" /></head>
+<link rel="manifest" href="/assets/images/site.webmanifest" />
+
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script>
+
+</head>
 <body><header class="site-header">
 
   <div class="wrapper">
@@ -44,6 +48,7 @@
   <a style="color:limegreen;" class="nav-item" href="/projects/microbee/">Microbee</a>
   <a style="color:limegreen;" class="nav-item" href="/projects/corewars/">CoreWars</a>
   <a style="color:limegreen;" class="nav-item" href="/projects/blogging/">Blogging</a>
+  <a style="color:limegreen;" class="nav-item" href="/search.html">Search</a>
   <a style="color:limegreen;" class="nav-item" href="/about/">About Me</a>
           </div>
         </div>
@@ -51,6 +56,7 @@
   <a style="color:limegreen;" class="nav-item" href="/projects/microbee/">Microbee</a>
   <a style="color:limegreen;" class="nav-item" href="/projects/corewars/">CoreWars</a>
   <a style="color:limegreen;" class="nav-item" href="/projects/blogging/">Blogging</a>
+  <a style="color:limegreen;" class="nav-item" href="/search.html">Search</a>
   <a style="color:limegreen;" class="nav-item" href="/about/">About Me</a>
         </div>
       </nav>
@@ -61,7 +67,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">How is Abeja structured ?</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Search</h1>
     <div class="post-meta">
       <time class="dt-published" datetime="" itemprop="datePublished">
         
@@ -71,29 +77,34 @@
 
   <div style="text-align:center;">
     
-    <span class="tag-highlight">Microbee</span>
-    
-    <span class="tag-highlight">Z80</span>
-    
-    <span class="tag-highlight">Emulation</span>
-    
-    <span class="tag-highlight">Retro Computing</span>
-    
-    <span class="tag-highlight">MacOS</span>
-    
-    <span class="tag-highlight">Swift</span>
-    
-    <span class="tag-highlight">SwiftUI</span>
-    
   </div>
 
   <br>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>blah, blah, blah,  MDDM, reactive</p>
+    <p style="text-align:center;">Can't find what you are looking for ?</p>
+
+<!-- from https://github.com/jekyll/minima/issues/741 -->
+
+<p><!-- Search Input -->
+<input type="text" id="search-input" placeholder="Search..." /></p>
+
+<!-- Results Display -->
+<ul id="search-results"></ul>
+
+<!-- Initialization Script -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    noResultsText: 'No results found'
+  });
+</script>
 
 
-  </div><a class="u-url" href="/2025-04-09-Shaders.html" hidden></a>
+  </div><a class="u-url" href="/search.html" hidden></a>
 
   <!-- 
   <div class="PageNavigation">

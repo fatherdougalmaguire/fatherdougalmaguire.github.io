@@ -37,4 +37,3 @@ Further information can be found at :
       {{ post.excerpt }}
     {% endfor %}
 </ul>
- 
