@@ -743,8 +743,8 @@ table td {
 }
 
 .tag-highlight {
-  background-color: white;
-  colour: green;
+  background-color: limegreen;
+  colour: white;
   padding: 5px;
   text-align: center;
   text-decoration: none;
@@ -752,7 +752,6 @@ table td {
   font-size: 10px;
   margin: 2px 2px;
   border-radius: 0px;
-  border: 2px solid #04AA6D; /* Green */
 }
 
 /*# sourceMappingURL=style.css.map */

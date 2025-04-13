@@ -29,7 +29,13 @@ I quickly came to my senses and decided that a blog might be the way to go.
 
 These pages will attempt to track my journey into this new world.
 
-Explore the links in the navigation menu for more details.
-<br>
+I'm concentrating on three main projects at the moment.
+
+<ul>
+	<li><a href="projects/microbee/">Microbee</a> - Revisiting a computer from my youth by way of a emulator.</li>
+	<li><a href="projects/corewars/">Corewars</a> - Programs battle for supremacy inside a virtual computer. </li>
+	<li><a href="projects/blogging/">Blogging</a> - Using Jekyll to build my own blog.</li>
+</ul>
 
 ## Latest Posts
+

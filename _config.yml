@@ -3,10 +3,9 @@ author:
   name: Tony Sanchez
   email: 
 
-description: >
- This is my site.  
- Nothing fancy.
- Just a place to jot down thoughts and musings.
+description: 
+ This is my site. 
+ It's nothing fancy.  
 
 theme: minima
 
@@ -34,9 +33,9 @@ minima:
   #   the `path` property (as represented via Liquid) of the pages in the order they
   #   should be rendered.
   nav_pages:
-    - microbee.md
-    - corewars.md
-    - blogging.md
+    - projects/microbee/index.md
+    - projects/corewars/index.md
+    - projects/blogging/index.md
     - about.md
 
   # Set to `true` to show excerpts on the homepage.
