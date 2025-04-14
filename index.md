@@ -13,7 +13,7 @@ layout: home
 Photo credit : [Daniele Franchi](https://unsplash.com/@daniele_franchi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash "Unsplash")
 
 <br>
-As a teenager, I spent a lot of my free time mucking about with the [family's home computer](microbee).   
+As a teenager, I spent a lot of my free time mucking about with the [family's home computer](projects/microbee/).   
 
 I built a bunch of cool things ( since lost to the ages )
 
