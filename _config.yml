@@ -37,6 +37,7 @@ minima:
     - projects/corewars/index.md
     - projects/blogging/index.md
     - search.md
+    - search2.html
     - about.md
 
   # Set to `true` to show excerpts on the homepage.

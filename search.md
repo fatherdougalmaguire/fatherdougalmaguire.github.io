@@ -19,7 +19,7 @@ layout: post
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
     json: '/search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
+    searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a><br><small>{excerpt}</small></li>',
     noResultsText: 'No results found'
   });
 </script>

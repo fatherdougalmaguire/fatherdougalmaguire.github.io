@@ -1,80 +1,113 @@
 [
   
     {
-      "title": "Decoding CPU instructions",
-      "category": "",
-      "tags": "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url": "/projects/microbee/2025/04/11/CPU.html"
+      "title"    : "Decoding CPU instructions",
+      "category" : "projects, microbee",
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
+      "url"      : "/projects/microbee/2025/04/11/CPU.html",
+      "date"     : "April 11, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "UI Design",
-      "category": "",
-      "tags": "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url": "/projects/microbee/2025/04/10/UI-Design.html"
+      "title"    : "UI Design",
+      "category" : "projects, microbee",
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
+      "url"      : "/projects/microbee/2025/04/10/UI-Design.html",
+      "date"     : "April 10, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Building a Metal shader for display output",
-      "category": "",
-      "tags": "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI, Metal, Shader",
-      "url": "/projects/microbee/2025/04/09/Shaders.html"
+      "title"    : "Building a Metal shader for display output",
+      "category" : "projects, microbee",
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI, Metal, Shader",
+      "url"      : "/projects/microbee/2025/04/09/Shaders.html",
+      "date"     : "April  9, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "How is Abeja structured ?",
-      "category": "",
-      "tags": "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url": "/projects/microbee/2025/04/08/Abejas-structure.html"
+      "title"    : "How is Abeja structured ?",
+      "category" : "projects, microbee",
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
+      "url"      : "/projects/microbee/2025/04/08/Abejas-structure.html",
+      "date"     : "April  8, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Enhancing Minima Part 4 - Search",
-      "category": "",
-      "tags": "Jekyll, Blog, Minima, GitHub Pages",
-      "url": "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html"
+      "title"    : "Enhancing Minima Part 4 - Search",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
+      "date"     : "April  2, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Enhancing Minima Part 3 - Tags and Categories",
-      "category": "",
-      "tags": "Jekyll, Blog, Minima, GitHub Pages",
-      "url": "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html"
+      "title"    : "Enhancing Minima Part 3 - Tags and Categories",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
+      "date"     : "April  1, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Enhancing Minima Part 2 - Fonts and Colours",
-      "category": "",
-      "tags": "Jekyll, Blog, Minima, GitHub Pages",
-      "url": "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html"
+      "title"    : "Enhancing Minima Part 2 - Fonts and Colours",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
+      "date"     : "March 30, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Enhancing Minima Part 1 - Navigation and Content",
-      "category": "",
-      "tags": "Jekyll, Blog, Minima, GitHub Pages",
-      "url": "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html"
+      "title"    : "Enhancing Minima Part 1 - Navigation and Content",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
+      "date"     : "March 29, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
     } ,
   
     {
-      "title": "Introducing Abeja",
-      "category": "",
-      "tags": "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url": "/projects/microbee/2025/03/28/Introducing-Abeja.html"
+      "title"    : "Introducing Abeja",
+      "category" : "projects, microbee",
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
+      "url"      : "/projects/microbee/2025/03/28/Introducing-Abeja.html",
+      "date"     : "March 28, 2025",
+      "excerpt"  :  "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",
+      "content"  :  "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.So I decided to roll my ownMy implementation is called AbejaWhich is Spanish for bee ( a nod to my heritage ).It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.Currently state of play :  It will attempt to start executing the BASIC interpreter in ROM  It will show the contents of memory and registers during execution  It show show a disassembly of the executing code  You can step through executing code.  A Metal shader is used to write output to the screenHowever :  Only 1/3 of the Z80 instruction set is currently emulated.  So the CPU emulation quickly goes pear shaped  No I/O functionality has been emulated. So there is no sound/keyboard/data storage as of yet.  It’s particularly slow.Subsequent posts will document how to got to this point.And the challenges in moving forward to a fully working implementation."
     } ,
   
     {
-      "title": "Is there LifeOnMars ?",
-      "category": "",
-      "tags": "Redcode, MARS, Warriors, MacOS, Swift, SwiftUI",
-      "url": "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"
+      "title"    : "Is there LifeOnMars ?",
+      "category" : "projects, corewars",
+      "tags"     : "Redcode, MARS, Warriors, MacOS, Swift, SwiftUI",
+      "url"      : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
+      "date"     : "March 27, 2025",
+      "excerpt"  :  "I had made abortive attempts at building MARS enviroments for the Microbee ( and later the PC ) but nothing ever came to fruition.",
+      "content"  :  "I had made abortive attempts at building MARS enviroments for the Microbee ( and later the PC ) but nothing ever came to fruition.So I decided to bite the bullet and finally complete one.My implementation is called LifeOnMarsIt is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other projects."
     } ,
   
     {
-      "title": "Getting started with Minima and GitHub pages",
-      "category": "",
-      "tags": "Jekyll, Blog, Minima, GitHub Pages",
-      "url": "/projects/blogging/2025/03/26/Minima-theme.html"
+      "title"    : "Getting started with Minima and GitHub pages",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/03/26/Minima-theme.html",
+      "date"     : "March 26, 2025",
+      "excerpt"  :  "On the face of it,  Minima is a fairly boring theme.",
+      "content"  :  "On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?Coming soon!\t"
     } 
   
 ]
