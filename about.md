@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About Me
-permalink: /about/
+title: "About Me"
+permalink: /about
+include_search : true
+excerpt : Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.
 ---
 Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.
 

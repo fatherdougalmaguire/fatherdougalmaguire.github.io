@@ -1,6 +1,8 @@
 ---
 title: "Microbee"
 layout: post
+include_search : true
+excerpt: Back in distant past,  my family owned a Microbee. 
 ---
 
 ![My first computer](/assets/images/Microbee32K_IC.png)

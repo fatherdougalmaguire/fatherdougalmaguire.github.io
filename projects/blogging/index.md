@@ -1,6 +1,8 @@
 ---
 title: Blogging
 layout: post
+include_search : true
+excerpt : I thought it my be a good idea to track the progress of my various software projects.
 ---
 I thought it my be a good idea to track the progress of my various software projects.
 

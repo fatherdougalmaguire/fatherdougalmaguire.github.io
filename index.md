@@ -6,6 +6,10 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: home
+title: An ecumenical matter
+include_search : true
+hide_title : true
+excerpt: As a teenager, I spent a lot of my free time mucking about with the [family's home computer](projects/microbee/). 
 ---
 
 ![](/assets/images/daniele-franchi-GbAEJUJKJ88-unsplash.jpg "Multicoloured light globes")

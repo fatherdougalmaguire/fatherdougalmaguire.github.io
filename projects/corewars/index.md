@@ -1,7 +1,8 @@
 ---
-#permalink: /corewars/
 title: "CoreWars"
 layout: post
+include_search : true
+excerpt: I first read about CoreWars in old back issues of Scientific American.
 ---
 
 ![pMARS screenshot](/assets/images/pmarssdl.png "pMARS screenshot")
