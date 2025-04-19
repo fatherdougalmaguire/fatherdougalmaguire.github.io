@@ -11,7 +11,7 @@ tags:
 ---
 
 
-I had made abortive attempts at building MARS enviroments for the [Microbee](\microbee) ( and later the PC ) but nothing ever came to fruition.  
+I had made abortive attempts at building MARS environments for the [Microbee](\microbee) ( and later the PC ) but nothing ever came to fruition.  
 
 So I decided to bite the bullet and finally complete one.
 

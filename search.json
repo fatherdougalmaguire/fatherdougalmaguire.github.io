@@ -14,11 +14,12 @@ layout: none
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 
-{% assign comma_control = 0 %}
-
 {% for pages in site.html_pages  %}
-   {% if pages.include_search  %}
-    ,{
+   {% if pages.include_search %}
+   {% if pages.url contains "/page"%}
+   {% else %}
+   
+   ,{
       "title"    : "{{ pages.title | escape }}",
       "category" : "{{ pages.categories | join: ', ' }}",
       "tags"     : "{{ pages.include_search | join: ', ' }}",
@@ -28,6 +29,7 @@ layout: none
       "content"  :  {{ pages.content | strip | strip_html | strip_newlines | escape | jsonify }}
     } 
     
+    {% endif %} 
     {% endif %}
 
   {% endfor %}
