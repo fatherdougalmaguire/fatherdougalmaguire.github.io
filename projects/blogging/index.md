@@ -19,7 +19,7 @@ There is a large developer community that has built some very visually appealing
 <br>  
 Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
 
-![Jekyllthemes.io](/assets/images/jekyllthemes.io.jpeg)
+![Jekyllthemes.io](/assets/images/jekyllthemes.jpg)
 
 I've ended up building this site using the default Jekyll theme [Minima](https://github.com/jekyll/minima)
 
@@ -34,6 +34,7 @@ But I hope to migrate it to something a little more visually stylish as I explor
       {{ post.date | date: date_format }}
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       {{ post.excerpt }}
+      <hr>
     {% endfor %}
 </ul>
  

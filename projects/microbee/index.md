@@ -55,5 +55,6 @@ Further information can be found at :
       {{ post.date | date: date_format }}
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       {{ post.excerpt }}
+      <hr>
     {% endfor %}
 </ul>
