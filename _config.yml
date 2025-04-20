@@ -16,6 +16,8 @@ plugins:
 
 paginate: 5
 
+google_analytics: G-4HL20MHYZG
+
 sass:
   quiet_deps: true
   silence_deprecations: [import]
@@ -45,8 +47,6 @@ minima:
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
 
-  google_analytics: G-4HL20MHYZG
-  
   # Minima date format.
   #   The default value is "%b %d, %Y" (e.g. Nov 14, 2023).
   #   Refer to https://shopify.github.io/liquid/filters/date/ for valid values.
