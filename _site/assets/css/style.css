@@ -826,6 +826,14 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   color: limegreen;
 }
 
+/** not working for some reason **/
+.nav-item {
+  display: block;
+  padding: 5px 0;
+  color: limegreen;
+  line-height: 1.5;
+}
+
 /** Formspree **/
 /** Variables **/
 :root {

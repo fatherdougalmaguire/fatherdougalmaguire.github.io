@@ -1,6 +1,10 @@
 {%- for path in include.paths -%}
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
-  <a style="color:limegreen;" class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+    {%- if hyperpage.title == 'Search' -%}
+      <a style="color:limegreen;font-size: 125%;" class="fa-solid fa-magnifying-glass" href="{{ hyperpage.url | relative_url }}"></a>
+    {%- else -%}
+      <a style="color:limegreen;" class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
+    {%- endif -%}
   {%- endif -%}
 {%- endfor -%}

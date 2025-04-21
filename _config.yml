@@ -41,8 +41,8 @@ minima:
     - projects/microbee/index.md
     - projects/corewars/index.md
     - projects/blogging/index.md
-    - search.md
     - about.md
+    - search.md
 
   # Set to `true` to show excerpts on the homepage.
   show_excerpts: true
