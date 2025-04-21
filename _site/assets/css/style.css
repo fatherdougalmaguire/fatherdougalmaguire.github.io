@@ -800,4 +800,28 @@ table td {
   color: #0078d4;
 }
 
+body {
+  font-family: "Raleway", serif;
+}
+
+h1, h2, h3, h4, h5, .site-title, .site-nav {
+  font-family: "Raleway", sans-serif;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+}
+@media screen and (max-width: 600px) {
+  .site-title {
+    padding-right: 45px;
+  }
+}
+.site-title, .site-title:visited {
+  color: limegreen;
+}
+
 /*# sourceMappingURL=style.css.map */

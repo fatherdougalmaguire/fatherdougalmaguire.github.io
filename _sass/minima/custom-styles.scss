@@ -73,3 +73,28 @@
 #search-results a:hover {
     color: #0078d4;
 }
+
+body {
+  font-family: 'Raleway', serif;
+  }
+
+h1, h2, h3, h4, h5, .site-title, .site-nav {
+  font-family: 'Raleway', sans-serif;
+}
+
+.site-title {
+  @include relative-font-size(1.8);
+  font-weight: 600;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+
+  @include media-query($on-palm) {
+    padding-right: 45px;
+  }
+
+  &,
+  &:visited {
+    color: limegreen;
+  }
+}
