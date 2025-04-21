@@ -1,6 +1,16 @@
 [
   
     {
+      "title"    : "Enhancing Minima Part 6 - Google Analytics and Contact Forms",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Email, Contact form, Google Analytics, GitHub Pages",
+      "url"      : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
+      "date"     : "April 19, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "Coming soon!\t"
+    } ,
+  
+    {
       "title"    : "Enhancing Minima Part 5 - Pagination",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
@@ -86,8 +96,8 @@
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
       "url"      : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
       "date"     : "March 29, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "excerpt"  :  "On the face of it,  Minima is a fairly boring theme.",
+      "content"  :  "On the face of it,  Minima is a fairly boring theme."
     } ,
   
     {
@@ -114,10 +124,20 @@
       "title"    : "Getting started with Minima and GitHub pages",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/26/Minima-theme.html",
+      "url"      : "/projects/blogging/2025/03/26/Github-pages.html",
       "date"     : "March 26, 2025",
-      "excerpt"  :  "On the face of it,  Minima is a fairly boring theme.",
-      "content"  :  "On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?Coming soon!\t"
+      "excerpt"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",
+      "content"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?Coming soon!\t"
+    } ,
+  
+    {
+      "title"    : "Jekyll",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "url"      : "/projects/blogging/2025/03/25/Jekyll.html",
+      "date"     : "March 25, 2025",
+      "excerpt"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",
+      "content"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?Coming soon!\t"
     } 
   
 
@@ -135,7 +155,7 @@
       "url"      : "/about",
       "date"     : "",
       "excerpt"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.",
-      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.But I do own a beautiful black cat.This isn’t him.Photo credit : Andreea Popa"
+      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.But I do own a beautiful black cat.This isn’t him.Photo credit : Andreea PopaDrop me a line      Your Name            Email              This will help me respond to your query via an email.            Message        What would you like to discuss?        Submit  "
     } 
     
      
@@ -186,7 +206,7 @@
       "url"      : "/projects/blogging/",
       "date"     : "",
       "excerpt"  :  "I thought it my be a good idea to track the progress of my various software projects.",
-      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.After checking out the various bogging options available, I stumbled across GitHub PagesNot withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.ioI’ve ended up building this site using the default Jekyll theme MinimaBut I hope to migrate it to something a little more visually stylish as I explore the capabilities of Jeykll and to document my journey.Related postsMar 26, 2025      Getting started with Minima and GitHub pages      On the face of it,  Minima is a fairly boring theme.          Mar 29, 2025      Enhancing Minima Part 1 - Navigation and Content      Coming soon!          Mar 30, 2025      Enhancing Minima Part 2 - Fonts and Colours      Coming soon!          Apr 01, 2025      Enhancing Minima Part 3 - Tags and Categories      Coming soon!          Apr 02, 2025      Enhancing Minima Part 4 - Search      Coming soon!          Apr 18, 2025      Enhancing Minima Part 5 - Pagination      Coming soon!          "
+      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.I had thought of using aGoogle Sites( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as Google Sites I stumbled across GitHub Pages.Not withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.ioRelated postsMar 25, 2025      Jekyll      I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.          Mar 26, 2025      Getting started with Minima and GitHub pages      I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.          Mar 29, 2025      Enhancing Minima Part 1 - Navigation and Content      On the face of it,  Minima is a fairly boring theme.          Mar 30, 2025      Enhancing Minima Part 2 - Fonts and Colours      Coming soon!          Apr 01, 2025      Enhancing Minima Part 3 - Tags and Categories      Coming soon!          Apr 02, 2025      Enhancing Minima Part 4 - Search      Coming soon!          Apr 18, 2025      Enhancing Minima Part 5 - Pagination      Coming soon!          Apr 19, 2025      Enhancing Minima Part 6 - Google Analytics and Contact Forms      Coming soon!          "
     } 
     
      

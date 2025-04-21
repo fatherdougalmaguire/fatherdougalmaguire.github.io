@@ -11,7 +11,9 @@ Mainly as I am notoriously bad at documentation
 But also give me a way to track my progress.  
 Or lack thereof.   
 
-After checking out the various bogging options available, I stumbled across [GitHub Pages](https://pages.github.com/)
+I had thought of using a[Google Sites](https://sitdes.google.com/)( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.
+
+After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as [Google Sites](https://sitdes.google.com/) I stumbled across [GitHub Pages.](https://pages.github.com/)
 
 Not withstanding the fact that it is free, I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/), an open source static site generator created especially with blogging in mind.  
 
@@ -20,10 +22,6 @@ There is a large developer community that has built some very visually appealing
 Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
 
 ![Jekyllthemes.io](/assets/images/jekyllthemes.jpg)
-
-I've ended up building this site using the default Jekyll theme [Minima](https://github.com/jekyll/minima)
-
-But I hope to migrate it to something a little more visually stylish as I explore the capabilities of Jeykll and to document my journey.
 
 ### Related posts
 
