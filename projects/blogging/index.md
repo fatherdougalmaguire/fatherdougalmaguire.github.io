@@ -11,7 +11,7 @@ Mainly as I am notoriously bad at documentation
 But also give me a way to track my progress.  
 Or lack thereof.   
 
-I had thought of using a[Google Sites](https://sitdes.google.com/)( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.
+I had thought of using [Google Sites](https://sites.google.com/) ( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.
 
 After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as [Google Sites](https://sitdes.google.com/) I stumbled across [GitHub Pages.](https://pages.github.com/)
 
