@@ -32,9 +32,11 @@ layout: base
     </div>
   </header>
 
+  <!-- from https://mmpataki.github.io/programming/2020/09/06/adding-a-tag-cloud-page-to-jekyll-blog.html -->
+
   <div style="text-align:center;">
     {% for tag in page.tags %}
-    <span class="tag-highlight">{{ tag }}</span>
+    <span class="tag-highlight"><a href="/archive?id={{tag}}">{{ tag }}</a></span>
     {% endfor %}
   </div>
 

@@ -200,6 +200,23 @@
    
    
    ,{
+      "title"    : "CoreWars",
+      "category" : "",
+      "tags"     : "true",
+      "url"      : "/projects/corewars/",
+      "date"     : "",
+      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
+      "content"  :  "I first read about CoreWars in old back issues of Scientific American.And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )Each program battles each other in attempt to stop the other executing and essentially win the battle.Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.I decided to roll my own MARS environment as my second major project.Further information can be found at :  Wikipedia  Core War - the Ultimate Programming GameRelated postsMar 27, 2025      Is there LifeOnMars ?      I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.          "
+    } 
+    
+     
+    
+
+  
+   
+   
+   
+   ,{
       "title"    : "Blogging",
       "category" : "",
       "tags"     : "true",
@@ -214,20 +231,6 @@
 
   
    
-   
-   
-   ,{
-      "title"    : "CoreWars",
-      "category" : "",
-      "tags"     : "true",
-      "url"      : "/projects/corewars/",
-      "date"     : "",
-      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
-      "content"  :  "I first read about CoreWars in old back issues of Scientific American.And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )Each program battles each other in attempt to stop the other executing and essentially win the battle.Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.I decided to roll my own MARS environment as my second major project.Further information can be found at :  Wikipedia  Core War - the Ultimate Programming GameRelated postsMar 27, 2025      Is there LifeOnMars ?      I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.          "
-    } 
-    
-     
-    
 
   
    
