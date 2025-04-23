@@ -4,8 +4,8 @@
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color : white;
-  width : 48%;
-  padding: 20px;
+  width : 33%;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -111,6 +111,35 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
     color: limegreen;
   }
 }
+
+a {
+  color: $link-base-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    text-decoration: none ! important;
+    font-weight : bold ! important;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+.nav-item {
+    display: block;
+    padding: 5px 0;
+    color: limegreen ! important;
+    line-height: $base-line-height;
+  }
 
 /** Formspree **/
 

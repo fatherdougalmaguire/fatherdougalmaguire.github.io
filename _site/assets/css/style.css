@@ -729,8 +729,8 @@ table td {
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color: white;
-  width: 48%;
-  padding: 20px;
+  width: 33%;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -832,6 +832,31 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 }
 .site-title, .site-title:visited {
   color: limegreen;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
+}
+a:hover {
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+.social-media-list a:hover, .pagination a:hover {
+  text-decoration: none;
+}
+.social-media-list a:hover .username, .pagination a:hover .username {
+  text-decoration: underline;
+}
+
+.nav-item {
+  display: block;
+  padding: 5px 0;
+  color: limegreen !important;
+  line-height: 1.5;
 }
 
 /** Formspree **/
