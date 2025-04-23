@@ -85,10 +85,10 @@ layout: base
     {% endif %}
 
     {% if prev_post %}
-      <a class="button" style="float:left" href="{{prev_post.url}}">&laquo; {{prev_post.title}}</a>
+      <a class="nav_button" style="float:left" href="{{prev_post.url}}">{{prev_post.title}}</a>
     {% endif %}
     {% if next_post %}
-      <a class="button" style="float:right" href="{{next_post.url}}">{{next_post.title}} &raquo;</a>
+      <a class="nav_button" style="float:right" href="{{next_post.url}}">{{next_post.title}}</a>
     {% endif %}
   </div>
 </article>

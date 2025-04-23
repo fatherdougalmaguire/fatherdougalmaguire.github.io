@@ -1,11 +1,10 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-.button:link, .button:visited {
+.nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color : white;
-  max-width: 150px;
-  text-overflow: ellipsis;
+  width : 48%;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -18,7 +17,7 @@
   white-space: nowrap;
 }
 
-.button:hover, .button:active {
+.nav_button:hover, .nav_button:active {
   background-color: seagreen;
 }
 
@@ -113,21 +112,6 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   }
 }
 
-/** not working for some reason **/
-
-.snav-item:link, .snav-item:visited {
-    display: block;
-    padding: 5px 0;
-    color: limegreen;
-    line-height: $base-line-height;
-  }
-
-  .snav-item:hover, .snav-item:active {
-    display: block;
-    padding: 5px 0;
-    color: limegreen;
-    line-height: $base-line-height;
-  }
 /** Formspree **/
 
 /** Variables **/

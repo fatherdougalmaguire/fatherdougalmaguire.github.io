@@ -1,5 +1,5 @@
 ---
-title: "Getting started with Minima and GitHub pages"
+title: "GitHub pages"
 layout: post
 tags:
  - Jekyll
@@ -18,9 +18,6 @@ And it was taking me away from actually publishing any content.
 Not to mention actually working on said content.
 
 ### So how did I do it ?
-
-Coming soon!
-<!-- more -->
 
 <p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">

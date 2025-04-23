@@ -1,5 +1,6 @@
 ---
-title: "Enhancing Minima Part 6 - Google Analytics and Contact Forms"
+title: "Google Analytics and Contact Forms"
+excerpt: "Coming soon!"
 layout: post
 tags:
  - Jekyll
@@ -10,9 +11,6 @@ tags:
  - "Google Analytics"
  - "GitHub Pages"
 ---
-
-Coming soon!
-<!-- more -->
 
 <p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">

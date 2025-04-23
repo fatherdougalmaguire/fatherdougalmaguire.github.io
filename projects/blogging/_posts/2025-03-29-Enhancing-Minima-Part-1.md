@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Minima Part 1 - Navigation and Content"
+title: "Navigation and Content"
 layout: post
 tags:
  - Jekyll

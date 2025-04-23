@@ -1,6 +1,7 @@
 ---
 layout: post
 title : "How is Abeja structured ?"
+excerpt: "Coming soon!"
 tags:
  - Z80
  - Emulation
@@ -9,9 +10,6 @@ tags:
  - Swift
  - SwiftUI
 ---
-
-Coming soon!
-<!-- more -->
 
 <p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">

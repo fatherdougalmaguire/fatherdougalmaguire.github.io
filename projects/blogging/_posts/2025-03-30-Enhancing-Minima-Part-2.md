@@ -1,5 +1,6 @@
 ---
-title: "Enhancing Minima Part 2 - Fonts and Colours"
+title: "Fonts and Colours"
+excerpt: "Coming soon!"
 layout: post
 tags:
  - Jekyll
@@ -7,9 +8,6 @@ tags:
  - Minima
  - "GitHub Pages"
 ---
-
-Coming soon!
-<!-- more -->
 
 <p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">

@@ -726,11 +726,10 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
-.button:link, .button:visited {
+.nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color: white;
-  max-width: 150px;
-  text-overflow: ellipsis;
+  width: 48%;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -743,7 +742,7 @@ table td {
   white-space: nowrap;
 }
 
-.button:hover, .button:active {
+.nav_button:hover, .nav_button:active {
   background-color: seagreen;
 }
 
@@ -833,21 +832,6 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 }
 .site-title, .site-title:visited {
   color: limegreen;
-}
-
-/** not working for some reason **/
-.snav-item:link, .snav-item:visited {
-  display: block;
-  padding: 5px 0;
-  color: limegreen;
-  line-height: 1.5;
-}
-
-.snav-item:hover, .snav-item:active {
-  display: block;
-  padding: 5px 0;
-  color: limegreen;
-  line-height: 1.5;
 }
 
 /** Formspree **/
