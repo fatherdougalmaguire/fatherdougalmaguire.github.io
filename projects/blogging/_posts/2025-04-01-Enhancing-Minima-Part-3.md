@@ -12,7 +12,7 @@ Coming soon!
 <!-- more -->
 
 <p style="text-align:center;">
-	<img src="/assets/images/istockphoto-1410983127-612x612.jpg" alt="Under construction sign">
+	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">
 </p>
 
 

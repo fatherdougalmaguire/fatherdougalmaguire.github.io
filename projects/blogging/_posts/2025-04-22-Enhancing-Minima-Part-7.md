@@ -1,14 +1,13 @@
 ---
+title: "Enhancing Minima Part 7 - Tag Cloud"
 layout: post
-title : "Decoding CPU instructions"
 tags:
- - Z80
- - Emulation
- - "Retro Computing"
- - MacOS
- - Swift
- - SwiftUI
+ - Jekyll
+ - Blog
+ - Minima
+ - "Tag cloud"
 ---
+
 Coming soon!
 <!-- more -->
 
@@ -17,5 +16,3 @@ Coming soon!
 </p>
 
 
-
- 

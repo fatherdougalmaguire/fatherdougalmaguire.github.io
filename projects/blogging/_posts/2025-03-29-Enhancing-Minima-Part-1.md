@@ -10,3 +10,7 @@ tags:
 
 On the face of it,  Minima is a fairly boring theme.
 
+<p style="text-align:center;">
+	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">
+</p>
+

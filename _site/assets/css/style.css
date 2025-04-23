@@ -726,8 +726,9 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
-.button {
-  background-color: #F0F3F4;
+.button:link, .button:visited {
+  background-color: limegreen;
+  color: white;
   max-width: 150px;
   text-overflow: ellipsis;
   padding: 20px;
@@ -742,16 +743,24 @@ table td {
   white-space: nowrap;
 }
 
-.tag-highlight {
+.button:hover, .button:active {
+  background-color: seagreen;
+}
+
+.tag-highlight:link, .tag-highlight:visited {
   background-color: limegreen;
   color: white;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   margin: 2px 2px;
   border-radius: 0px;
+}
+
+.tag-highlight:hover, .tag-hightlight:active {
+  background-color: seagreen;
 }
 
 /* Styling for the search box */
@@ -827,7 +836,14 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 }
 
 /** not working for some reason **/
-.nav-item {
+.snav-item:link, .snav-item:visited {
+  display: block;
+  padding: 5px 0;
+  color: limegreen;
+  line-height: 1.5;
+}
+
+.snav-item:hover, .snav-item:active {
   display: block;
   padding: 5px 0;
   color: limegreen;
@@ -846,7 +862,7 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   /** --color-primary: #b64e08; **/
   --color-primary: limegreen ;
   /** --color-primary-active: #79320e; **/
-  --color-primary-active: #008000;
+  --color-primary-active: seagreen;
   --color-text-default: #262626;
   --color-text-muted: #4f4f4f;
   --font-family-body: "Raleway", system-ui, sans-serif;
