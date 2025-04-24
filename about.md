@@ -13,11 +13,7 @@ That being said, my skills are more technology adjacent.
 
 But I do own a beautiful black cat.
 
-This isn't him.  
-
-![](/assets/images/andreea-popa-6ST6S6i9IGM-unsplash-original.jpg "A black cat")
-
-Photo credit : [Andreea Popa](https://unsplash.com/@elfcodobelf "Unsplash")
+![](/assets/images/aboutme.jpg "A black cat")
 
 <br>
 ### Drop me a line
