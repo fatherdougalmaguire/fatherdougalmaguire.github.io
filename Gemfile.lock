@@ -95,7 +95,9 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  jekyll-feed
   jekyll-paginate
+  jekyll-seo-tag
   minima!
 
 BUNDLED WITH

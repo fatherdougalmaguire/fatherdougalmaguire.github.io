@@ -20,6 +20,6 @@ Not to mention actually working on said content.
 ### So how did I do it ?
 
 <p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">
+	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog">
 </p>
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed/corewars.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-24T14:58:32+10:00</updated><id>http://localhost:4000/feed/corewars.xml</id><title type="html">An ecumenical matter | Corewars</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
+
+<p>So I decided to bite the bullet and finally complete one.</p>
+
+<p>My implementation is called <a href="https://github.com/fatherdougalmaguire/LifeOnMARS" title="LifeOnMars GitHub repository">LifeOnMars</a></p>
+
+<p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
+
+<p><img src="/assets/images/lifeonmars-0.25.png" alt="LifeOnMars" /></p>
+
+<p>It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other projects.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="corewars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.]]></summary></entry></feed>

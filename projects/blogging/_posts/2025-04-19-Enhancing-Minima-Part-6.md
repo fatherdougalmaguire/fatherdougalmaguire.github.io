@@ -13,7 +13,8 @@ tags:
 ---
 
 <p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Female construction worker">
+	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog">
 </p>
+
 
 
