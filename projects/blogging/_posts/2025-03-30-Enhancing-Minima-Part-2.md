@@ -1,5 +1,5 @@
 ---
-title: "Fonts and Colours"
+title: "Fun with CSS"
 excerpt: "Coming soon!"
 layout: post
 tags:

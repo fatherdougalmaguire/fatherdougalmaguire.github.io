@@ -1,6 +1,6 @@
 ---
 title: "Microbee"
-layout: post
+layout: category
 include_search : true
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
@@ -46,15 +46,3 @@ Further information can be found at :
 - [Microbee Technology Forum](https://microbeetechnology.com.au/forum/ "Microbee Technology Forum")
 - [Microbee Users Group](https://www.facebook.com/groups/100158753790849/ "Microbee Users Group")
 
-### Related posts
-
-<ul class="post-list">
-{% assign microbee_posts = site.categories["microbee"] | sort: 'date' %}
-{% for post in microbee_posts %}
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ post.date | date: date_format }}
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
-      <hr>
-    {% endfor %}
-</ul>

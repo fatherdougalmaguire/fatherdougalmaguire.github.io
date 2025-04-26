@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-24T14:58:32+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Tag Cloud</title><link href="http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html" rel="alternate" type="text/html" title="Tag Cloud" /><published>2025-04-22T00:00:00+10:00</published><updated>2025-04-22T00:00:00+10:00</updated><id>http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html"><![CDATA[<p style="text-align:center;">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-26T15:48:21+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Tag Cloud</title><link href="http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html" rel="alternate" type="text/html" title="Tag Cloud" /><published>2025-04-22T00:00:00+10:00</published><updated>2025-04-22T00:00:00+10:00</updated><id>http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html"><![CDATA[<p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
 </p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="Tag cloud" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry><entry><title type="html">Google Analytics and Contact Forms</title><link href="http://localhost:4000/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html" rel="alternate" type="text/html" title="Google Analytics and Contact Forms" /><published>2025-04-19T00:00:00+10:00</published><updated>2025-04-19T00:00:00+10:00</updated><id>http://localhost:4000/projects/blogging/2025/04/19/Enhancing-Minima-Part-6</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html"><![CDATA[<p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
@@ -16,70 +16,6 @@
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
 </p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry><entry><title type="html">Tags and Categories</title><link href="http://localhost:4000/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html" rel="alternate" type="text/html" title="Tags and Categories" /><published>2025-04-01T00:00:00+11:00</published><updated>2025-04-01T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/04/01/Enhancing-Minima-Part-3</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html"><![CDATA[<p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
-</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry><entry><title type="html">Fonts and Colours</title><link href="http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html" rel="alternate" type="text/html" title="Fonts and Colours" /><published>2025-03-30T00:00:00+11:00</published><updated>2025-03-30T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html"><![CDATA[<p style="text-align:center;">
+</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry><entry><title type="html">Fun with CSS</title><link href="http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html" rel="alternate" type="text/html" title="Fun with CSS" /><published>2025-03-30T00:00:00+11:00</published><updated>2025-03-30T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html"><![CDATA[<p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
-</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry><entry><title type="html">Navigation and Content</title><link href="http://localhost:4000/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html" rel="alternate" type="text/html" title="Navigation and Content" /><published>2025-03-29T00:00:00+11:00</published><updated>2025-03-29T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/03/29/Enhancing-Minima-Part-1</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html"><![CDATA[<p>On the face of it,  Minima is a fairly boring theme.</p>
-
-<p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
-</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[On the face of it, Minima is a fairly boring theme.]]></summary></entry><entry><title type="html">Introducing Abeja</title><link href="http://localhost:4000/projects/microbee/2025/03/28/Introducing-Abeja.html" rel="alternate" type="text/html" title="Introducing Abeja" /><published>2025-03-28T00:00:00+11:00</published><updated>2025-03-28T00:00:00+11:00</updated><id>http://localhost:4000/projects/microbee/2025/03/28/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/projects/microbee/2025/03/28/Introducing-Abeja.html"><![CDATA[<p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.</p>
-
-<p>So I decided to roll my own</p>
-
-<p>My implementation is called <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a><br />
-Which is Spanish for <strong>bee</strong> ( a nod to my heritage ).</p>
-
-<p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
-
-<p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>
-
-<p>Currently state of play :</p>
-
-<ul>
-  <li>It will attempt to start executing the BASIC interpreter in ROM</li>
-  <li>It will show the contents of memory and registers during execution</li>
-  <li>It show show a disassembly of the executing code</li>
-  <li>You can step through executing code.</li>
-  <li>A Metal shader is used to write output to the screen</li>
-</ul>
-
-<p>However :</p>
-
-<ul>
-  <li>Only 1/3 of the Z80 instruction set is currently emulated.  So the CPU emulation quickly goes pear shaped</li>
-  <li>No I/O functionality has been emulated. So there is no sound/keyboard/data storage as of yet.</li>
-  <li>It’s particularly slow.</li>
-</ul>
-
-<p>Subsequent posts will document how to got to this point.</p>
-
-<p>And the challenges in moving forward to a fully working implementation.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.]]></summary></entry><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
-
-<p>So I decided to bite the bullet and finally complete one.</p>
-
-<p>My implementation is called <a href="https://github.com/fatherdougalmaguire/LifeOnMARS" title="LifeOnMars GitHub repository">LifeOnMars</a></p>
-
-<p>It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.</p>
-
-<p><img src="/assets/images/lifeonmars-0.25.png" alt="LifeOnMars" /></p>
-
-<p>It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other projects.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="corewars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.]]></summary></entry><entry><title type="html">GitHub pages</title><link href="http://localhost:4000/projects/blogging/2025/03/26/Github-pages.html" rel="alternate" type="text/html" title="GitHub pages" /><published>2025-03-26T00:00:00+11:00</published><updated>2025-03-26T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/03/26/Github-pages</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/03/26/Github-pages.html"><![CDATA[<p>I’ve ended up building this site using the default Jekyll theme <a href="https://github.com/jekyll/minima">Minima</a>.
-On the face of it,  Minima is a fairly boring theme.</p>
-
-<p>But I got hopelessly lost trying to modify the complex and visually appealing options.</p>
-
-<p>And it was taking me away from actually publishing any content.</p>
-
-<p>Not to mention actually working on said content.</p>
-
-<h3 id="so-how-did-i-do-it-">So how did I do it ?</h3>
-
-<p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
-</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[I’ve ended up building this site using the default Jekyll theme Minima. On the face of it, Minima is a fairly boring theme.]]></summary></entry><entry><title type="html">Jekyll</title><link href="http://localhost:4000/projects/blogging/2025/03/25/Jekyll.html" rel="alternate" type="text/html" title="Jekyll" /><published>2025-03-25T00:00:00+11:00</published><updated>2025-03-25T00:00:00+11:00</updated><id>http://localhost:4000/projects/blogging/2025/03/25/Jekyll</id><content type="html" xml:base="http://localhost:4000/projects/blogging/2025/03/25/Jekyll.html"><![CDATA[<blockquote>
-  <p>The instructions and code within are current as of 25th March 2025.</p>
-</blockquote>
-
-<p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
-</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[The instructions and code within are current as of 25th March 2025.]]></summary></entry></feed>
+</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="blogging" /><category term="Jekyll" /><category term="Blog" /><category term="Minima" /><category term="GitHub Pages" /><summary type="html"><![CDATA[Coming soon!]]></summary></entry></feed>

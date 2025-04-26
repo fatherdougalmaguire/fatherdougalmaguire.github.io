@@ -1,6 +1,6 @@
 ---
 title: "CoreWars"
-layout: post
+layout: category
 include_search : true
 excerpt: I first read about CoreWars in old back issues of Scientific American.
 ---
@@ -27,15 +27,4 @@ Further information can be found at :
 - [Wikipedia](https://en.wikipedia.org/wiki/Core_War "Wikipedia")
 - [Core War - the Ultimate Programming Game](https://corewar.co.uk/ "Core War - the Ultimate Programming Game")
 
-### Related posts
 
-<ul class="post-list">
-{% assign microbee_posts = site.categories["corewars"] | sort: 'date' %}
-{% for post in microbee_posts %}
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ post.date | date: date_format }}
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
-      <hr>
-    {% endfor %}
-</ul>

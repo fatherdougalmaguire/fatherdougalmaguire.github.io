@@ -22,12 +22,7 @@ sass:
   quiet_deps: true
   silence_deprecations: [import]
 
-feed:
-  categories:
-    - microbee
-    - corewars
-    - blogging
-  posts_limit: 1000
+posts_limit: 1000
 
 minima:
   # Minima skin selection. Available skins are:

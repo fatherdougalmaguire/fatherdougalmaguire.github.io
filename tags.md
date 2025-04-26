@@ -25,7 +25,7 @@ layout : post
 <br/>
 
 <div id="selectedtags"></div>
-<br/>
+<!-- <br/> -->
 <ol style="list-style-type: none;" id="selectedurls"></ol>
 
 <script>
@@ -105,7 +105,7 @@ layout : post
     for(tagName in tags) {
       var tag = tags[tagName]
       if(tag.selected) {
-        selectedtags.innerHTML += `<code style="background-color: lightgreen">${tagName}</code> `;
+        /** selectedtags.innerHTML += `<code style="background-color: brown">${tagName}</code> `; **/
         urls = new Set(tag.pages.filter(
           function (u) {
             var ua = [...urls];

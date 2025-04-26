@@ -1,6 +1,6 @@
 ---
-title: Blogging
-layout: post
+title: "Blogging"
+layout: category  
 include_search : true
 excerpt : I thought it my be a good idea to track the progress of my various software projects.
 ---
@@ -23,16 +23,3 @@ Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
 
 ![Jekyllthemes.io](/assets/images/jekyllthemes.jpg)
 
-### Related posts
-
-<ul class="post-list">
-{% assign microbee_posts = site.categories["blogging"] | sort: 'date' %}
-{% for post in microbee_posts %}
-    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {{ post.date | date: date_format }}
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
-      <hr>
-    {% endfor %}
-</ul>
- 
