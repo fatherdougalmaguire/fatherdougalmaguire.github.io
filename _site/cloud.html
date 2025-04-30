@@ -71,351 +71,800 @@
 
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
+<div id="tag_list"></div>
+
 <script>
+  
+  $(document).ready(
+
+    function() 
+    {
+
+      function multiSort(arr, fields) 
+      {
+       arr.sort((a, b) => 
+      {
+        for (let field of fields) 
+        {
+        const [fieldName, order] = field.split(':');
+        const aValue = a[fieldName];
+        const bValue = b[fieldName];
+
+        if (aValue < bValue) return order === 'desc' ? 1 : -1;
+        if (aValue > bValue) return order === 'desc' ? -1 : 1;
+       }
+      return 0;
+       });
+    }
+
   function AllPosts() 
     {
-      debugger;
+      /*debugger;*/
       var alltags = [];
       
        
       
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Mar 25, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Mar 26, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Redcode", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "microbee", tag : "MARS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "microbee", tag : "Warriors", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Mar 27, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Z80", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "microbee", tag : "Emulation", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "microbee", tag : "Retro Computing", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Mar 28, 2025" });
+          
+              
+                  alltags.push({category: "Microbee", tag : "Z80", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Emulation", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Retro computing", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Macos", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swift", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swiftui", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Mar 29, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "microbee", tag : "CSS", title: "", date : "Mar 30, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Apr 01, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Apr 02, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Z80", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "microbee", tag : "Emulation", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "microbee", tag : "Retro Computing", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Apr 08, 2025" });
+          
+              
+                  alltags.push({category: "Microbee", tag : "Z80", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Emulation", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Retro computing", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Macos", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swift", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swiftui", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "microbee", tag : "Z80", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "Emulation", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "Retro Computing", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "Metal", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "microbee", tag : "Shader", title: "", date : "Apr 09, 2025" });
+          
+              
+                  alltags.push({category: "Microbee", tag : "Z80", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Emulation", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Retro computing", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Macos", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swift", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swiftui", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Metal", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Shader", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "microbee", tag : "Z80", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "microbee", tag : "Emulation", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "microbee", tag : "Retro Computing", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Apr 10, 2025" });
+          
+              
+                  alltags.push({category: "Microbee", tag : "Z80", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Emulation", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Retro computing", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Macos", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swift", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swiftui", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "microbee", tag : "Z80", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "microbee", tag : "Emulation", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "microbee", tag : "Retro Computing", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "microbee", tag : "MacOS", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "microbee", tag : "Swift", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "microbee", tag : "SwiftUI", title: "", date : "Apr 11, 2025" });
+          
+              
+                  alltags.push({category: "Microbee", tag : "Z80", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Emulation", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Retro computing", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Macos", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swift", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Microbee", tag : "Swiftui", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Apr 18, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "Email", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "Contact form", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "Google Analytics", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "microbee", tag : "GitHub Pages", title: "", date : "Apr 19, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "microbee", tag : "Jekyll", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "microbee", tag : "Blog", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "microbee", tag : "Minima", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "microbee", tag : "Tag cloud", title: "", date : "Apr 22, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+      
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+                  alltags.push({category: "Corewars", tag : "Redcode", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Corewars", tag : "Mars", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Corewars", tag : "Warriors", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Corewars", tag : "Macos", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Corewars", tag : "Swift", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Corewars", tag : "Swiftui", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+        
+          
+              
+          
+              
+          
+              
+          
+              
           
         
       
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Mar 25, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Mar 26, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Redcode", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "corewars", tag : "MARS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "corewars", tag : "Warriors", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Mar 27, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Z80", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "corewars", tag : "Emulation", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "corewars", tag : "Retro Computing", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Mar 28, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Mar 29, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "corewars", tag : "CSS", title: "", date : "Mar 30, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Css", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Apr 01, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Apr 02, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Z80", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "corewars", tag : "Emulation", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "corewars", tag : "Retro Computing", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Apr 08, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Z80", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "Emulation", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "Retro Computing", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "Metal", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "corewars", tag : "Shader", title: "", date : "Apr 09, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Z80", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "corewars", tag : "Emulation", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "corewars", tag : "Retro Computing", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Apr 10, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Z80", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "corewars", tag : "Emulation", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "corewars", tag : "Retro Computing", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "corewars", tag : "MacOS", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "corewars", tag : "Swift", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "corewars", tag : "SwiftUI", title: "", date : "Apr 11, 2025" });
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
+          
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Apr 18, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "Email", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "Contact form", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "Google Analytics", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "corewars", tag : "GitHub Pages", title: "", date : "Apr 19, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Email", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Contact form", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Google analytics", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Github pages", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
+              
           
         
-          alltags.push({categories: "corewars", tag : "Jekyll", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "corewars", tag : "Blog", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "corewars", tag : "Minima", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "corewars", tag : "Tag cloud", title: "", date : "Apr 22, 2025" });
+          
+              
+                  alltags.push({category: "Blogging", tag : "Jekyll", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Blog", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Minima", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});
+              
+          
+              
+                  alltags.push({category: "Blogging", tag : "Tag cloud", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});
+              
           
         
       
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Mar 25, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Mar 25, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Mar 26, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Mar 26, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Redcode", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "blogging", tag : "MARS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "blogging", tag : "Warriors", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Mar 27, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Mar 27, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Z80", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "blogging", tag : "Emulation", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "blogging", tag : "Retro Computing", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Mar 28, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Mar 28, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Mar 29, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Mar 29, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Mar 30, 2025" });
-          alltags.push({categories: "blogging", tag : "CSS", title: "", date : "Mar 30, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Apr 01, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Apr 01, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Apr 02, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Apr 02, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Z80", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "blogging", tag : "Emulation", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "blogging", tag : "Retro Computing", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Apr 08, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Apr 08, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Z80", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "Emulation", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "Retro Computing", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "Metal", title: "", date : "Apr 09, 2025" });
-          alltags.push({categories: "blogging", tag : "Shader", title: "", date : "Apr 09, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Z80", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "blogging", tag : "Emulation", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "blogging", tag : "Retro Computing", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Apr 10, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Apr 10, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Z80", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "blogging", tag : "Emulation", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "blogging", tag : "Retro Computing", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "blogging", tag : "MacOS", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "blogging", tag : "Swift", title: "", date : "Apr 11, 2025" });
-          alltags.push({categories: "blogging", tag : "SwiftUI", title: "", date : "Apr 11, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Apr 18, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Apr 18, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "Email", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "Contact form", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "Google Analytics", title: "", date : "Apr 19, 2025" });
-          alltags.push({categories: "blogging", tag : "GitHub Pages", title: "", date : "Apr 19, 2025" });
-          
-        
-          alltags.push({categories: "blogging", tag : "Jekyll", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "blogging", tag : "Blog", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "blogging", tag : "Minima", title: "", date : "Apr 22, 2025" });
-          alltags.push({categories: "blogging", tag : "Tag cloud", title: "", date : "Apr 22, 2025" });
-          
-        
-      
+      return alltags;
     }
-</script>
 
-<script>
-  $(document).ready(function() 
+      function bum(eddie)
+        {
+         var ed = eddie.currentTarget.innerText;
+        document.getElementById("tag_list").innerHTML = ed;
+        }
+
+      function tagClicked(manny) 
     {
+      debugger;
+      var ed = manny.currentTarget.innerText;
+      var selectedtags = document.getElementById("selectedtags");
+      selectedtags.innerHTML = "";
+      var arrayLength = listotags.length;
+      var currentCategory = "";
+      var currentMonth = "";
+      for (var i = 0; i < arrayLength; i++)
+      {
+       if (listotags[i].tag == ed)
+       {
+          if  (currentCategory != listotags[i].category )
+          {
+            currentCategory = listotags[i].category;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<h1>" + currentCategory + '</h1><ul class="post-list">';
+             if ( currentMonth != listotags[i].month_date )
+          {
+           currentMonth = listotags[i].month_date;
+           selectedtags.innerHTML = selectedtags.innerHTML + currentMonth+"<br>";
+          }
+          }
+         
+          selectedtags.innerHTML = selectedtags.innerHTML + "<h3><a href="+'"'+listotags[i].url+'">'+listotags[i].title+"</a></h3>"+listotags[i].excerpt;
+      }
+        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
+      }
+    }
+
       var tags = [];
+      var listotags = [];
       var ed = "";
       
         
@@ -436,7 +885,7 @@
         
         
         ed = "GitHub Pages";
-        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Github pages", weight: 8, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
@@ -446,7 +895,7 @@
         
         
         ed = "MARS";
-        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Mars", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
@@ -456,7 +905,7 @@
         
         
         ed = "MacOS";
-        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Macos", weight: 6, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
@@ -466,7 +915,7 @@
         
         
         ed = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Swiftui", weight: 6, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
@@ -481,12 +930,12 @@
         
         
         ed = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Retro computing", weight: 5, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
         ed = "CSS";
-        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Css", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
@@ -511,1775 +960,21 @@
         
         
         ed = "Google Analytics";
-        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
+        tags.push({text: "Google analytics", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
       
         
         
         ed = "Tag cloud";
         tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { tagClicked(ed) }}});
       
-      AllPosts();
+      listotags = AllPosts();
+      multiSort(listotags, ['category:desc', 'tag:asc','date:asc']);
       $(".wordcloud").jQCloud(tags, {shape: 'rectangular'});
     });
 </script>
 
 <script>
-  function tagClicked(manny) 
-    {
-      debugger;
-      var ed = manny.currentTarget.innerText;
-      
-      var selectedtags = document.getElementById("selectedtags");
-      selectedtags.innerHTML = "";
-      
-       
-      
-        selectedtags.innerHTML = selectedtags.innerHTML + '<h1>Microbee</h1><ul class="post-list">';
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Redcode
-          7 
-          */
-            
-          
-          /*
-             
-          MARS
-          4 
-          */
-            
-          
-          /*
-             
-          Warriors
-          8 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            selectedtags.innerHTML = selectedtags.innerHTML +'Mar 28, 2025<h3><a href="/projects/microbee/2025/03/28/Introducing-Abeja.html">Introducing Abeja</a></h3><hr>';
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-          /*
-             
-          CSS
-          3 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            selectedtags.innerHTML = selectedtags.innerHTML +'Apr 08, 2025<h3><a href="/projects/microbee/2025/04/08/Abejas-structure.html">How is Abeja structured ?</a></h3><hr>';
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            selectedtags.innerHTML = selectedtags.innerHTML +'Apr 09, 2025<h3><a href="/projects/microbee/2025/04/09/Shaders.html">Building a Metal shader for display output</a></h3><hr>';
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-          /*
-             
-          Metal
-          5 
-          */
-            
-          
-          /*
-             
-          Shader
-          6 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            selectedtags.innerHTML = selectedtags.innerHTML +'Apr 10, 2025<h3><a href="/projects/microbee/2025/04/10/UI-Design.html">UI Design</a></h3><hr>';
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            selectedtags.innerHTML = selectedtags.innerHTML +'Apr 11, 2025<h3><a href="/projects/microbee/2025/04/11/CPU.html">Decoding CPU instructions</a></h3><hr>';
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Email
-          5 
-          */
-            
-          
-          /*
-             
-          Contact form
-          12 
-          */
-            
-          
-          /*
-             
-          Google Analytics
-          16 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Tag cloud
-          9 
-          */
-            
-          
-        
-        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
-      
-        selectedtags.innerHTML = selectedtags.innerHTML + '<h1>Corewars</h1><ul class="post-list">';
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Redcode
-          7 
-          */
-            
-          
-          /*
-             
-          MARS
-          4 
-          */
-            
-          
-          /*
-             
-          Warriors
-          8 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-          /*
-             
-          CSS
-          3 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-          /*
-             
-          Metal
-          5 
-          */
-            
-          
-          /*
-             
-          Shader
-          6 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Email
-          5 
-          */
-            
-          
-          /*
-             
-          Contact form
-          12 
-          */
-            
-          
-          /*
-             
-          Google Analytics
-          16 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Tag cloud
-          9 
-          */
-            
-          
-        
-        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
-      
-        selectedtags.innerHTML = selectedtags.innerHTML + '<h1>Blogging</h1><ul class="post-list">';
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Redcode
-          7 
-          */
-            
-          
-          /*
-             
-          MARS
-          4 
-          */
-            
-          
-          /*
-             
-          Warriors
-          8 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-          /*
-             
-          CSS
-          3 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-          /*
-             
-          Metal
-          5 
-          */
-            
-          
-          /*
-             
-          Shader
-          6 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Z80
-          3 
-          */
-            
-          
-          /*
-             
-          Emulation
-          9 
-          */
-            
-          
-          /*
-             
-          Retro Computing
-          15 
-          */
-            
-          
-          /*
-             
-          MacOS
-          5 
-          */
-            
-          
-          /*
-             
-          Swift
-          5 
-          */
-            
-          
-          /*
-             
-          SwiftUI
-          7 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Email
-          5 
-          */
-            
-          
-          /*
-             
-          Contact form
-          12 
-          */
-            
-          
-          /*
-             
-          Google Analytics
-          16 
-          */
-            
-          
-          /*
-             
-          GitHub Pages
-          12 
-          */
-            
-          
-        
-          
-          /*
-             
-          Jekyll
-          6 
-          */
-            
-          
-          /*
-             
-          Blog
-          4 
-          */
-            
-          
-          /*
-             
-          Minima
-          6 
-          */
-            
-          
-          /*
-             
-          Tag cloud
-          9 
-          */
-            
-          
-        
-        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
-      
-    }
+  
 </script>
 
 <div id="selectedtags"></div>

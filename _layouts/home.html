@@ -34,7 +34,7 @@ layout: base
         {%- if site.minima.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
-        <hr>
+        {%unless forloop.last%}<hr>{%endunless%}
       </li>
       {%- endfor -%}
     </ul>
