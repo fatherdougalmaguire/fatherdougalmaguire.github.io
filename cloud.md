@@ -10,7 +10,7 @@ layout: page
 
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
-<div hidden id="tag_list"></div>
+<div id="tag_list"></div>
 
 <div id="selectedtags"></div>
 
@@ -58,7 +58,7 @@ layout: page
 
     function tagClicked(manny) 
     {
-      /*debugger;*/
+      debugger;
       /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
@@ -67,7 +67,7 @@ layout: page
       var currentMonth = "";
       for (var i = 0; i < arrayLength; i++)
       {
-       if (listotags[i].tag == manny)
+       if (listotags[i].tag.toUpperCase() == manny.toUpperCase())
        {
           if  (currentCategory != listotags[i].category )
           {
@@ -89,9 +89,10 @@ layout: page
 
       function bum(eddie)
         {
+          debugger;
          var ed = eddie.currentTarget.innerText;
-        document.getElementById("tag_list").innerHTML = ed;
-        tagClicked(ed);
+         document.getElementById("tag_list").innerHTML = ed;
+         tagClicked(ed);
         }
 
       var tags = [];
