@@ -1221,7 +1221,7 @@ fieldset {
 
 /* JQcloud */
 div.jqcloud {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
   font-size: 10px;
   line-height: normal;
 }
@@ -1331,7 +1331,7 @@ div.jqcloud span.w1 {
 /* layout */
 div.jqcloud {
   overflow: hidden;
-  position: relative;
+  position: static;
 }
 
 div.jqcloud span {
