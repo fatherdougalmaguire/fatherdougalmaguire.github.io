@@ -10,7 +10,7 @@ layout: page
 
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
-<div id="tag_list"></div>
+<div hidden id="tag_list"></div>
 
 <div id="selectedtags"></div>
 
