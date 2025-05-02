@@ -3,8 +3,6 @@ title: "Mo tags, mo often"
 layout: page
 ---
 
-
-
 <!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -13,6 +11,8 @@ layout: page
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
 <div id="tag_list"></div>
+
+<div id="selectedtags"></div>
 
 <script>
   
@@ -64,7 +64,7 @@ layout: page
 
       function tagClicked(manny) 
     {
-      debugger;
+      /*debugger;*/
       var ed = manny.currentTarget.innerText;
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
@@ -78,15 +78,16 @@ layout: page
           if  (currentCategory != listotags[i].category )
           {
             currentCategory = listotags[i].category;
-            selectedtags.innerHTML = selectedtags.innerHTML + "<h1>" + currentCategory + '</h1><ul class="post-list">';
-             if ( currentMonth != listotags[i].month_date )
+            selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
+            currentMonth = listotags[i].month_date;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<p>"+currentMonth+"</p>";
+          }
+          if ( currentMonth != listotags[i].month_date )
           {
            currentMonth = listotags[i].month_date;
-           selectedtags.innerHTML = selectedtags.innerHTML + currentMonth+"<br>";
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p>"+currentMonth+"</p>";
           }
-          }
-         
-          selectedtags.innerHTML = selectedtags.innerHTML + "<h3><a href="+'"'+listotags[i].url+'">'+listotags[i].title+"</a></h3>"+listotags[i].excerpt;
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
       }
         selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
       }
@@ -107,27 +108,4 @@ layout: page
     });
 </script>
 
-<script>
-  
-</script>
 
-<div id="selectedtags"></div>
-
-{%comment%}
-{% assign bob = site.categories %}
-{% assign my_posts = site.posts | sort: "date"  %}
-{% for ken in bob reversed offset: 1 %}
-  <h1>{{ken[0] | capitalize }}</h1>
-  <ul class="post-list">
-  {% for post in my_posts %}
-    {% if post.categories[1] == ken[0] %}
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ post.date | date: date_format }}
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        {{ post.excerpt }}
-        <hr>
-    {%endif%}
-  {% endfor %}
-  </ul>
-{% endfor %}
-{%endcomment%}
