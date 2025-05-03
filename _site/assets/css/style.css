@@ -367,6 +367,7 @@ table td {
  */
 .site-header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   min-height: 55.95px;
   line-height: 54px;
@@ -1222,7 +1223,7 @@ fieldset {
 /* JQcloud */
 div.jqcloud {
   font-family: "Raleway", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   line-height: normal;
 }
 
@@ -1330,8 +1331,9 @@ div.jqcloud span.w1 {
 
 /* layout */
 div.jqcloud {
-  overflow: hidden;
-  position: static;
+  /* overflow: hidden; */
+  position: relative;
+  cursor: grab;
 }
 
 div.jqcloud span {

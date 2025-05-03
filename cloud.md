@@ -6,7 +6,7 @@ layout: page
 <!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/assets/js/jqcloud.min.js"></script>
+<script src="/assets/js/jqcloud-1.0.5.js"></script>
 
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
@@ -42,23 +42,23 @@ layout: page
     {
       /*debugger;*/
       var alltags = [];
-      {% assign bob = site.categories %}
-      {% assign my_posts = site.posts | sort: "date"  %} 
-      {% for ken in bob reversed offset: 1 %}
+      {%- assign bob = site.categories -%}
+      {%- assign my_posts = site.posts | sort: "date"  -%} 
+      {%- for ken in bob reversed offset: 1 -%}
         {% for post in my_posts %}
           {% for my_tag in post.tags %}
-              {% if ken[0] == post.categories.last %}
-                  alltags.push({category: "{{ken[0] | capitalize }}", tag : "{{my_tag | capitalize }}", title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
-              {% endif %}
+              {%- if ken[0] == post.categories.last -%}
+                  alltags.push({category: "{{ken[0] | capitalize }}", tag : "{{my_tag}}", title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
+              {%- endif -%}
           {% endfor %}
         {% endfor %}
-      {% endfor %}
+      {%- endfor -%}
       return alltags;
     }
 
     function tagClicked(manny) 
     {
-      debugger;
+      /*debugger;*/
       /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
@@ -100,14 +100,14 @@ layout: page
       var ed = "";
       const searchParams = new URLSearchParams(window.location.search)
       {% for tag in site.tags %}
-        {% assign tag_name = tag | first %}
-        {% assign tag_weight = tag | last | size %}
+        {%- assign tag_name = tag | first -%}
+        {%- assign tag_weight = tag | last | size -%}
         ed = "{{ tag_name }}";
-        tags.push({text: "{{ tag_name | capitalize }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed) }}});
       {% endfor %}
       listotags = AllPosts();
       multiSort(listotags, ['category:desc', 'tag:asc','date:asc']);
-      $(".wordcloud").jQCloud(tags, {shape: 'rectangular'});
+      $(".wordcloud").jQCloud(tags);
       if (searchParams.has('id'))
         {
           document.getElementById("tag_list").innerHTML = searchParams.get('id');
