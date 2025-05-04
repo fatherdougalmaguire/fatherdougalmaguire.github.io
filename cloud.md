@@ -11,6 +11,7 @@ layout: page
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
 <div hidden id="tag_list"></div>
+<div hidden id="taggy_list"></div>
 
 <div id="selectedtags"></div>
 
@@ -44,13 +45,11 @@ layout: page
       var alltags = [];
       {%- assign bob = site.categories -%}
       {%- assign my_posts = site.posts | sort: "date"  -%} 
-      {%- for ken in bob reversed offset: 1 -%}
+      {% for ken in bob reversed offset: 1 %}
         {% for post in my_posts %}
-          {% for my_tag in post.tags %}
-              {%- if ken[0] == post.categories.last -%}
-                  alltags.push({category: "{{ken[0] | capitalize }}", tag : "{{my_tag}}", title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
-              {%- endif -%}
-          {% endfor %}
+           {%- if ken[0] == post.categories.last -%}
+              alltags.push({category: "{{ken[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
+            {%- endif -%}
         {% endfor %}
       {%- endfor -%}
       return alltags;
@@ -59,15 +58,27 @@ layout: page
     function tagClicked(manny) 
     {
       /*debugger;*/
+      console.log("------");
       /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
+      var bobby = document.getElementById("taggy_list").innerText.slice(0,-1);
+      var jonny = bobby.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-       if (listotags[i].tag.toUpperCase() == manny.toUpperCase())
+        console.log("------");
+        console.log("parsed page tags:"+jonny);
+        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        console.log("parsed post tags:"+billy);
+        console.log("ccommon tags:"+jonny.filter(el => billy.includes(el)));
+        var steve = jonny.filter(el => billy.includes(el)).length;
+        console.log("size of common tags:"+steve);
+        console.log("LOT-title"+listotags[i].title);
+      /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
+        if (steve != 0)
        {
           if  (currentCategory != listotags[i].category )
           {
@@ -89,29 +100,77 @@ layout: page
 
       function bum(eddie)
         {
-          debugger;
-         var ed = eddie.currentTarget.innerText;
-         document.getElementById("tag_list").innerHTML = ed;
-         tagClicked(ed);
+          /*debugger;*/
+          var ed = eddie.currentTarget.innerText;
+          var allListElements = $( "[id*='_word_']" );
+          for (var i = 0; i < allListElements.length; i++)
+          {
+            var tagindex = tags.findIndex(x => x.text === ed );
+            /*console.log(allListElements[i]);
+            console.log(allListElements[i].innerText);
+            console.log(allListElements[i].className);
+            console.log(tags[i].text);
+            console.log(tags[i].selected);*/
+            if (allListElements[i].innerText == ed)
+              {
+             /*   console.log("@ed:"+ed);
+                console.log("@ALE:"+allListElements[i].innerText);
+                console.log("@tagsTxt:"+tags[tagindex].text);
+                console.log("@tagsel:"+tags[tagindex].selected);*/
+                if (tags[tagindex].selected == 0)
+                {
+                  $(allListElements[i]).css("color", "red");
+                  tags[tagindex].selected = 1;
+                }
+                else
+                {
+                  $(allListElements[i]).css("color", "blue");
+                  tags[tagindex].selected = 0;
+                }
+            /*    console.log("*ed:"+ed);
+                console.log("*ALE:"+allListElements[i].innerText);
+                console.log("*tagsTxt:"+tags[tagindex].text);
+                console.log("*tagsel:"+tags[tagindex].selected);*/
+              } 
+          }
+          var ken = "";
+          if (first_run)
+          {
+            ken = document.getElementById("taggy_list").innerHTML;
+            first_run = false;
+          }
+          for (var i = 0; i < tags.length; i++)
+          {
+           if (tags[i].selected == 1)
+             {
+              ken = ken+tags[i].text+"|"; 
+             }
+          }
+          document.getElementById("taggy_list").innerHTML = ken; 
+          document.getElementById("tag_list").innerHTML = ed;
+          tagClicked(ed);
         }
 
       var tags = [];
       var listotags = [];
       var ed = "";
+      var first_run = true;
       const searchParams = new URLSearchParams(window.location.search)
       {% for tag in site.tags %}
         {%- assign tag_name = tag | first -%}
         {%- assign tag_weight = tag | last | size -%}
         ed = "{{ tag_name }}";
-        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       {% endfor %}
       listotags = AllPosts();
-      multiSort(listotags, ['category:desc', 'tag:asc','date:asc']);
+      multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags);
       if (searchParams.has('id'))
         {
           document.getElementById("tag_list").innerHTML = searchParams.get('id');
-          tagClicked(searchParams.get('id'));
+          document.getElementById("taggy_list").innerHTML = searchParams.get('id')+"|";
+          bum(searchParams.get('id'));
+          /* set tag selected */
       }
     });
 </script>

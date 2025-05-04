@@ -1232,6 +1232,10 @@ div.jqcloud a {
   text-decoration: none;
 }
 
+div.jqcloud span.w10plus {
+  font-size: 1000%;
+}
+
 div.jqcloud span.w10 {
   font-size: 550%;
 }

@@ -69,6 +69,7 @@
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
 <div hidden="" id="tag_list"></div>
+<div hidden="" id="taggy_list"></div>
 
 <div id="selectedtags"></div>
 
@@ -100,110 +101,35 @@
     {
       /*debugger;*/
       var alltags = [];
-          
-        
-          
-        
-          
-        
-          alltags.push({category: "Microbee", tag : "Z80", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : "Emulation", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : "Retro Computing", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : "MacOS", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : "Swift", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : "SwiftUI", title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          alltags.push({category: "Microbee", tag : "Z80", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Emulation", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Retro Computing", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "MacOS", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Swift", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "SwiftUI", title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Microbee", tag : "Z80", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Emulation", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Retro Computing", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "MacOS", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Swift", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "SwiftUI", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Metal", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Shader", title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Microbee", tag : "Z80", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Emulation", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Retro Computing", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "MacOS", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Swift", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "SwiftUI", title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Microbee", tag : "Z80", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Emulation", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Retro Computing", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "MacOS", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "Swift", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : "SwiftUI", title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          alltags.push({category: "Corewars", tag : "Redcode", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});alltags.push({category: "Corewars", tag : "MARS", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});alltags.push({category: "Corewars", tag : "Warriors", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});alltags.push({category: "Corewars", tag : "MacOS", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});alltags.push({category: "Corewars", tag : "Swift", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});alltags.push({category: "Corewars", tag : "SwiftUI", title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});
-        
-          
-        
-          
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : "CSS", title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Email", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Contact form", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Google Analytics", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "GitHub Pages", title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});
-        
-          alltags.push({category: "Blogging", tag : "Jekyll", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Blog", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Minima", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : "Tag cloud", title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});
-        return alltags;
+        alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI", "Metal", "Shader"]', title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+        alltags.push({category: "Corewars", tag : '["Redcode", "MARS", "Warriors", "MacOS", "Swift", "SwiftUI"]', title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+        alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages", "CSS"]', title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Email", "Contact form", "Google Analytics", "GitHub Pages"]', title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Tag cloud"]', title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});return alltags;
     }
 
     function tagClicked(manny) 
     {
       /*debugger;*/
+      console.log("------");
       /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
+      var bobby = document.getElementById("taggy_list").innerText.slice(0,-1);
+      var jonny = bobby.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-       if (listotags[i].tag.toUpperCase() == manny.toUpperCase())
+        console.log("------");
+        console.log("parsed page tags:"+jonny);
+        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        console.log("parsed post tags:"+billy);
+        console.log("ccommon tags:"+jonny.filter(el => billy.includes(el)));
+        var steve = jonny.filter(el => billy.includes(el)).length;
+        console.log("size of common tags:"+steve);
+        console.log("LOT-title"+listotags[i].title);
+      /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
+        if (steve != 0)
        {
           if  (currentCategory != listotags[i].category )
           {
@@ -225,64 +151,112 @@
 
       function bum(eddie)
         {
-          debugger;
-         var ed = eddie.currentTarget.innerText;
-         document.getElementById("tag_list").innerHTML = ed;
-         tagClicked(ed);
+          /*debugger;*/
+          var ed = eddie.currentTarget.innerText;
+          var allListElements = $( "[id*='_word_']" );
+          for (var i = 0; i < allListElements.length; i++)
+          {
+            var tagindex = tags.findIndex(x => x.text === ed );
+            /*console.log(allListElements[i]);
+            console.log(allListElements[i].innerText);
+            console.log(allListElements[i].className);
+            console.log(tags[i].text);
+            console.log(tags[i].selected);*/
+            if (allListElements[i].innerText == ed)
+              {
+             /*   console.log("@ed:"+ed);
+                console.log("@ALE:"+allListElements[i].innerText);
+                console.log("@tagsTxt:"+tags[tagindex].text);
+                console.log("@tagsel:"+tags[tagindex].selected);*/
+                if (tags[tagindex].selected == 0)
+                {
+                  $(allListElements[i]).css("color", "red");
+                  tags[tagindex].selected = 1;
+                }
+                else
+                {
+                  $(allListElements[i]).css("color", "blue");
+                  tags[tagindex].selected = 0;
+                }
+            /*    console.log("*ed:"+ed);
+                console.log("*ALE:"+allListElements[i].innerText);
+                console.log("*tagsTxt:"+tags[tagindex].text);
+                console.log("*tagsel:"+tags[tagindex].selected);*/
+              } 
+          }
+          var ken = "";
+          if (first_run)
+          {
+            ken = document.getElementById("taggy_list").innerHTML;
+            first_run = false;
+          }
+          for (var i = 0; i < tags.length; i++)
+          {
+           if (tags[i].selected == 1)
+             {
+              ken = ken+tags[i].text+"|"; 
+             }
+          }
+          document.getElementById("taggy_list").innerHTML = ken; 
+          document.getElementById("tag_list").innerHTML = ed;
+          tagClicked(ed);
         }
 
       var tags = [];
       var listotags = [];
       var ed = "";
+      var first_run = true;
       const searchParams = new URLSearchParams(window.location.search)
       ed = "Jekyll";
-        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Blog";
-        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Minima";
-        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "GitHub Pages";
-        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Redcode";
-        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "MARS";
-        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Warriors";
-        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "MacOS";
-        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Swift";
-        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Z80";
-        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Emulation";
-        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "CSS";
-        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Metal";
-        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Shader";
-        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Email";
-        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Contact form";
-        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Google Analytics";
-        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       ed = "Tag cloud";
-        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { bum(ed) }}});
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
       
       listotags = AllPosts();
-      multiSort(listotags, ['category:desc', 'tag:asc','date:asc']);
+      multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags);
       if (searchParams.has('id'))
         {
           document.getElementById("tag_list").innerHTML = searchParams.get('id');
-          tagClicked(searchParams.get('id'));
+          document.getElementById("taggy_list").innerHTML = searchParams.get('id')+"|";
+          bum(searchParams.get('id'));
+          /* set tag selected */
       }
     });
 </script>
