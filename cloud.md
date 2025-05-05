@@ -38,7 +38,7 @@ layout: page
        });
     }
 
-  function AllPosts() 
+  function BuildAllPostList() 
     {
       /*debugger;*/
       var alltags = [];
@@ -54,7 +54,7 @@ layout: page
       return alltags;
     }
 
-    function tagClicked(manny) 
+  function BuildPostList() 
     {
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
@@ -67,7 +67,6 @@ layout: page
       {
         var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
         var steve = jonny.filter(el => billy.includes(el)).length;
-      /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
         if (steve != 0)
        {
           if (currentCategory != listotags[i].category )
@@ -88,34 +87,35 @@ layout: page
       }
     }
 
-      function bum(eddie,freddie)
+      function BuildTagList(passed_tag,first_run)
         {
   
-          if (freddie)
+          if (first_run)
             {
-              var ed = eddie.currentTarget.innerText;
+              var tag_match = passed_tag;
             }
             else
             {
-              var ed = eddie;
+              var tag_match = passed_tag.currentTarget.innerText;
             }
           var allListElements = $( "[id*='_word_']" );
-          console.log(allListElements);
           for (var i = 0; i < allListElements.length; i++)
           {
-            var tagindex = tags.findIndex(x => x.text === ed );
-            if (allListElements[i].innerText == ed)
+            var tagindex = tags.findIndex(x => x.text === tag_match );
+            if (allListElements[i].innerText == tag_match)
               {
-                if (tags[tagindex].selected == 0)
+                if (tags[tagindex].selected == 0 || first_run )
                 {
-                  console.log(allListElements[i].className);
-                  $(allListElements[i]).css("color","red");
+                  /*$(allListElements[i]).css("color","red");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class);
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                  console.log(allListElements[i].className);
-                   $(allListElements[i]).css("color","blue");
+                   /*$(allListElements[i]).css("color","blue");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class);
                   tags[tagindex].selected = 0;
                 }
               } 
@@ -124,7 +124,6 @@ layout: page
           if (first_run)
           {
             ken = document.getElementById("tag_list").innerHTML;
-            first_run = false;
           }
           for (var i = 0; i < tags.length; i++)
           {
@@ -134,30 +133,43 @@ layout: page
              }
           }
           document.getElementById("tag_list").innerHTML = ken; 
-          tagClicked(ed);
+          BuildPostList();
         }
+  
+      function firsttag()
+      {
+        const searchParams = new URLSearchParams(window.location.search);
+        var allspan = $( "[id*='_word_']" );
+          console.log(allspan);
+          for (var i = 0; i < allspan.length; i++)
+          {
+            for (var j = 0; j < tags.length; j++)
+            if (allspan[i].innerText == tags[j].text)
+              {
+                tags[j].tag_class = allspan[i].className;
+              } 
+          }
+        if (searchParams.has('id'))
+        {
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          BuildTagList(searchParams.get('id'),true);
+          /* set tag selected */
+        }
+      }
 
       var tags = [];
       var listotags = [];
       var ed = "";
-      var first_run = true;
-      const searchParams = new URLSearchParams(window.location.search)
+      
       {% for tag in site.tags %}
         {%- assign tag_name = tag | first -%}
         {%- assign tag_weight = tag | last | size -%}
         ed = "{{ tag_name }}";
-        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       {% endfor %}
       multiSort(listotags, ['category:desc','date:asc']);
-      $(".wordcloud").jQCloud(tags);
-      listotags = AllPosts();
-      console.log("got here");
-      if (searchParams.has('id'))
-        {
-          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
-          bum(searchParams.get('id'),false);
-          /* set tag selected */
-      }
+      $(".wordcloud").jQCloud(tags,{ afterCloudRender: function() { firsttag() }} );
+      listotags = BuildAllPostList();
     });
 </script>
 

@@ -96,7 +96,7 @@
        });
     }
 
-  function AllPosts() 
+  function BuildAllPostList() 
     {
       /*debugger;*/
       var alltags = [];
@@ -105,7 +105,7 @@
         alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages", "CSS"]', title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Email", "Contact form", "Google Analytics", "GitHub Pages"]', title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Tag cloud"]', title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});return alltags;
     }
 
-    function tagClicked(manny) 
+  function BuildPostList() 
     {
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
@@ -118,7 +118,6 @@
       {
         var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
         var steve = jonny.filter(el => billy.includes(el)).length;
-      /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
         if (steve != 0)
        {
           if (currentCategory != listotags[i].category )
@@ -139,34 +138,35 @@
       }
     }
 
-      function bum(eddie,freddie)
+      function BuildTagList(passed_tag,first_run)
         {
   
-          if (freddie)
+          if (first_run)
             {
-              var ed = eddie.currentTarget.innerText;
+              var tag_match = passed_tag;
             }
             else
             {
-              var ed = eddie;
+              var tag_match = passed_tag.currentTarget.innerText;
             }
           var allListElements = $( "[id*='_word_']" );
-          console.log(allListElements);
           for (var i = 0; i < allListElements.length; i++)
           {
-            var tagindex = tags.findIndex(x => x.text === ed );
-            if (allListElements[i].innerText == ed)
+            var tagindex = tags.findIndex(x => x.text === tag_match );
+            if (allListElements[i].innerText == tag_match)
               {
-                if (tags[tagindex].selected == 0)
+                if (tags[tagindex].selected == 0 || first_run )
                 {
-                  console.log(allListElements[i].className);
-                  $(allListElements[i]).css("color","red");
+                  /*$(allListElements[i]).css("color","red");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class);
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                  console.log(allListElements[i].className);
-                   $(allListElements[i]).css("color","blue");
+                   /*$(allListElements[i]).css("color","blue");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class);
                   tags[tagindex].selected = 0;
                 }
               } 
@@ -175,7 +175,6 @@
           if (first_run)
           {
             ken = document.getElementById("tag_list").innerHTML;
-            first_run = false;
           }
           for (var i = 0; i < tags.length; i++)
           {
@@ -185,65 +184,78 @@
              }
           }
           document.getElementById("tag_list").innerHTML = ken; 
-          tagClicked(ed);
+          BuildPostList();
         }
+  
+      function firsttag()
+      {
+        const searchParams = new URLSearchParams(window.location.search);
+        var allspan = $( "[id*='_word_']" );
+          console.log(allspan);
+          for (var i = 0; i < allspan.length; i++)
+          {
+            for (var j = 0; j < tags.length; j++)
+            if (allspan[i].innerText == tags[j].text)
+              {
+                tags[j].tag_class = allspan[i].className;
+              } 
+          }
+        if (searchParams.has('id'))
+        {
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          BuildTagList(searchParams.get('id'),true);
+          /* set tag selected */
+        }
+      }
 
       var tags = [];
       var listotags = [];
       var ed = "";
-      var first_run = true;
-      const searchParams = new URLSearchParams(window.location.search)
+      
       ed = "Jekyll";
-        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Blog";
-        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Minima";
-        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "GitHub Pages";
-        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Redcode";
-        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "MARS";
-        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Warriors";
-        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "MacOS";
-        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Swift";
-        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Z80";
-        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Emulation";
-        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "CSS";
-        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Metal";
-        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Shader";
-        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Email";
-        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Contact form";
-        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Google Analytics";
-        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       ed = "Tag cloud";
-        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       
       multiSort(listotags, ['category:desc','date:asc']);
-      $(".wordcloud").jQCloud(tags);
-      listotags = AllPosts();
-      console.log("got here");
-      if (searchParams.has('id'))
-        {
-          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
-          bum(searchParams.get('id'),false);
-          /* set tag selected */
-      }
+      $(".wordcloud").jQCloud(tags,{ afterCloudRender: function() { firsttag() }} );
+      listotags = BuildAllPostList();
     });
 </script>
 
