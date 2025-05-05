@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Mo tags, mo often | An ecumenical matter</title>
+<title>Tag Archive | An ecumenical matter</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Mo tags, mo often" />
+<meta property="og:title" content="Tag Archive" />
 <meta name="author" content="Tony Sanchez" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is my site. It’s nothing fancy." />
@@ -15,9 +15,9 @@
 <meta property="og:site_name" content="An ecumenical matter" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Mo tags, mo often" />
+<meta property="twitter:title" content="Tag Archive" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Mo tags, mo often","url":"http://localhost:4000/cloud.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Tag Archive","url":"http://localhost:4000/cloud.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
@@ -56,7 +56,7 @@
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Mo tags, mo often</h1>
+    <h1 class="post-title">Tag Archive</h1>
   </header>
 
   <div class="post-content">
@@ -69,7 +69,6 @@
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
 <div hidden="" id="tag_list"></div>
-<div hidden="" id="taggy_list"></div>
 
 <div id="selectedtags"></div>
 
@@ -108,30 +107,21 @@
 
     function tagClicked(manny) 
     {
-      /*debugger;*/
-      console.log("------");
-      /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
-      var bobby = document.getElementById("taggy_list").innerText.slice(0,-1);
+      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
       var jonny = bobby.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-        console.log("------");
-        console.log("parsed page tags:"+jonny);
         var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
-        console.log("parsed post tags:"+billy);
-        console.log("ccommon tags:"+jonny.filter(el => billy.includes(el)));
         var steve = jonny.filter(el => billy.includes(el)).length;
-        console.log("size of common tags:"+steve);
-        console.log("LOT-title"+listotags[i].title);
       /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
         if (steve != 0)
        {
-          if  (currentCategory != listotags[i].category )
+          if (currentCategory != listotags[i].category )
           {
             currentCategory = listotags[i].category;
             selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
@@ -149,45 +139,42 @@
       }
     }
 
-      function bum(eddie)
+      function bum(eddie,freddie)
         {
-          /*debugger;*/
-          var ed = eddie.currentTarget.innerText;
+  
+          if (freddie)
+            {
+              var ed = eddie.currentTarget.innerText;
+            }
+            else
+            {
+              var ed = eddie;
+            }
           var allListElements = $( "[id*='_word_']" );
+          console.log(allListElements);
           for (var i = 0; i < allListElements.length; i++)
           {
             var tagindex = tags.findIndex(x => x.text === ed );
-            /*console.log(allListElements[i]);
-            console.log(allListElements[i].innerText);
-            console.log(allListElements[i].className);
-            console.log(tags[i].text);
-            console.log(tags[i].selected);*/
             if (allListElements[i].innerText == ed)
               {
-             /*   console.log("@ed:"+ed);
-                console.log("@ALE:"+allListElements[i].innerText);
-                console.log("@tagsTxt:"+tags[tagindex].text);
-                console.log("@tagsel:"+tags[tagindex].selected);*/
                 if (tags[tagindex].selected == 0)
                 {
-                  $(allListElements[i]).css("color", "red");
+                  console.log(allListElements[i].className);
+                  $(allListElements[i]).css("color","red");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                  $(allListElements[i]).css("color", "blue");
+                  console.log(allListElements[i].className);
+                   $(allListElements[i]).css("color","blue");
                   tags[tagindex].selected = 0;
                 }
-            /*    console.log("*ed:"+ed);
-                console.log("*ALE:"+allListElements[i].innerText);
-                console.log("*tagsTxt:"+tags[tagindex].text);
-                console.log("*tagsel:"+tags[tagindex].selected);*/
               } 
           }
           var ken = "";
           if (first_run)
           {
-            ken = document.getElementById("taggy_list").innerHTML;
+            ken = document.getElementById("tag_list").innerHTML;
             first_run = false;
           }
           for (var i = 0; i < tags.length; i++)
@@ -197,8 +184,7 @@
               ken = ken+tags[i].text+"|"; 
              }
           }
-          document.getElementById("taggy_list").innerHTML = ken; 
-          document.getElementById("tag_list").innerHTML = ed;
+          document.getElementById("tag_list").innerHTML = ken; 
           tagClicked(ed);
         }
 
@@ -208,54 +194,54 @@
       var first_run = true;
       const searchParams = new URLSearchParams(window.location.search)
       ed = "Jekyll";
-        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Blog";
-        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Minima";
-        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "GitHub Pages";
-        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Redcode";
-        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "MARS";
-        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Warriors";
-        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "MacOS";
-        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Swift";
-        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Z80";
-        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Emulation";
-        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "CSS";
-        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Metal";
-        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Shader";
-        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Email";
-        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Contact form";
-        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Google Analytics";
-        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       ed = "Tag cloud";
-        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       
-      listotags = AllPosts();
       multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags);
+      listotags = AllPosts();
+      console.log("got here");
       if (searchParams.has('id'))
         {
-          document.getElementById("tag_list").innerHTML = searchParams.get('id');
-          document.getElementById("taggy_list").innerHTML = searchParams.get('id')+"|";
-          bum(searchParams.get('id'));
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          bum(searchParams.get('id'),false);
           /* set tag selected */
       }
     });

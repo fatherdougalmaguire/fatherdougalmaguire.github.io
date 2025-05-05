@@ -1,5 +1,5 @@
 ---
-title: "Mo tags, mo often"
+title: "Tag Archive"
 layout: page
 ---
 
@@ -11,7 +11,6 @@ layout: page
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
 <div hidden id="tag_list"></div>
-<div hidden id="taggy_list"></div>
 
 <div id="selectedtags"></div>
 
@@ -57,30 +56,21 @@ layout: page
 
     function tagClicked(manny) 
     {
-      /*debugger;*/
-      console.log("------");
-      /*var ed = manny.currentTarget.innerText;*/
       var selectedtags = document.getElementById("selectedtags");
       selectedtags.innerHTML = "";
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
-      var bobby = document.getElementById("taggy_list").innerText.slice(0,-1);
+      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
       var jonny = bobby.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-        console.log("------");
-        console.log("parsed page tags:"+jonny);
         var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
-        console.log("parsed post tags:"+billy);
-        console.log("ccommon tags:"+jonny.filter(el => billy.includes(el)));
         var steve = jonny.filter(el => billy.includes(el)).length;
-        console.log("size of common tags:"+steve);
-        console.log("LOT-title"+listotags[i].title);
       /* if (listotags[i].tag.toUpperCase() == manny.toUpperCase())*/
         if (steve != 0)
        {
-          if  (currentCategory != listotags[i].category )
+          if (currentCategory != listotags[i].category )
           {
             currentCategory = listotags[i].category;
             selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
@@ -98,45 +88,42 @@ layout: page
       }
     }
 
-      function bum(eddie)
+      function bum(eddie,freddie)
         {
-          /*debugger;*/
-          var ed = eddie.currentTarget.innerText;
+  
+          if (freddie)
+            {
+              var ed = eddie.currentTarget.innerText;
+            }
+            else
+            {
+              var ed = eddie;
+            }
           var allListElements = $( "[id*='_word_']" );
+          console.log(allListElements);
           for (var i = 0; i < allListElements.length; i++)
           {
             var tagindex = tags.findIndex(x => x.text === ed );
-            /*console.log(allListElements[i]);
-            console.log(allListElements[i].innerText);
-            console.log(allListElements[i].className);
-            console.log(tags[i].text);
-            console.log(tags[i].selected);*/
             if (allListElements[i].innerText == ed)
               {
-             /*   console.log("@ed:"+ed);
-                console.log("@ALE:"+allListElements[i].innerText);
-                console.log("@tagsTxt:"+tags[tagindex].text);
-                console.log("@tagsel:"+tags[tagindex].selected);*/
                 if (tags[tagindex].selected == 0)
                 {
-                  $(allListElements[i]).css("color", "red");
+                  console.log(allListElements[i].className);
+                  $(allListElements[i]).css("color","red");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                  $(allListElements[i]).css("color", "blue");
+                  console.log(allListElements[i].className);
+                   $(allListElements[i]).css("color","blue");
                   tags[tagindex].selected = 0;
                 }
-            /*    console.log("*ed:"+ed);
-                console.log("*ALE:"+allListElements[i].innerText);
-                console.log("*tagsTxt:"+tags[tagindex].text);
-                console.log("*tagsel:"+tags[tagindex].selected);*/
               } 
           }
           var ken = "";
           if (first_run)
           {
-            ken = document.getElementById("taggy_list").innerHTML;
+            ken = document.getElementById("tag_list").innerHTML;
             first_run = false;
           }
           for (var i = 0; i < tags.length; i++)
@@ -146,8 +133,7 @@ layout: page
               ken = ken+tags[i].text+"|"; 
              }
           }
-          document.getElementById("taggy_list").innerHTML = ken; 
-          document.getElementById("tag_list").innerHTML = ed;
+          document.getElementById("tag_list").innerHTML = ken; 
           tagClicked(ed);
         }
 
@@ -160,16 +146,16 @@ layout: page
         {%- assign tag_name = tag | first -%}
         {%- assign tag_weight = tag | last | size -%}
         ed = "{{ tag_name }}";
-        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed) }}, selected : 0});
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { bum(ed,true)}}, selected : 0, tag_class : ""});
       {% endfor %}
-      listotags = AllPosts();
       multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags);
+      listotags = AllPosts();
+      console.log("got here");
       if (searchParams.has('id'))
         {
-          document.getElementById("tag_list").innerHTML = searchParams.get('id');
-          document.getElementById("taggy_list").innerHTML = searchParams.get('id')+"|";
-          bum(searchParams.get('id'));
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          bum(searchParams.get('id'),false);
           /* set tag selected */
       }
     });

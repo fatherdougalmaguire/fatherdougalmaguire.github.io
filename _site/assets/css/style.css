@@ -1223,7 +1223,7 @@ fieldset {
 /* JQcloud */
 div.jqcloud {
   font-family: "Raleway", "Helvetica", "Arial", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   line-height: normal;
 }
 
@@ -1233,7 +1233,53 @@ div.jqcloud a {
 }
 
 div.jqcloud span.w10plus {
-  font-size: 1000%;
+  font-size: 550%;
+  color: red;
+}
+
+div.jqcloud span.w9plus {
+  font-size: 500%;
+  color: red;
+}
+
+div.jqcloud span.w8plus {
+  font-size: 450%;
+  color: red;
+}
+
+div.jqcloud span.w7plus {
+  font-size: 400%;
+  color: red;
+}
+
+div.jqcloud span.w6plus {
+  font-size: 350%;
+  color: red;
+}
+
+div.jqcloud span.w5plus {
+  font-size: 300%;
+  color: red;
+}
+
+div.jqcloud span.w4plus {
+  font-size: 250%;
+  color: red;
+}
+
+div.jqcloud span.w3plus {
+  font-size: 200%;
+  color: red;
+}
+
+div.jqcloud span.w2plus {
+  font-size: 150%;
+  color: red;
+}
+
+div.jqcloud span.w1plus {
+  font-size: 100%;
+  color: red;
 }
 
 div.jqcloud span.w10 {
