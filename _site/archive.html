@@ -10,14 +10,14 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is my site. It’s nothing fancy." />
 <meta property="og:description" content="This is my site. It’s nothing fancy." />
-<link rel="canonical" href="http://localhost:4000/archive/" />
-<meta property="og:url" content="http://localhost:4000/archive/" />
+<link rel="canonical" href="http://localhost:4000/archive.html" />
+<meta property="og:url" content="http://localhost:4000/archive.html" />
 <meta property="og:site_name" content="An ecumenical matter" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Archive" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Archive","url":"http://localhost:4000/archive/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Archive","url":"http://localhost:4000/archive.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
@@ -43,10 +43,10 @@
         </label>
 
         <div class="drawer-container">
-          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive/">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
           </div>
         </div>
-        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive/">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
         </div>
       </nav>
   </div>
@@ -191,7 +191,6 @@
       {
         const searchParams = new URLSearchParams(window.location.search);
         var allspan = $( "[id*='_word_']" );
-          console.log(allspan);
           for (var i = 0; i < allspan.length; i++)
           {
             for (var j = 0; j < tags.length; j++)

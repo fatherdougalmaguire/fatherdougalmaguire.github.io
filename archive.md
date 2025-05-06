@@ -1,152 +1,175 @@
 ---
 title: Archive
-permalink: /archive/
-layout : post
+layout : page
 ---
 
-<!-- from  https://mmpataki.github.io/programming/2020/09/06/adding-a-tag-cloud-page-to-jekyll-blog.html -->
+<!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->
 
-<style>
-  code {
-    cursor: pointer;
-  }
-  .date {
-    color: gray;
-    font-size: 0.9em;
-  }
-  sup, sub {
-    font-size: 14px;
-  }
-</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/jqcloud-1.0.5.js"></script>
 
-<div id="tagcloud">
-</div>
+<div class="wordcloud" style="height: 400px; width: 90%"></div>
 
-<br/>
+<div hidden id="tag_list"></div>
 
 <div id="selectedtags"></div>
-<!-- <br/> -->
-<ol style="list-style-type: none;" id="selectedurls"></ol>
 
 <script>
-  var tags = {
-    {% assign firstTag = true %}
-    {% for tag in site.tags %}
-        {% if firstTag == false %},{% endif %}
-        {% assign firstTag = false %}
-        "{{tag[0]}}": {
-          selected: false,
-          pages: [
-            {% assign firstPage = true %}
-            {% for post in tag[1] %}
-              {% if firstPage == false %},{% endif %}
-              {% assign firstPage = false %}
-              {
-                url: "{{post.url}}",
-                title: "{{post.title}}",
-                pdate: "{{post.date}}"
-              }
-            {% endfor %}
-          ]
-        }
-    {% endfor %}
-  };
-
-  /* from the URL */
-  try {
-    var selectedTags = new URL(location).searchParams.get("id").split(",");
-    for(selectedTag in selectedTags) {
-      var tag = selectedTags[selectedTag]
-      if (tag in tags) {
-        tags[tag].selected = true
-      }
-    }
-  } catch {
-
-  }
-
-  renderTags();
-
-  function renderTags() {
-    showTags();
-    showUrls();
-  }
   
-  function tagClicked(tag) {
-    tag = tags[tag]
-    tag.selected = !tag.selected;
-    renderTags();
-  }
+  $(document).ready(
 
-  function getBlogPeriod(d) {
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"];
-    d = new Date(Date.parse(d.split(" ")[0]));
-    return `${monthNames[d.getMonth()]}, ${d.getFullYear()}`
-  }
+    function() 
+    {
 
-  function showUrls() {
+      function multiSort(arr, fields) 
+      {
+       arr.sort((a, b) => 
+      {
+        for (let field of fields) 
+        {
+        const [fieldName, order] = field.split(':');
+        const aValue = a[fieldName];
+        const bValue = b[fieldName];
 
-    let selTags = [];
-    let urls = new Set();
-
-    /* if no tag is selected, we should show all of them */
-    let tmp = {};
-    for(tagName in tags) {
-      tags[tagName].pages.forEach(page => tmp[page.url] = page)
+        if (aValue < bValue) return order === 'desc' ? 1 : -1;
+        if (aValue > bValue) return order === 'desc' ? -1 : 1;
+       }
+      return 0;
+       });
     }
-    Object.values(tmp).forEach(p => urls.add(p))
 
-    var selectedtags = document.getElementById("selectedtags");
-    selectedtags.innerHTML = "";
-    var selectedurls = document.getElementById("selectedurls");
-    selectedurls.innerHTML = "";
+  function BuildAllPostList() 
+    {
+      /*debugger;*/
+      var alltags = [];
+      {%- assign bob = site.categories -%}
+      {%- assign my_posts = site.posts | sort: "date"  -%} 
+      {% for ken in bob reversed offset: 1 %}
+        {% for post in my_posts %}
+           {%- if ken[0] == post.categories.last -%}
+              alltags.push({category: "{{ken[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
+            {%- endif -%}
+        {% endfor %}
+      {%- endfor -%}
+      return alltags;
+    }
 
-    for(tagName in tags) {
-      var tag = tags[tagName]
-      if(tag.selected) {
-        /** selectedtags.innerHTML += `<code style="background-color: brown">${tagName}</code> `; **/
-        urls = new Set(tag.pages.filter(
-          function (u) {
-            var ua = [...urls];
-            for(ou in ua) {
-              if(ua[ou].url == u.url)
-                return true;
-            }
+  function BuildPostList() 
+    {
+      var selectedtags = document.getElementById("selectedtags");
+      selectedtags.innerHTML = "";
+      var arrayLength = listotags.length;
+      var currentCategory = "";
+      var currentMonth = "";
+      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
+      var jonny = bobby.split("|").sort();
+      for (var i = 0; i < arrayLength; i++)
+      {
+        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        var steve = jonny.filter(el => billy.includes(el)).length;
+        if (steve != 0)
+       {
+          if (currentCategory != listotags[i].category )
+          {
+            currentCategory = listotags[i].category;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
+            currentMonth = listotags[i].month_date;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
           }
-        ));
+          if ( currentMonth != listotags[i].month_date )
+          {
+           currentMonth = listotags[i].month_date;
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
+          }
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 30px;"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
+      }
+        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
       }
     }
 
-    let html = "", lastDate = "";
-    [...urls]
-      .sort((u1, u2) => toDate(u1.pdate) < toDate(u2.pdate))
-      .forEach(u => {
-        console.log(toDate(u.pdate))
-        if(getBlogPeriod(lastDate) != getBlogPeriod(u.pdate)) {
-          html += `${lastDate == "" ? "" : "<br/></ul>"}<li><i class="date">${getBlogPeriod(u.pdate)}</i><ul style="list-style-type: none;">`
+      function BuildTagList(passed_tag,first_run)
+        {
+  
+          if (first_run)
+            {
+              var tag_match = passed_tag;
+            }
+            else
+            {
+              var tag_match = passed_tag.currentTarget.innerText;
+            }
+          var allListElements = $( "[id*='_word_']" );
+          for (var i = 0; i < allListElements.length; i++)
+          {
+            var tagindex = tags.findIndex(x => x.text === tag_match );
+            if (allListElements[i].innerText == tag_match)
+              {
+                if (tags[tagindex].selected == 0 || first_run )
+                {
+                  /*$(allListElements[i]).css("color","red");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class);
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
+                  tags[tagindex].selected = 1;
+                }
+                else
+                {
+                   /*$(allListElements[i]).css("color","blue");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class);
+                  tags[tagindex].selected = 0;
+                }
+              } 
+          }
+          var ken = "";
+          if (first_run)
+          {
+            ken = document.getElementById("tag_list").innerHTML;
+          }
+          for (var i = 0; i < tags.length; i++)
+          {
+           if (tags[i].selected == 1)
+             {
+              ken = ken+tags[i].text+"|"; 
+             }
+          }
+          document.getElementById("tag_list").innerHTML = ken; 
+          BuildPostList();
         }
-        html += `<li><a href="${u.url}">${u.title}</a></li>`
-        lastDate = u.pdate
+  
+      function firsttag()
+      {
+        const searchParams = new URLSearchParams(window.location.search);
+        var allspan = $( "[id*='_word_']" );
+          for (var i = 0; i < allspan.length; i++)
+          {
+            for (var j = 0; j < tags.length; j++)
+            if (allspan[i].innerText == tags[j].text)
+              {
+                tags[j].tag_class = allspan[i].className;
+              } 
+          }
+        if (searchParams.has('id'))
+        {
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          BuildTagList(searchParams.get('id'),true);
+          /* set tag selected */
+        }
       }
-    );
 
-    selectedurls.innerHTML = html
-  }
-
-  function toDate(u) {
-    return new Date(Date.parse(`${u.split(" ")[0]} ${u.split(" ")[1]}`))
-  }
-
-  /* show tag cloud */
-  function showTags() {
-    document.getElementById("tagcloud").innerHTML = "";
-    for(tag in tags) {
-      var pages = tags[tag].pages;
-      document.getElementById("tagcloud").innerHTML += `
-        <code style="background-color: ${tags[tag].selected ? "skyblue": "defcol"}; font-size: ${12 + 4 * pages.length}px;" title="${pages.length} post${pages.length > 1 ? "s":""}" onclick="tagClicked('${tag}')">${tag}<sup>(${pages.length})</sup></code>
-      `;
-    }
-  }
-
+      var tags = [];
+      var listotags = [];
+      var ed = "";
+      
+      {% for tag in site.tags %}
+        {%- assign tag_name = tag | first -%}
+        {%- assign tag_weight = tag | last | size -%}
+        ed = "{{ tag_name }}";
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      {% endfor %}
+      multiSort(listotags, ['category:desc','date:asc']);
+      $(".wordcloud").jQCloud(tags,{ afterCloudRender: function() { firsttag() }} );
+      listotags = BuildAllPostList();
+    });
 </script>
+
+
