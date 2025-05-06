@@ -1,6 +1,7 @@
 ---
-title: "Tag Archive"
-layout: page
+title: Archive
+permalink: /archive/
+layout : page
 ---
 
 <!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->

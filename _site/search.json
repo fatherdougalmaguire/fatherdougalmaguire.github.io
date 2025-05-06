@@ -176,6 +176,9 @@
 
   
    
+
+  
+   
    
    
    ,{
@@ -186,6 +189,23 @@
       "date"     : "",
       "excerpt"  :  "As a teenager, I spent a lot of my free time mucking about with the family&#39;s home computer.",
       "content"  :  "Photo credit: Daniele FranchiAs a teenager, I spent a lot of my free time mucking about with the family&#39;s home computer.  I built a bunch of cool things ( since lost to the ages )  Life ( as it is want to do ) takes you different places and coding fell by the way side.  In recent times,  I have wanted to pick up the baton again and get my head around how things have changed.  A few projects have been bubbling around in my mind and I wanted to document what I will be doing so things don&#39;t ( once again ) fall down the back of the metaphorical couch.  I thought about a YouTube channel.  And then a podcast.  Recognising that I would be terrible at either of these options, I quickly came to my senses and decided that a blog might be the way to go.  These pages will attempt to track my journey into this new world.  I&#39;m concentrating on three main projects at the moment.\tMicrobee - Revisiting a computer from my youth by way of a emulator.\tCorewars - Programs battle for supremacy inside a virtual computer. \tBlogging - Using Jekyll to build my own blog.Latest Posts"
+    } 
+    
+     
+    
+
+  
+   
+   
+   
+   ,{
+      "title"    : "Blogging",
+      "category" : "",
+      "tags"     : "true",
+      "url"      : "/projects/blogging/",
+      "date"     : "",
+      "excerpt"  :  "I thought it my be a good idea to track the progress of my various software projects.",
+      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.I had thought of using Google Sites ( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as Google Sites I stumbled across GitHub Pages.Not withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io"
     } 
     
      
@@ -224,26 +244,6 @@
     
      
     
-
-  
-   
-   
-   
-   ,{
-      "title"    : "Blogging",
-      "category" : "",
-      "tags"     : "true",
-      "url"      : "/projects/blogging/",
-      "date"     : "",
-      "excerpt"  :  "I thought it my be a good idea to track the progress of my various software projects.",
-      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.I had thought of using Google Sites ( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as Google Sites I stumbled across GitHub Pages.Not withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io"
-    } 
-    
-     
-    
-
-  
-   
 
   
    

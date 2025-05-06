@@ -43,6 +43,7 @@ minima:
     - projects/microbee/index.md
     - projects/corewars/index.md
     - projects/blogging/index.md
+    - archive.md
     - about.md
     - search.md
 

@@ -43,1003 +43,226 @@
         </label>
 
         <div class="drawer-container">
-          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive/">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
           </div>
         </div>
-        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive/">Archive</a><a class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
         </div>
       </nav>
   </div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Archive</h1>
-    <div class="post-meta">
-      <time class="dt-published" datetime="" itemprop="datePublished">
-        
-      </time>
-    </div>
+    <h1 class="post-title">Archive</h1>
   </header>
 
-  <!-- from https://mmpataki.github.io/programming/2020/09/06/adding-a-tag-cloud-page-to-jekyll-blog.html -->
+  <div class="post-content">
+    <!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->
 
-  <div style="text-align:center;">
-    
-  </div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <br>
+<script src="/assets/js/jqcloud-1.0.5.js"></script>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    <!-- from  https://mmpataki.github.io/programming/2020/09/06/adding-a-tag-cloud-page-to-jekyll-blog.html -->
+<div class="wordcloud" style="height: 400px; width: 90%"></div>
 
-<style>
-  code {
-    cursor: pointer;
-  }
-  .date {
-    color: gray;
-    font-size: 0.9em;
-  }
-  sup, sub {
-    font-size: 14px;
-  }
-</style>
-
-<div id="tagcloud">
-</div>
-
-<p><br /></p>
+<div hidden="" id="tag_list"></div>
 
 <div id="selectedtags"></div>
-<!-- <br/> -->
-<ol style="list-style-type: none;" id="selectedurls"></ol>
 
 <script>
-  var tags = {
-    
-    
-        
-        
-        "Jekyll": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
-                title: "Tag Cloud",
-                pdate: "2025-04-22 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
-                title: "Pagination",
-                pdate: "2025-04-18 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
-                title: "Search",
-                pdate: "2025-04-02 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
-                title: "Tags and Categories",
-                pdate: "2025-04-01 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-                title: "Fun with CSS",
-                pdate: "2025-03-30 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
-                title: "Navigation and Content",
-                pdate: "2025-03-29 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/26/Github-pages.html",
-                title: "GitHub pages",
-                pdate: "2025-03-26 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/25/Jekyll.html",
-                title: "Jekyll",
-                pdate: "2025-03-25 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Blog": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
-                title: "Tag Cloud",
-                pdate: "2025-04-22 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
-                title: "Pagination",
-                pdate: "2025-04-18 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
-                title: "Search",
-                pdate: "2025-04-02 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
-                title: "Tags and Categories",
-                pdate: "2025-04-01 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-                title: "Fun with CSS",
-                pdate: "2025-03-30 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
-                title: "Navigation and Content",
-                pdate: "2025-03-29 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/26/Github-pages.html",
-                title: "GitHub pages",
-                pdate: "2025-03-26 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/25/Jekyll.html",
-                title: "Jekyll",
-                pdate: "2025-03-25 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Minima": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
-                title: "Tag Cloud",
-                pdate: "2025-04-22 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
-                title: "Pagination",
-                pdate: "2025-04-18 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
-                title: "Search",
-                pdate: "2025-04-02 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
-                title: "Tags and Categories",
-                pdate: "2025-04-01 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-                title: "Fun with CSS",
-                pdate: "2025-03-30 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
-                title: "Navigation and Content",
-                pdate: "2025-03-29 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/26/Github-pages.html",
-                title: "GitHub pages",
-                pdate: "2025-03-26 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/25/Jekyll.html",
-                title: "Jekyll",
-                pdate: "2025-03-25 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "GitHub Pages": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
-                title: "Pagination",
-                pdate: "2025-04-18 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
-                title: "Search",
-                pdate: "2025-04-02 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
-                title: "Tags and Categories",
-                pdate: "2025-04-01 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-                title: "Fun with CSS",
-                pdate: "2025-03-30 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
-                title: "Navigation and Content",
-                pdate: "2025-03-29 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/26/Github-pages.html",
-                title: "GitHub pages",
-                pdate: "2025-03-26 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/blogging/2025/03/25/Jekyll.html",
-                title: "Jekyll",
-                pdate: "2025-03-25 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Redcode": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "MARS": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Warriors": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "MacOS": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Swift": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "SwiftUI": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html",
-                title: "Is there LifeOnMars ?",
-                pdate: "2025-03-27 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Z80": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Emulation": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Retro Computing": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/11/CPU.html",
-                title: "Decoding CPU instructions",
-                pdate: "2025-04-11 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/10/UI-Design.html",
-                title: "UI Design",
-                pdate: "2025-04-10 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/04/08/Abejas-structure.html",
-                title: "How is Abeja structured ?",
-                pdate: "2025-04-08 00:00:00 +1000"
-              }
-            
-              ,
-              
-              {
-                url: "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-                title: "Introducing Abeja",
-                pdate: "2025-03-28 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "CSS": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-                title: "Fun with CSS",
-                pdate: "2025-03-30 00:00:00 +1100"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Metal": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Shader": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/microbee/2025/04/09/Shaders.html",
-                title: "Building a Metal shader for display output",
-                pdate: "2025-04-09 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Email": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Contact form": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Google Analytics": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-                title: "Google Analytics and Contact Forms",
-                pdate: "2025-04-19 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-        ,
-        
-        "Tag cloud": {
-          selected: false,
-          pages: [
-            
-            
-              
-              
-              {
-                url: "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
-                title: "Tag Cloud",
-                pdate: "2025-04-22 00:00:00 +1000"
-              }
-            
-          ]
-        }
-    
-  };
-
-  /* from the URL */
-  try {
-    var selectedTags = new URL(location).searchParams.get("id").split(",");
-    for(selectedTag in selectedTags) {
-      var tag = selectedTags[selectedTag]
-      if (tag in tags) {
-        tags[tag].selected = true
-      }
-    }
-  } catch {
-
-  }
-
-  renderTags();
-
-  function renderTags() {
-    showTags();
-    showUrls();
-  }
   
-  function tagClicked(tag) {
-    tag = tags[tag]
-    tag.selected = !tag.selected;
-    renderTags();
-  }
+  $(document).ready(
 
-  function getBlogPeriod(d) {
-    const monthNames = ["January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"];
-    d = new Date(Date.parse(d.split(" ")[0]));
-    return `${monthNames[d.getMonth()]}, ${d.getFullYear()}`
-  }
+    function() 
+    {
 
-  function showUrls() {
+      function multiSort(arr, fields) 
+      {
+       arr.sort((a, b) => 
+      {
+        for (let field of fields) 
+        {
+        const [fieldName, order] = field.split(':');
+        const aValue = a[fieldName];
+        const bValue = b[fieldName];
 
-    let selTags = [];
-    let urls = new Set();
-
-    /* if no tag is selected, we should show all of them */
-    let tmp = {};
-    for(tagName in tags) {
-      tags[tagName].pages.forEach(page => tmp[page.url] = page)
+        if (aValue < bValue) return order === 'desc' ? 1 : -1;
+        if (aValue > bValue) return order === 'desc' ? -1 : 1;
+       }
+      return 0;
+       });
     }
-    Object.values(tmp).forEach(p => urls.add(p))
 
-    var selectedtags = document.getElementById("selectedtags");
-    selectedtags.innerHTML = "";
-    var selectedurls = document.getElementById("selectedurls");
-    selectedurls.innerHTML = "";
+  function BuildAllPostList() 
+    {
+      /*debugger;*/
+      var alltags = [];
+        alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI", "Metal", "Shader"]', title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+        alltags.push({category: "Corewars", tag : '["Redcode", "MARS", "Warriors", "MacOS", "Swift", "SwiftUI"]', title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+        alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Jekyll", excerpt: "  The instructions and code within are current as of 25th March 2025.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "GitHub pages", excerpt: "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",date : "2025-03-26T00:00:00Z", url : "/projects/blogging/2025/03/26/Github-pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages", "CSS"]', title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Tags and Categories", excerpt: "Coming soon!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Email", "Contact form", "Google Analytics", "GitHub Pages"]', title: "Google Analytics and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Tag cloud"]', title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});return alltags;
+    }
 
-    for(tagName in tags) {
-      var tag = tags[tagName]
-      if(tag.selected) {
-        /** selectedtags.innerHTML += `<code style="background-color: brown">${tagName}</code> `; **/
-        urls = new Set(tag.pages.filter(
-          function (u) {
-            var ua = [...urls];
-            for(ou in ua) {
-              if(ua[ou].url == u.url)
-                return true;
-            }
+  function BuildPostList() 
+    {
+      var selectedtags = document.getElementById("selectedtags");
+      selectedtags.innerHTML = "";
+      var arrayLength = listotags.length;
+      var currentCategory = "";
+      var currentMonth = "";
+      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
+      var jonny = bobby.split("|").sort();
+      for (var i = 0; i < arrayLength; i++)
+      {
+        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        var steve = jonny.filter(el => billy.includes(el)).length;
+        if (steve != 0)
+       {
+          if (currentCategory != listotags[i].category )
+          {
+            currentCategory = listotags[i].category;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
+            currentMonth = listotags[i].month_date;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
           }
-        ));
+          if ( currentMonth != listotags[i].month_date )
+          {
+           currentMonth = listotags[i].month_date;
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
+          }
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 30px;"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
+      }
+        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
       }
     }
 
-    let html = "", lastDate = "";
-    [...urls]
-      .sort((u1, u2) => toDate(u1.pdate) < toDate(u2.pdate))
-      .forEach(u => {
-        console.log(toDate(u.pdate))
-        if(getBlogPeriod(lastDate) != getBlogPeriod(u.pdate)) {
-          html += `${lastDate == "" ? "" : "<br/></ul>"}<li><i class="date">${getBlogPeriod(u.pdate)}</i><ul style="list-style-type: none;">`
+      function BuildTagList(passed_tag,first_run)
+        {
+  
+          if (first_run)
+            {
+              var tag_match = passed_tag;
+            }
+            else
+            {
+              var tag_match = passed_tag.currentTarget.innerText;
+            }
+          var allListElements = $( "[id*='_word_']" );
+          for (var i = 0; i < allListElements.length; i++)
+          {
+            var tagindex = tags.findIndex(x => x.text === tag_match );
+            if (allListElements[i].innerText == tag_match)
+              {
+                if (tags[tagindex].selected == 0 || first_run )
+                {
+                  /*$(allListElements[i]).css("color","red");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class);
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
+                  tags[tagindex].selected = 1;
+                }
+                else
+                {
+                   /*$(allListElements[i]).css("color","blue");*/
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class);
+                  tags[tagindex].selected = 0;
+                }
+              } 
+          }
+          var ken = "";
+          if (first_run)
+          {
+            ken = document.getElementById("tag_list").innerHTML;
+          }
+          for (var i = 0; i < tags.length; i++)
+          {
+           if (tags[i].selected == 1)
+             {
+              ken = ken+tags[i].text+"|"; 
+             }
+          }
+          document.getElementById("tag_list").innerHTML = ken; 
+          BuildPostList();
         }
-        html += `<li><a href="${u.url}">${u.title}</a></li>`
-        lastDate = u.pdate
+  
+      function firsttag()
+      {
+        const searchParams = new URLSearchParams(window.location.search);
+        var allspan = $( "[id*='_word_']" );
+          console.log(allspan);
+          for (var i = 0; i < allspan.length; i++)
+          {
+            for (var j = 0; j < tags.length; j++)
+            if (allspan[i].innerText == tags[j].text)
+              {
+                tags[j].tag_class = allspan[i].className;
+              } 
+          }
+        if (searchParams.has('id'))
+        {
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          BuildTagList(searchParams.get('id'),true);
+          /* set tag selected */
+        }
       }
-    );
 
-    selectedurls.innerHTML = html
-  }
-
-  function toDate(u) {
-    return new Date(Date.parse(`${u.split(" ")[0]} ${u.split(" ")[1]}`))
-  }
-
-  /* show tag cloud */
-  function showTags() {
-    document.getElementById("tagcloud").innerHTML = "";
-    for(tag in tags) {
-      var pages = tags[tag].pages;
-      document.getElementById("tagcloud").innerHTML += `
-        <code style="background-color: ${tags[tag].selected ? "skyblue": "defcol"}; font-size: ${12 + 4 * pages.length}px;" title="${pages.length} post${pages.length > 1 ? "s":""}" onclick="tagClicked('${tag}')">${tag}<sup>(${pages.length})</sup></code>
-      `;
-    }
-  }
-
+      var tags = [];
+      var listotags = [];
+      var ed = "";
+      
+      ed = "Jekyll";
+        tags.push({text: "Jekyll", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Blog";
+        tags.push({text: "Blog", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Minima";
+        tags.push({text: "Minima", weight: 9, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "GitHub Pages";
+        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Redcode";
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "MARS";
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Warriors";
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "MacOS";
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Swift";
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "SwiftUI";
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Z80";
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Emulation";
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Retro Computing";
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "CSS";
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Metal";
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Shader";
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Email";
+        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Contact form";
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Google Analytics";
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      ed = "Tag cloud";
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      
+      multiSort(listotags, ['category:desc','date:asc']);
+      $(".wordcloud").jQCloud(tags,{ afterCloudRender: function() { firsttag() }} );
+      listotags = BuildAllPostList();
+    });
 </script>
 
 
-  </div><a class="u-url" href="/archive/" hidden></a>
-
-  <!-- from https://github.com/jekyll/jekyll/issues/260#issuecomment-171553586 -->
-  <div class="PageNavigation">
-    
-
-    
-    
   </div>
+
 </article>
-
-
-
 
       </div>
     </main><footer class="site-footer h-card">
