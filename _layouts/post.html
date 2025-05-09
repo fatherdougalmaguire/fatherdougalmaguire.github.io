@@ -20,6 +20,7 @@ layout: base
           {{ mdate | date: date_format }}
         </time>
       {%- endif -%}
+      <div>{%- include reading-time.html -%}</div>
       {%- if page.author %}
       <div class="{% unless page.modified_date %}force-inline {% endunless %}post-authors">
         {%- for author in page.author %}

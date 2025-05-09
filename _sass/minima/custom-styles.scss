@@ -37,6 +37,18 @@
   background-color: seagreen;
 }
 
+.cookie_button {
+  background-color: red ! important;
+  color: white ! important;
+  padding: 5px ! important;
+  text-align: center ! important;
+  text-decoration: none! important;
+  display: inline-block ! important;
+  font-size: 14px ! important;
+  margin: 2px 2px ! important;
+  border-radius: 5px ! important;
+}
+
 /* Styling for the search box */
 #search-input {
     display: block;
@@ -505,64 +517,111 @@ fieldset {
   color: var(--color-text-muted);
 }
 
-/* JQcloud */
-
-div.jqcloud {
-  font-family: "Raleway", "Helvetica", "Arial", sans-serif;
-  font-size: 12px;
+/*!
+ * jQCloud 2.0.3
+ * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
+ * Copyright 2013 Daniel White (http://www.developerdan.com)
+ * Copyright 2014-2017 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ */
+.jqcloud {
+  font: 10px "Raleway","Helvetica", "Arial", sans-serif;
   line-height: normal;
+  overflow: hidden;
+  position: relative;
 }
 
-div.jqcloud a {
+.jqcloud-word {
+  margin: 0;
+  padding: 0;
+}
+.jqcloud-word.w1 {
+  color: #aab5f0;
+  font-size: 100%;
+}
+.jqcloud-word.w2 {
+  color: #99ccee;
+  font-size: 150%;
+}
+.jqcloud-word.w3 {
+  color: #a0ddff;
+  font-size: 200%;
+}
+.jqcloud-word.w4 {
+  color: #90c5f0;
+  font-size: 250%;
+}
+.jqcloud-word.w5 {
+  color: #90a0dd;
+  font-size: 300%;
+}
+.jqcloud-word.w6 {
+  color: #90c5f0;
+  font-size: 350%;
+}
+.jqcloud-word.w7 {
+  color: #3399dd;
+  font-size: 400%;
+}
+.jqcloud-word.w8 {
+  color: #00ccff;
+  font-size: 450%;
+}
+.jqcloud-word.w9 {
+  color: #00ccff;
+  font-size: 500%;
+}
+.jqcloud-word.w10 {
+  color: #00ccff;
+  font-size: 550%;
+}
+
+.jqcloud-word.w1plus {
+  color: red;
+  font-size: 100%;
+}
+.jqcloud-word.w2plus {
+  color: red;
+  font-size: 150%;
+}
+.jqcloud-word.w3plus {
+  color: red;
+  font-size: 200%;
+}
+.jqcloud-word.w4plus {
+  color: red;
+  font-size: 250%;
+}
+.jqcloud-word.w5plus {
+  color: red;
+  font-size: 300%;
+}
+.jqcloud-word.w6plus {
+  color: red;
+  font-size: 350%;
+}
+.jqcloud-word.w7plus {
+  color: red;
+  font-size: 400%;
+}
+.jqcloud-word.w8plus {
+  color: red;
+  font-size: 450%;
+}
+.jqcloud-word.w9plus {
+  color: red;
+  font-size: 500%;
+}
+.jqcloud-word.w10plus {
+  color: red;
+  font-size: 550%;
+}
+
+.jqcloud-word a {
+  color: inherit;
   font-size: inherit;
   text-decoration: none;
 }
-
-
-div.jqcloud span.w10plus { font-size: 550%; color: red; }
-div.jqcloud span.w9plus { font-size: 500%; color: red; }
-div.jqcloud span.w8plus { font-size: 450%; color: red; }
-div.jqcloud span.w7plus { font-size: 400%; color: red; }
-div.jqcloud span.w6plus { font-size: 350%; color: red; }
-div.jqcloud span.w5plus { font-size: 300%; color: red;}
-div.jqcloud span.w4plus { font-size: 250%; color: red;}
-div.jqcloud span.w3plus { font-size: 200%; color: red; }
-div.jqcloud span.w2plus { font-size: 150%; color: red; }
-div.jqcloud span.w1plus { font-size: 100%; color: red; }
-div.jqcloud span.w10 { font-size: 550%; }
-div.jqcloud span.w9 { font-size: 500%; }
-div.jqcloud span.w8 { font-size: 450%; }
-div.jqcloud span.w7 { font-size: 400%; }
-div.jqcloud span.w6 { font-size: 350%; }
-div.jqcloud span.w5 { font-size: 300%; }
-div.jqcloud span.w4 { font-size: 250%; }
-div.jqcloud span.w3 { font-size: 200%; }
-div.jqcloud span.w2 { font-size: 150%; }
-div.jqcloud span.w1 { font-size: 100%; }
-
-/* colors */
-
-div.jqcloud { color: #09f; }
-div.jqcloud a { color: inherit; }
-div.jqcloud a:hover { color: #0df; }
-div.jqcloud a:hover { color: #0cf; } 
-div.jqcloud span.w10 { color: #0cf; }
-div.jqcloud span.w9 { color: #0cf; }
-div.jqcloud span.w8 { color: #0cf; }
-div.jqcloud span.w7 { color: #39d; }
-div.jqcloud span.w6 { color: #90c5f0; }
-div.jqcloud span.w5 { color: #90a0dd; }
-div.jqcloud span.w4 { color: #90c5f0; }
-div.jqcloud span.w3 { color: #a0ddff; }
-div.jqcloud span.w2 { color: #99ccee; }
-div.jqcloud span.w1 { color: #aab5f0; }
-
-/* layout */
-
-div.jqcloud {
- /* overflow: hidden; */
-  position: relative;
-  cursor: grab;
+.jqcloud-word a:hover {
+  color: #00ccff;
 }
-
-div.jqcloud span { padding: 0; }

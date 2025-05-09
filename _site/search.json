@@ -1,6 +1,16 @@
 [
   
     {
+      "title"    : "Cookie Consent, Reading Time",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Tag cloud",
+      "url"      : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html",
+      "date"     : "May  9, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\t"
+    } ,
+  
+    {
       "title"    : "Tag Cloud",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, Tag cloud",
@@ -247,6 +257,15 @@
 
   
    
+
+  
+   
+
+  
+   
+   
+    
+    
 
   
    

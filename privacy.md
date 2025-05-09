@@ -1,0 +1,39 @@
+---
+title: "Privacy and Disclaimer"
+layout: post
+---
+
+![Talking about Privacy](/assets/images/privacy.png "Talking about Privacy")
+
+## Privacy Policy
+
+#### GitHub
+The blog is served from [GitHub pages.](https://pages.github.com "GitHub pages")
+
+As per the [Data Collection](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection "Data Collection") section of the GitHub Pages documentation:
+
+<blockquote>
+When a GitHub Pages site is visited, the visitor's IP address is logged and stored for security purposes, regardless of whether the visitor has signed into GitHub or not. 
+For more information about GitHub's security practices, see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" alt="GitHub Privacy Statement">GitHub Privacy Statement</a>
+</blockquote>
+
+#### Google Analytics
+This blog uses Google Analytics to measure site access statistics.
+
+#### Formspree
+The email response form on the About me page uses [Formspree](https://formspree.io/ "Formspree").
+
+Any data entered into that form will be sent via Formspree's servers and is will be covered by their [privacy policy.](https://formspree.io/legal/privacy-policy/ "Formspree privacy policy")
+
+If you don't want to share anything,  don't use the form.
+
+## Disclaimer
+
+Use anything contained within this blog at your own risk.
+
+I've tried to make the information contained within as accurate as possible.  
+It will not cause your computer to explode, your socks to get holes or your cat to leave home.
+
+No representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained therein for any purpose.
+
+In no event will any liablility be borne for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.

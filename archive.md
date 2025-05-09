@@ -3,10 +3,19 @@ title: Archive
 layout : page
 ---
 
-<!-- from https://nathan.gs/2024/01/04/tags-in-jekyll-wordcloud/ -->
+<!--  old CDN list
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+-->
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/jquery-3.7.1.min.js"></script>
+
+<!-- from https://github.com/mistic100/jQCloud -->
+<script src="/assets/js/jqcloud.js"></script>
+<!-- old jqcloud 
 <script src="/assets/js/jqcloud-1.0.5.js"></script>
+-->
+
+<p align=center><b>Click on one or more tags to display matching posts.</b></p>
 
 <div class="wordcloud" style="height: 400px; width: 90%"></div>
 
@@ -167,7 +176,7 @@ layout : page
         tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
       {% endfor %}
       multiSort(listotags, ['category:desc','date:asc']);
-      $(".wordcloud").jQCloud(tags,{ afterCloudRender: function() { firsttag() }} );
+      $(".wordcloud").jQCloud(tags, {removeOverflowing: true, afterCloudRender: function() { firsttag() }} );
       listotags = BuildAllPostList();
     });
 </script>
