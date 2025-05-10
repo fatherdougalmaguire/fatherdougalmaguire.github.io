@@ -1,7 +1,17 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ site.google_analytics }}');
+ if(readCookie('cookie-type') == 'accept')
+ { 
+    const script = document.createElement('script');
+
+    script.src = "https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}";
+    script.type = 'text/javascript';
+    script.async = true; 
+
+    document.head.appendChild(script);
+    console.log(readCookie('cookie-type'));
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+     };
 </script>
