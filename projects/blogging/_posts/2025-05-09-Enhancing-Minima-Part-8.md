@@ -1,5 +1,5 @@
 ---
-title: "Reading Time and Social Media Sharing"
+title: "Reading Time and Social Media Sharing and continue reading"
 excerpt: "Coming soon!"
 layout: post
 tags:

@@ -1353,4 +1353,45 @@ fieldset {
   font-size: 375%;
 }
 
+/* from  https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog */
+.read-more {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+  display: none;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  display: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Continue reading...";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less...";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  padding: 1em 0.5em;
+  color: #0085bd;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid #0085bd;
+  border-radius: 0.25em;
+  font-weight: 500;
+  display: grid;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

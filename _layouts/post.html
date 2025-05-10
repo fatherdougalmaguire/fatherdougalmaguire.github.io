@@ -50,7 +50,20 @@ layout: base
   <br>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+
+  <!-- from  https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog -->
+    {% if page.content contains '<!--more-->' %}
+      <div>
+         {{ page.content | split:'<!--more-->' | first }}
+      </div>
+      <input type="checkbox" class="read-more-state" id="{{ page.url }}"/>
+      <div class="read-more">
+        {{ page.content | split:'<!--more-->' | last }}
+      </div>
+     <label for="{{ page.url }}" class="read-more-trigger"></label>
+    {% else %}
+      {{ page.content }}
+    {% endif %}
   </div>
 
   {%- if site.disqus.shortname -%}
