@@ -1,9 +1,19 @@
 [
   
     {
-      "title"    : "Reading Time and Text Expand",
+      "title"    : "Comments",
       "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, Tag cloud",
+      "tags"     : "Jekyll, Blog, Minima, Comment",
+      "url"      : "/projects/blogging/2025/05/10/Enhancing-Minima-Part-9.html",
+      "date"     : "May 10, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\t"
+    } ,
+  
+    {
+      "title"    : "Reading Time and Social Media Sharing",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Reading Time, Social Media",
       "url"      : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html",
       "date"     : "May  9, 2025",
       "excerpt"  :  "Coming soon!",

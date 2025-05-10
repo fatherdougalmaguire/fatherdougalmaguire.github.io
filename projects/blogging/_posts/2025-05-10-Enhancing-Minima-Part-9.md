@@ -1,13 +1,12 @@
 ---
-title: "Reading Time and Social Media Sharing"
+title: "Comments"
 excerpt: "Coming soon!"
 layout: post
 tags:
  - Jekyll
  - Blog
  - Minima
- - Reading Time
- - Social Media
+ - Comment
 ---
 
 <p style="text-align:center;">
