@@ -63,7 +63,7 @@
       </time><div>
 
 	
-		1 minute to read
+		<i class="fa-solid fa-clock" style="color: red;"></i> 2 minutes to read
 	
 
 </div>
@@ -83,6 +83,14 @@
 
 <h2 id="privacy-policy">Privacy Policy</h2>
 
+<p>As per <a href="https://gdpr.eu/cookies/" title="GPDR cookies">GPDR</a> requirements,  you are given the option of accepting or declining cookie processing for a period of 180 days.</p>
+
+<p>Specifically this relates to the use of Google Analytics.</p>
+
+<h4 id="google-analytics">Google Analytics</h4>
+<p>This blog uses Google Analytics to measure site access statistics.<br />
+You can opt out of this tracking for a period of 180 days by clicking <span class="cookie_button">Reject</span> on the cookie notice.</p>
+
 <h4 id="github">GitHub</h4>
 <p>The blog is served from <a href="https://pages.github.com" title="GitHub pages">GitHub pages.</a></p>
 
@@ -93,11 +101,8 @@ When a GitHub Pages site is visited, the visitor's IP address is logged and stor
 For more information about GitHub's security practices, see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" alt="GitHub Privacy Statement">GitHub Privacy Statement</a>
 </blockquote>
 
-<h4 id="google-analytics">Google Analytics</h4>
-<p>This blog uses Google Analytics to measure site access statistics.</p>
-
 <h4 id="formspree">Formspree</h4>
-<p>The email response form on the About me page uses <a href="https://formspree.io/" title="Formspree">Formspree</a>.</p>
+<p>The email response form on the <a href="/about">About Me</a> page uses <a href="https://formspree.io/" title="Formspree">Formspree</a>.</p>
 
 <p>Any data entered into that form will be sent via Formspree’s servers and is will be covered by their <a href="https://formspree.io/legal/privacy-policy/" title="Formspree privacy policy">privacy policy.</a></p>
 
@@ -107,12 +112,13 @@ For more information about GitHub's security practices, see <a href="https://doc
 
 <p>Use anything contained within this blog at your own risk.</p>
 
-<p>I’ve tried to make the information contained within as accurate as possible.<br />
-It will not cause your computer to explode, your socks to get holes or your cat to leave home.</p>
+<p>I’ve tried to make the information contained within as accurate as possible.</p>
 
-<p>No representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained therein for any purpose.</p>
+<p>It will not cause your computer to explode, your hair to fall out or your cat to leave home.</p>
 
-<p>In no event will any liablility be borne for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+<p>No representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the blog or the information, products, services, or related graphics contained therein for any purpose.</p>
+
+<p>In no event will any liablility be borne for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
 
   </div><a class="u-url" href="/privacy.html" hidden></a>
 
@@ -130,7 +136,7 @@ It will not cause your computer to explode, your socks to get holes or your cat 
 
       </div>
     </main><style>
-    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: lightslategrey; color: rgba(255,255,255,0.8);}
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: limegreen; color: rgba(255,255,255,0.8);}
     #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
     @media (max-width: 767px) {
         #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
@@ -140,6 +146,7 @@ It will not cause your computer to explode, your socks to get holes or your cat 
 <div id="cookie-notice">
     <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
     <a id="cookie-notice-accept" class="cookie_button">Approve</a>
+    <a id="cookie-notice-reject" class="cookie_button">Reject</a>
     <a href="/privacy" class="cookie_button">More info</a>
 </div>
 
@@ -167,13 +174,19 @@ It will not cause your computer to explode, your socks to get holes or your cat 
         createCookie(name,"",-1);
     }
 
-    if(readCookie('cookie-notice-dismissed')=='true') {
-
-    } else {
+    if(readCookie('cookie-type') != 'accept' && readCookie('cookie-type') != 'reject' ) 
+    {
         document.getElementById('cookie-notice').style.display = 'block';
     }
+
     document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-        createCookie('cookie-notice-dismissed','true',31);
+        createCookie('cookie-type','accept',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-reject').addEventListener("click",function() {
+        createCookie('cookie-type','reject',180);
         document.getElementById('cookie-notice').style.display = 'none';
         location.reload();
     });
@@ -201,6 +214,8 @@ It will not cause your computer to explode, your socks to get holes or your cat 
           <li class="p-name">&copy; 2025 Tony Sanchez</li>
           
           <li class="p-name">Based on the <a href="https://github.com/jekyll/minima">Minima</a> theme.</li>
+          <li>&nbsp;</li>
+          <li class="p-name"><a href="/privacy">Privacy Statement and Disclaimer</a></li>
         </ul>
       </div>
 

@@ -100,7 +100,7 @@ I'm concentrating on three main projects at the moment.
         <span class="post-meta">May 09, 2025</span>
         <h3>
           <a class="post-link" href="/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html">
-            Cookie Consent, Reading Time
+            Reading Time
           </a>
         </h3>Coming soon!<hr>
       </li><li>
@@ -114,7 +114,7 @@ I'm concentrating on three main projects at the moment.
         <span class="post-meta">Apr 19, 2025</span>
         <h3>
           <a class="post-link" href="/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html">
-            Google Analytics and Contact Forms
+            Google Analytics and Cookie Consent and Contact Forms
           </a>
         </h3>Coming soon!<hr>
       </li><li>
@@ -144,7 +144,7 @@ I'm concentrating on three main projects at the moment.
 
       </div>
     </main><style>
-    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: lightslategrey; color: rgba(255,255,255,0.8);}
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: limegreen; color: rgba(255,255,255,0.8);}
     #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
     @media (max-width: 767px) {
         #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
@@ -154,6 +154,7 @@ I'm concentrating on three main projects at the moment.
 <div id="cookie-notice">
     <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
     <a id="cookie-notice-accept" class="cookie_button">Approve</a>
+    <a id="cookie-notice-reject" class="cookie_button">Reject</a>
     <a href="/privacy" class="cookie_button">More info</a>
 </div>
 
@@ -181,13 +182,19 @@ I'm concentrating on three main projects at the moment.
         createCookie(name,"",-1);
     }
 
-    if(readCookie('cookie-notice-dismissed')=='true') {
-
-    } else {
+    if(readCookie('cookie-type') != 'accept' && readCookie('cookie-type') != 'reject' ) 
+    {
         document.getElementById('cookie-notice').style.display = 'block';
     }
+
     document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-        createCookie('cookie-notice-dismissed','true',31);
+        createCookie('cookie-type','accept',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-reject').addEventListener("click",function() {
+        createCookie('cookie-type','reject',180);
         document.getElementById('cookie-notice').style.display = 'none';
         location.reload();
     });
@@ -215,6 +222,8 @@ I'm concentrating on three main projects at the moment.
           <li class="p-name">&copy; 2025 Tony Sanchez</li>
           
           <li class="p-name">Based on the <a href="https://github.com/jekyll/minima">Minima</a> theme.</li>
+          <li>&nbsp;</li>
+          <li class="p-name"><a href="/privacy">Privacy Statement and Disclaimer</a></li>
         </ul>
       </div>
 

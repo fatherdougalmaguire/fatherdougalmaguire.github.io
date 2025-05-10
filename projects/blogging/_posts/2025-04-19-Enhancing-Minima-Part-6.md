@@ -1,5 +1,5 @@
 ---
-title: "Google Analytics and Contact Forms"
+title: "Google Analytics and Cookie Consent and Contact Forms"
 excerpt: "Coming soon!"
 layout: post
 tags:

@@ -1,5 +1,5 @@
 ---
-title: "Cookie Consent, Reading Time"
+title: "Reading Time"
 excerpt: "Coming soon!"
 layout: post
 tags:

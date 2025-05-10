@@ -1,7 +1,7 @@
 [
   
     {
-      "title"    : "Cookie Consent, Reading Time",
+      "title"    : "Reading Time",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, Tag cloud",
       "url"      : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html",
@@ -21,7 +21,7 @@
     } ,
   
     {
-      "title"    : "Google Analytics and Contact Forms",
+      "title"    : "Google Analytics and Cookie Consent and Contact Forms",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, Email, Contact form, Google Analytics, GitHub Pages",
       "url"      : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
