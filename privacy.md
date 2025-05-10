@@ -1,6 +1,6 @@
 ---
 title: "Privacy and Disclaimer"
-layout: post
+layout: page
 ---
 
 ![Talking about Privacy](/assets/images/privacy.png "Talking about Privacy")

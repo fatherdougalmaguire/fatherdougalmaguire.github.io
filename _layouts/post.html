@@ -43,6 +43,12 @@ layout: base
 
   <br>
 
+    <div align=center>
+      {% include share-buttons.html %}
+    </div>
+
+  <br>
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
@@ -81,6 +87,19 @@ layout: base
       <a class="nav_button" style="float:right" href="{{next_post.url}}">{{next_post.title}}</a>
     {% endif %}
   </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="utterances"></div>
+  <script src="https://utteranc.es/client.js"
+        repo="fatherdougalmaguire/fatherdougalmaguire.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+
 </article>
 
 
