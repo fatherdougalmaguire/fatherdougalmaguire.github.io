@@ -32,6 +32,10 @@ Any data entered into that form will be sent via Formspree's servers and is will
 
 If you don't want to share anything,  don't use the form.
 
+#### Ko-fi
+
+TBA
+
 ## Disclaimer
 
 Use anything contained within this blog at your own risk.
