@@ -32,9 +32,33 @@ Any data entered into that form will be sent via Formspree's servers and is will
 
 If you don't want to share anything,  don't use the form.
 
-#### Ko-fi
+#### Ko-Fi
+Ko-Fi is used as a front door to accept donations ( if you think anything within deserves a donation )
 
-TBA
+Unless you click on the link,  no user activity is tracked.  
+
+As per the [Ko-Fi privacy policy](https://more.ko-fi.com/privacy "Ko-Fi privacy policy")
+
+#### Utterances
+The commenting system is powered by a GitHub app called [Utterances](https://utteranc.es/ "Utterances").
+
+In and of itself, Utterances does not track user activity. But it uses the GitHub issue subsystem as a repository and so you will need to log into GitHub to leave a comment.
+
+If you do so,  you will be covered by GitHub privacy policies.
+
+#### Social Media
+
+Unless you click on any of the social media link buttons,  you will not be tracked.
+Links to respectice policies below.
+
+| Policy | 
+|-------|
+| [Facebook](https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0 "Facebook")  | 
+| [X (Twitter)](https://privacy.x.com/en "X (Twitter)")  | 
+|[LinkedIn](https://www.linkedin.com/legal/privacy-policy "LinkedIn")  | 
+|[BlueSky](https://bsky.social/about/support/privacy-policy "BlueSky")  | 
+| [Mastadon](https://mastodon.social/privacy-policy "Mastadon")   | 
+|[Reddit](https://www.reddit.com/en-us/policies/privacy-policy?rdt=44089 "Reddit")  | 
 
 ## Disclaimer
 

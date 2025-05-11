@@ -10,10 +10,7 @@ layout : page
 <script src="/assets/js/jquery-3.7.1.min.js"></script>
 
 <!-- from https://github.com/mistic100/jQCloud -->
-<script src="/assets/js/jqcloud.js"></script>
-<!-- old jqcloud 
-<script src="/assets/js/jqcloud-1.0.5.js"></script>
--->
+<script src="/assets/js/jqcloud.min.js"></script>
 
 <p align=center><b>Click on one or more tags to display matching posts.</b></p>
 

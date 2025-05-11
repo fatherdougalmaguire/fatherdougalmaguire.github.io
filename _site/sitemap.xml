@@ -78,16 +78,13 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/projects/corewars/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/projects/blogging/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/projects/microbee/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/old-archive.html</loc>
+<loc>http://localhost:4000/projects/corewars/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/privacy.html</loc>

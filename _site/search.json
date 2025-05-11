@@ -47,7 +47,7 @@
       "url"      : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
       "date"     : "April 18, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -216,23 +216,6 @@
    
    
    ,{
-      "title"    : "CoreWars",
-      "category" : "",
-      "tags"     : "true",
-      "url"      : "/projects/corewars/",
-      "date"     : "",
-      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
-      "content"  :  "I first read about CoreWars in old back issues of Scientific American.And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )Each program battles each other in attempt to stop the other executing and essentially win the battle.Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.I decided to roll my own MARS environment as my second major project.Further information can be found at :  Wikipedia  Core War - the Ultimate Programming Game"
-    } 
-    
-     
-    
-
-  
-   
-   
-   
-   ,{
       "title"    : "Blogging",
       "category" : "",
       "tags"     : "true",
@@ -264,6 +247,20 @@
 
   
    
+   
+   
+   ,{
+      "title"    : "CoreWars",
+      "category" : "",
+      "tags"     : "true",
+      "url"      : "/projects/corewars/",
+      "date"     : "",
+      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
+      "content"  :  "I first read about CoreWars in old back issues of Scientific American.And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )Each program battles each other in attempt to stop the other executing and essentially win the battle.Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.I decided to roll my own MARS environment as my second major project.Further information can be found at :  Wikipedia  Core War - the Ultimate Programming Game"
+    } 
+    
+     
+    
 
   
    
