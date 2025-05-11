@@ -53,7 +53,7 @@ layout : page
       {% for ken in bob reversed offset: 1 %}
         {% for post in my_posts %}
            {%- if ken[0] == post.categories.last -%}
-              alltags.push({category: "{{ken[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title | truncate: 40 }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
+              alltags.push({category: "{{ken[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
             {%- endif -%}
         {% endfor %}
       {%- endfor -%}
@@ -87,7 +87,7 @@ layout : page
            currentMonth = listotags[i].month_date;
            selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
           }
-           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 30px;"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p class="+'"'+"archive_title"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
       }
         selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
       }

@@ -779,6 +779,14 @@ table td {
   border-radius: 5px !important;
 }
 
+.archive_title {
+  text-indent: 30px !important;
+  max-width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
 /* Styling for the search box */
 #search-input {
   display: block;
