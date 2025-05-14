@@ -379,7 +379,7 @@ table td {
 
 .site-title {
   font-size: 1.625rem;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -782,6 +782,13 @@ table td {
 .archive_title {
   text-indent: 30px !important;
   max-width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.normal_title {
+  max-width: 50% !important;
   white-space: nowrap;
   overflow: hidden !important;
   text-overflow: ellipsis !important;

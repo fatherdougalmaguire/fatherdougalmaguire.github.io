@@ -32,12 +32,12 @@ Any data entered into that form will be sent via Formspree's servers and is will
 
 If you don't want to share anything,  don't use the form.
 
-#### Ko-Fi
-Ko-Fi is used as a front door to accept donations ( if you think anything within deserves a donation )
+#### Ko-fi
+Ko-fi is used as a front door to accept donations ( if you think anything within deserves a donation )
 
 Unless you click on the link,  no user activity is tracked.  
 
-As per the [Ko-Fi privacy policy](https://more.ko-fi.com/privacy "Ko-Fi privacy policy")
+As per the [Ko-fi privacy policy](https://more.ko-fi.com/privacy "Ko-fi privacy policy")
 
 #### Utterances
 The commenting system is powered by a GitHub app called [Utterances](https://utteranc.es/ "Utterances").
@@ -49,16 +49,16 @@ If you do so,  you will be covered by GitHub privacy policies.
 #### Social Media
 
 Unless you click on any of the social media link buttons,  you will not be tracked.
-Links to respectice policies below.
+Links to respective policies below.
 
-| Policy | 
-|-------|
-| [Facebook](https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0 "Facebook")  | 
-| [X (Twitter)](https://privacy.x.com/en "X (Twitter)")  | 
-|[LinkedIn](https://www.linkedin.com/legal/privacy-policy "LinkedIn")  | 
-|[BlueSky](https://bsky.social/about/support/privacy-policy "BlueSky")  | 
-| [Mastadon](https://mastodon.social/privacy-policy "Mastadon")   | 
-|[Reddit](https://www.reddit.com/en-us/policies/privacy-policy?rdt=44089 "Reddit")  | 
+|Policy 
+|---
+|[Facebook](https://www.facebook.com/privacy/policy/?entry_point=data_policy_redirect&entry=0 "Facebook")  
+|[X (Twitter)](https://privacy.x.com/en "X (Twitter)")  
+|[LinkedIn](https://www.linkedin.com/legal/privacy-policy "LinkedIn")  
+|[BlueSky](https://bsky.social/about/support/privacy-policy "BlueSky")  
+|[Mastadon](https://mastodon.social/privacy-policy "Mastadon")   
+|[Reddit](https://www.reddit.com/en-us/policies/privacy-policy?rdt=44089 "Reddit")  
 
 ## Disclaimer
 
@@ -70,4 +70,4 @@ It will not cause your computer to explode, your hair to fall out or your cat to
 
 No representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the blog or the information, products, services, or related graphics contained therein for any purpose.
 
-In no event will any liablility be borne for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.
+In no event will any liablility be borne for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this blog.

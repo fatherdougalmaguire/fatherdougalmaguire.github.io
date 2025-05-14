@@ -7,7 +7,9 @@ excerpt: I first read about CoreWars in old back issues of Scientific American.
 
 ![pMARS screenshot](/assets/images/pmarssdl.png "pMARS screenshot")
 
-<br>
+Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
+
+\
 I first read about CoreWars in old back issues of Scientific American.
 
 And I was hooked.

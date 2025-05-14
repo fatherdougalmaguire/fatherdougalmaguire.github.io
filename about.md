@@ -9,7 +9,10 @@ Contrary to what the the site title may lead you to believe, I am not an Irish p
 
 I live in Sydney, Australia and work for the technology arm of a large financial institution.    
 
-That being said, my skills are more technology adjacent.    
+That being said, my skills are more technology adjacent.
+And my skills in HTML/CSS/JS et al are entirely self taught.
+
+So anything contained within this blog may be a little rough and ready.
 
 But I do own a beautiful black cat.
 

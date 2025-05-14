@@ -48,12 +48,12 @@ layout : page
     {
       /*debugger;*/
       var alltags = [];
-      {%- assign bob = site.categories -%}
+      {%- assign all_categories = site.categories -%}
       {%- assign my_posts = site.posts | sort: "date"  -%} 
-      {% for ken in bob reversed offset: 1 %}
+      {% for my_category in all_categories reversed offset: 1 %}
         {% for post in my_posts %}
-           {%- if ken[0] == post.categories.last -%}
-              alltags.push({category: "{{ken[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
+           {%- if my_category[0] == post.categories.last -%}
+              alltags.push({category: "{{my_category[0] | capitalize }}", tag : '{{ post.tags | split: "+" }}', title: "{{ post.title }}", excerpt: {{ post.excerpt | strip | strip_html | strip_newlines | escape | jsonify }},date : "{{ post.date | date: '%Y-%m-%dT%H:%M:%SZ' }}", url : "{{ post.url}}", month_date : "{{ post.date | date: '%B %Y' }}"});
             {%- endif -%}
         {% endfor %}
       {%- endfor -%}
@@ -67,13 +67,13 @@ layout : page
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
-      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
-      var jonny = bobby.split("|").sort();
+      var retrieve_selected_tags= document.getElementById("tag_list").innerText.slice(0,-1);
+      var selected_tags_array = retrieve_selected_tags.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
-        var steve = jonny.filter(el => billy.includes(el)).length;
-        if (steve != 0)
+        var sorted_tags= listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        var sorted_tags_length= selected_tags_array.filter(el => sorted_tags.includes(el)).length;
+        if (sorted_tags_length != 0)
        {
           if (currentCategory != listotags[i].category )
           {
@@ -112,33 +112,31 @@ layout : page
               {
                 if (tags[tagindex].selected == 0 || first_run )
                 {
-                  /*$(allListElements[i]).css("color","red");*/
                   $(allListElements[i]).removeClass(tags[tagindex].tag_class);
                   $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                   /*$(allListElements[i]).css("color","blue");*/
                   $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
                   $(allListElements[i]).addClass(tags[tagindex].tag_class);
                   tags[tagindex].selected = 0;
                 }
               } 
           }
-          var ken = "";
+          var selected_tags = "";
           if (first_run)
           {
-            ken = document.getElementById("tag_list").innerHTML;
+            selected_tags = document.getElementById("tag_list").innerHTML;
           }
           for (var i = 0; i < tags.length; i++)
           {
            if (tags[i].selected == 1)
              {
-              ken = ken+tags[i].text+"|"; 
+              selected_tags = selected_tags+tags[i].text+"|"; 
              }
           }
-          document.getElementById("tag_list").innerHTML = ken; 
+          document.getElementById("tag_list").innerHTML = selected_tags; 
           BuildPostList();
         }
   
@@ -164,13 +162,13 @@ layout : page
 
       var tags = [];
       var listotags = [];
-      var ed = "";
+      var current_tag_name = "";
       
       {% for tag in site.tags %}
         {%- assign tag_name = tag | first -%}
         {%- assign tag_weight = tag | last | size -%}
-        ed = "{{ tag_name }}";
-        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+        current_tag_name = "{{ tag_name }}";
+        tags.push({text: "{{ tag_name }}", weight: {{ tag_weight }}, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       {% endfor %}
       multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags, {removeOverflowing: true, afterCloudRender: function() { firsttag() }} );

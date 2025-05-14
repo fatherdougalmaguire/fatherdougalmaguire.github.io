@@ -58,6 +58,14 @@
   text-overflow: ellipsis ! important;
 }
 
+.normal_title
+{
+  max-width:50% ! important;
+  white-space: nowrap;
+  overflow:hidden ! important;
+  text-overflow: ellipsis ! important;
+}
+
 /* Styling for the search box */
 #search-input {
     display: block;

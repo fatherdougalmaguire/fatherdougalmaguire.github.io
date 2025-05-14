@@ -119,13 +119,13 @@
       var arrayLength = listotags.length;
       var currentCategory = "";
       var currentMonth = "";
-      var bobby = document.getElementById("tag_list").innerText.slice(0,-1);
-      var jonny = bobby.split("|").sort();
+      var retrieve_selected_tags= document.getElementById("tag_list").innerText.slice(0,-1);
+      var selected_tags_array = retrieve_selected_tags.split("|").sort();
       for (var i = 0; i < arrayLength; i++)
       {
-        var billy = listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
-        var steve = jonny.filter(el => billy.includes(el)).length;
-        if (steve != 0)
+        var sorted_tags= listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        var sorted_tags_length= selected_tags_array.filter(el => sorted_tags.includes(el)).length;
+        if (sorted_tags_length != 0)
        {
           if (currentCategory != listotags[i].category )
           {
@@ -164,33 +164,31 @@
               {
                 if (tags[tagindex].selected == 0 || first_run )
                 {
-                  /*$(allListElements[i]).css("color","red");*/
                   $(allListElements[i]).removeClass(tags[tagindex].tag_class);
                   $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
                   tags[tagindex].selected = 1;
                 }
                 else
                 {
-                   /*$(allListElements[i]).css("color","blue");*/
                   $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
                   $(allListElements[i]).addClass(tags[tagindex].tag_class);
                   tags[tagindex].selected = 0;
                 }
               } 
           }
-          var ken = "";
+          var selected_tags = "";
           if (first_run)
           {
-            ken = document.getElementById("tag_list").innerHTML;
+            selected_tags = document.getElementById("tag_list").innerHTML;
           }
           for (var i = 0; i < tags.length; i++)
           {
            if (tags[i].selected == 1)
              {
-              ken = ken+tags[i].text+"|"; 
+              selected_tags = selected_tags+tags[i].text+"|"; 
              }
           }
-          document.getElementById("tag_list").innerHTML = ken; 
+          document.getElementById("tag_list").innerHTML = selected_tags; 
           BuildPostList();
         }
   
@@ -216,54 +214,54 @@
 
       var tags = [];
       var listotags = [];
-      var ed = "";
+      var current_tag_name = "";
       
-      ed = "Jekyll";
-        tags.push({text: "Jekyll", weight: 11, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Blog";
-        tags.push({text: "Blog", weight: 11, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Minima";
-        tags.push({text: "Minima", weight: 11, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "GitHub Pages";
-        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Redcode";
-        tags.push({text: "Redcode", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "MARS";
-        tags.push({text: "MARS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Warriors";
-        tags.push({text: "Warriors", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "MacOS";
-        tags.push({text: "MacOS", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Swift";
-        tags.push({text: "Swift", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Z80";
-        tags.push({text: "Z80", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Emulation";
-        tags.push({text: "Emulation", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "CSS";
-        tags.push({text: "CSS", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Metal";
-        tags.push({text: "Metal", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Shader";
-        tags.push({text: "Shader", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Email";
-        tags.push({text: "Email", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Contact form";
-        tags.push({text: "Contact form", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Google Analytics";
-        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Tag cloud";
-        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Reading Time";
-        tags.push({text: "Reading Time", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Social Media";
-        tags.push({text: "Social Media", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
-      ed = "Comments";
-        tags.push({text: "Comments", weight: 1, handlers: {click: function(ed) { BuildTagList(ed,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Jekyll";
+        tags.push({text: "Jekyll", weight: 11, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Blog";
+        tags.push({text: "Blog", weight: 11, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Minima";
+        tags.push({text: "Minima", weight: 11, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "GitHub Pages";
+        tags.push({text: "GitHub Pages", weight: 8, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Redcode";
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "MARS";
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Warriors";
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "MacOS";
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Swift";
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "SwiftUI";
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Z80";
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Emulation";
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Retro Computing";
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "CSS";
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Metal";
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Shader";
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Email";
+        tags.push({text: "Email", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Contact form";
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Google Analytics";
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Tag cloud";
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Reading Time";
+        tags.push({text: "Reading Time", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Social Media";
+        tags.push({text: "Social Media", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Comments";
+        tags.push({text: "Comments", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       
       multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags, {removeOverflowing: true, afterCloudRender: function() { firsttag() }} );
@@ -330,6 +328,8 @@
         </p>
         <ul class="contact-list">
           <li class="p-name">&copy; 2025 Tony Sanchez</li>
+            <li class="p-name">Licenced under Creative Commons</li>
+            <li class="p-name" style="margin-top: 1em;margin-bottom: 1em;"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" alt="Creative Commons 4.0 BY-NC-SA licence"><img src="/assets/images/by-nc-sa.svg"></img></a></li>
           
           <li class="p-name">Based on the <a href="https://github.com/jekyll/minima">Minima</a> theme.</li>
           <li>&nbsp;</li>
