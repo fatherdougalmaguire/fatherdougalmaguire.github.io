@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/projects/blogging/2025/03/25/Jekyll.html</loc>
+<loc>http://localhost:4000/projects/blogging/2025/03/25/Jekyll-and-GitHub-Pages.html</loc>
 <lastmod>2025-03-25T00:00:00+11:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/projects/blogging/2025/03/26/Github-pages.html</loc>
-<lastmod>2025-03-26T00:00:00+11:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html</loc>
@@ -67,6 +63,10 @@
 <url>
 <loc>http://localhost:4000/projects/blogging/2025/05/10/Enhancing-Minima-Part-9.html</loc>
 <lastmod>2025-05-10T00:00:00+10:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/projects/blogging/2025/05/15/Enhancing-Minima-Part-10.html</loc>
+<lastmod>2025-05-15T00:00:00+10:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about</loc>

@@ -4,19 +4,52 @@ layout: category
 include_search : true
 excerpt : I thought it my be a good idea to track the progress of my various software projects.
 ---
-I thought it my be a good idea to track the progress of my various software projects.
+I thought it my be a good idea to track the progress of my various software projects by way of a blog.
 
-Mainly as I am notoriously bad at documentation
-But also give me a way to track my progress.  
-Or lack thereof.   
 
-After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as [Google Sites](https://sitdes.google.com/) I stumbled across [GitHub Pages.](https://pages.github.com/)
+Mainly as I am notoriously bad at documentation.
+But also give me a way to track my progress.
+Or lack thereof. 
 
-Not withstanding the fact that it is free, I was intrigued by the ability to use [Jekyll](https://jekyllrb.com/), an open source static site generator created especially with blogging in mind.  
+This then begs the questions:
 
-There is a large developer community that has built some very visually appealing templates or "themes" on top of Jekyll.
+1. How do you build a blog ? 
+2. Where to host it ?
+3. How much will it cost ?
 
-Samples of these can be found at [Jekyllthemes.io](https://jekyllthemes.io)
+Given that this is a vanity project,
+cost became the prime consideration.
+After all, zero dollar options were the easiest to justify to my nearest and dearest.
+So it then becane a decision on whether I went with a turnkey solution like [Google Sites](https://sites.google.com "Google Sites"), start from scratch or find some happy medium in-between. 
 
-![Jekyllthemes.io](/assets/images/jekyllthemes.jpg)
+
+I became somewhat frustrated with Google Sites as I couldn't style it the way I wanted ( notwithstanding I had access to an unused instance just hanging around) .
+Starting from scratch seemed to be a fool's errand.
+I didn't know one end of a CSS from another and the last time I created a web page, the **BLINK**{ tag was de rigueur.
+
+\
+![Confused man and cat](/assets/images/confused-man.jpg "Confused man and cat")
+
+\
+Then I stumbled across my goldilocks solution.
+
+A *static site generator (SSG)*.
+
+For those not familar with the term, an SSG takes fixed textual content, applies an HTML template to it and generates web pages.
+The resultant pages are uploaded to a hosting site and bob's your uncle, you have a blog.
+
+And because you can choose different HTML templates, you can achieve a multiplicity of output styles without having to know much about web design.
+
+
+My software projects use GitHub to host their source code.
+As part of a GitHub account, I have access to [GitHub Pages](https://pages.git.com "GitHub Pages").
+
+You get one site aligned to your GitHub username ( known as a "user site" ) and any number of subsidary sites ( known as "project sites" )
+And a number of SSG solutions are supported.
+I chose <a href="www.jekyllrb.com">Jekyll</a> as my starting point as it seem to have the largest user community.
+And GitHub Pages supports Jekyll out of the box.
+
+As much as I dislike the phrase "journey", as I build out my blog, I'll post some explanation of what I did along the way in the hope it may be of use to someone.
+
+Or a cautionary tale of being sucked into the [futzing](https://dictionary.cambridge.org/us/dictionary/english/futz">futzing "futzing") swamp.
 

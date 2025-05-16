@@ -1,14 +1,13 @@
 ---
-title: "Jekyll"
+title: "Jekyll vs Hugo"
+excerpt: "Coming soon!"
 layout: post
 tags:
  - Jekyll
  - Blog
- - Minima
- - "GitHub Pages"
+ - Hugo
+ - SSG
 ---
-
-> The instructions and code within are current as of 25th March 2025.
 
 <p style="text-align:center;">
 	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog">

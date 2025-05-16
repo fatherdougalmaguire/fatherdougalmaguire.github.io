@@ -1,6 +1,16 @@
 [
   
     {
+      "title"    : "Jekyll vs Hugo",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Hugo, SSG",
+      "url"      : "/projects/blogging/2025/05/15/Enhancing-Minima-Part-10.html",
+      "date"     : "May 15, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
       "title"    : "Comments",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, Comments",
@@ -151,23 +161,13 @@
     } ,
   
     {
-      "title"    : "GitHub pages",
+      "title"    : "Jekyll and GitHub pages",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/26/Github-pages.html",
-      "date"     : "March 26, 2025",
-      "excerpt"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",
-      "content"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Jekyll",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/25/Jekyll.html",
+      "url"      : "/projects/blogging/2025/03/25/Jekyll-and-GitHub-Pages.html",
       "date"     : "March 25, 2025",
-      "excerpt"  :  "  The instructions and code within are current as of 25th March 2025.",
-      "content"  :  "  The instructions and code within are current as of 25th March 2025.\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+      "excerpt"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.",
+      "content"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io  The instructions and code within are current as of 25th March 2025."
     } 
   
 
@@ -185,7 +185,7 @@
       "url"      : "/about",
       "date"     : "",
       "excerpt"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.",
-      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.And my skills in HTML/CSS/JS et al are entirely self taught.So anything contained within this blog may be a little rough and ready.But I do own a beautiful black cat.Drop me a line      Your Name            Email              This will help me respond to your query via an email.            Message        What would you like to discuss?        Submit  "
+      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.So when it comes to HTML/CSS/JS et al,  I am entirely self-taught.Which will become pretty obvious if you page through the blog,On the plus, I do own a beautiful black cat.Drop me a line      Your Name            Email              This will help me respond to your query via an email.            Message        What would you like to discuss?        Submit  "
     } 
     
      
@@ -222,7 +222,7 @@
       "url"      : "/projects/blogging/",
       "date"     : "",
       "excerpt"  :  "I thought it my be a good idea to track the progress of my various software projects.",
-      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as Google Sites I stumbled across GitHub Pages.Not withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io"
+      "content"  :  "I thought it my be a good idea to track the progress of my various software projects by way of a blog.Mainly as I am notoriously bad at documentation.But also give me a way to track my progress.Or lack thereof.This then begs the questions:  How do you build a blog ?  Where to host it ?  How much will it cost ?Given that this is a vanity project,cost became the prime consideration.After all, zero dollar options were the easiest to justify to my nearest and dearest.So it then becane a decision on whether I went with a turnkey solution like Google Sites, start from scratch or find some happy medium in-between.I became somewhat frustrated with Google Sites as I couldn’t style it the way I wanted ( notwithstanding I had access to an unused instance just hanging around) .Starting from scratch seemed to be a fool’s errand.I didn’t know one end of a CSS from another and the last time I created a web page, the BLINK{ tag was de rigueur.Then I stumbled across my goldilocks solution.A static site generator (SSG).For those not familar with the term, an SSG takes fixed textual content, applies an HTML template to it and generates web pages.The resultant pages are uploaded to a hosting site and bob’s your uncle, you have a blog.And because you can choose different HTML templates, you can achieve a multiplicity of output styles without having to know much about web design.My software projects use GitHub to host their source code.As part of a GitHub account, I have access to GitHub Pages.You get one site aligned to your GitHub username ( known as a “user site” ) and any number of subsidary sites ( known as “project sites” )And a number of SSG solutions are supported.I chose Jekyll as my starting point as it seem to have the largest user community.And GitHub Pages supports Jekyll out of the box.As much as I dislike the phrase “journey”, as I build out my blog, I’ll post some explanation of what I did along the way in the hope it may be of use to someone.Or a cautionary tale of being sucked into the futzing swamp."
     } 
     
      
