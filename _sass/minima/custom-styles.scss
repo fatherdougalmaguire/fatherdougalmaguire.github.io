@@ -1,6 +1,20 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+.callout
+{
+ margin-top:1em;
+ margin-bottom:1em;  
+ background-color: #DBEAFE;
+ color : white;
+ width : 100%;
+ border-radius: 8px;
+ padding: 10px;
+ border-style: solid;
+ border-width: thin; 
+ border-color: #BFDBFE;
+}
+
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color : white;

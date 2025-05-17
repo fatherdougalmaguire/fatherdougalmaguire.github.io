@@ -93,8 +93,9 @@
 .highlight .w {
   color: #bbbbbb;
 }
+/*$base-font-size:   16px !default;*/
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /**
@@ -111,7 +112,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  font: 400 18px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(65.25, 65.25, 65.25);
   /*background-color: $background-color;*/
   background-color: WhiteSmoke;
@@ -166,7 +167,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: 14px;
+  font-size: 15.75px;
 }
 
 /**
@@ -370,7 +371,7 @@ table td {
   z-index: 1;
   width: 100%;
   min-height: 55.95px;
-  line-height: 54px;
+  line-height: 60.75px;
   /*background-color: $background-color;*/
   background-color: WhiteSmoke;
   /*border-top: 5px solid $border-color-03;*/
@@ -596,7 +597,7 @@ table td {
 }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 15.75px;
   color: #818181;
 }
 
@@ -731,6 +732,19 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
+.callout {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #DBEAFE;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #BFDBFE;
+}
+
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color: white;

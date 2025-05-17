@@ -15,7 +15,7 @@ Back in distant past,  my family owned a Microbee.
 
 The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology ), popular during the 1980's.  
 
-[Here is a promotional video of the era.](https://www.youtube.com/watch?v=c_KnOJ9JUcc "Microbee promotional video")
+<div class="callout"><img src="/assets/images/info-circle.svg" style="height: 20px; margin-top: -5px;fill: darkslateblue;"><a href="https://www.youtube.com/watch?v=c_KnOJ9JUcc" alt="Microbee promotional video"> Here is a promotional video of the era.</a></div>
 
 It sold particularly well in the educational market.
 
