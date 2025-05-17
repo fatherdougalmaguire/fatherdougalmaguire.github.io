@@ -853,7 +853,7 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 .site-title {
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   margin-bottom: 0;
   float: left;
 }
@@ -891,6 +891,10 @@ a:hover {
   padding: 5px 0;
   color: limegreen !important;
   line-height: 1.5;
+}
+
+.nav-item:hover {
+  text-decoration: none;
 }
 
 /** Formspree **/
