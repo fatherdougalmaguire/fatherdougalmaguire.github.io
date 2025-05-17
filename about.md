@@ -16,11 +16,11 @@ Which will become pretty obvious if you page through the blog,
 
 On the plus, I do own a beautiful black cat.
 
-![](/assets/images/aboutme.jpg "A black cat")
+![A black cat](/assets/images/aboutme.jpg "A black cat")
 
-<br>
-### Drop me a line
-<br>
+<div style="margin-top:1em;margin-bottom:1em;">
+  <h3>Drop me a line</h3>
+</div>
 
 <form
   action="https://formspree.io/f/mqaqzpgo"

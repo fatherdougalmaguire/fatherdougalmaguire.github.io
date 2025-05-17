@@ -289,7 +289,7 @@ code.highlighter-rouge {
  * Wrapper
  */
 .wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -874,8 +874,10 @@ a:visited {
   color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
 }
 a:hover {
-  text-decoration: none !important;
-  font-weight: bold !important;
+  /* text-decoration: none ! important;
+   font-weight : bold ! important; */
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 .social-media-list a:hover, .pagination a:hover {
   text-decoration: none;

@@ -2,6 +2,7 @@
 title: "Microbee"
 layout: category
 include_search : true
+youtubeId: c_KnOJ9JUcc
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
 
@@ -13,6 +14,8 @@ Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
 Back in distant past,  my family owned a Microbee. 
 
 The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology ), popular during the 1980's.  
+
+[Here is a promotional video of the era.](https://www.youtube.com/watch?v=c_KnOJ9JUcc "Microbee promotional video")
 
 It sold particularly well in the educational market.
 

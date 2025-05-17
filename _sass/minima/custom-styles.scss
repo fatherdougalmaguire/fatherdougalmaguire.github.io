@@ -150,8 +150,10 @@ a {
   }
 
   &:hover {
-    text-decoration: none ! important;
-    font-weight : bold ! important;
+   /* text-decoration: none ! important;
+    font-weight : bold ! important; */
+    text-decoration: underline;
+    text-decoration-style: dashed;
   }
 
   .social-media-list &:hover {
