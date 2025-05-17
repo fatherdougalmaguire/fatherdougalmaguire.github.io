@@ -2,7 +2,7 @@
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
     {%- if hyperpage.title == 'Search' -%}
-      <a style="color:limegreen;font-size: 110%;position: relative; top: 2px" class="fa-solid fa-magnifying-glass" href="{{ hyperpage.url | relative_url }}"></a>
+      <a style="color:limegreen;font-size: 110%;position: relative; top: 2px;text-decoration: none;" class="fa-solid fa-magnifying-glass" href="{{ hyperpage.url | relative_url }}"></a>
     {%- else -%}
       <a class="nav-item" href="{{ hyperpage.url | relative_url }}">{{ hyperpage.title | escape }}</a>
     {%- endif -%}

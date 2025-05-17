@@ -866,6 +866,11 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   color: limegreen;
 }
 
+.site-title:hover {
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
 a {
   color: #2a7ae2;
   text-decoration: none;
@@ -894,7 +899,8 @@ a:hover {
 }
 
 .nav-item:hover {
-  text-decoration: none;
+  text-decoration: none !important;
+  font-weight: bold !important;
 }
 
 /** Formspree **/
