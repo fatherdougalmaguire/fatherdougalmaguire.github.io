@@ -61,20 +61,76 @@
     <h1 class="post-title">Privacy and Disclaimer</h1>
   </header>
 
-  <div class="post-content">
-    <p><img src="/assets/images/privacy.png" alt="Talking about Privacy" title="Talking about Privacy" /></p>
+<style>
+  
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: LightGray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
 
-<h2 id="privacy-policy">Privacy Policy</h2>
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+  <div class="post-content">
+    <ul id="toc" class="sidenav">
+<li class="toc-entry toc-h2"><a href="#privacy-policy">Privacy Policy</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#google-analytics">Google Analytics</a></li>
+<li class="toc-entry toc-h4"><a href="#github">GitHub</a></li>
+<li class="toc-entry toc-h4"><a href="#formspree">Formspree</a></li>
+<li class="toc-entry toc-h4"><a href="#ko-fi">Ko-fi</a></li>
+<li class="toc-entry toc-h4"><a href="#giscus">Giscus</a></li>
+<li class="toc-entry toc-h4"><a href="#social-media">Social Media</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#disclaimer">Disclaimer</a></li>
+</ul><p><img src="/assets/images/privacy.png" alt="Talking about Privacy" title="Talking about Privacy"></p>
+
+<h2 id="privacy-policy">
+<a class="anchor" href="#privacy-policy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Privacy Policy</h2>
 
 <p>As per <a href="https://gdpr.eu/cookies/" title="GPDR cookies">GPDR</a> requirements,  you are given the option of accepting or declining cookie processing for a period of 180 days.</p>
 
 <p>Specifically this relates to the use of Google Analytics.</p>
 
-<h4 id="google-analytics">Google Analytics</h4>
-<p>This blog uses Google Analytics to measure site access statistics.<br />
+<h4 id="google-analytics">
+<a class="anchor" href="#google-analytics" aria-hidden="true"><span class="octicon octicon-link"></span></a>Google Analytics</h4>
+<p>This blog uses Google Analytics to measure site access statistics.<br>
 You can opt out of this tracking for a period of 180 days by clicking <span class="cookie_button">Reject</span> on the cookie notice.</p>
 
-<h4 id="github">GitHub</h4>
+<h4 id="github">
+<a class="anchor" href="#github" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub</h4>
 <p>The blog is served from <a href="https://pages.github.com" title="GitHub pages">GitHub pages.</a></p>
 
 <p>As per the <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection" title="Data Collection">Data Collection</a> section of the GitHub Pages documentation:</p>
@@ -84,28 +140,32 @@ When a GitHub Pages site is visited, the visitor's IP address is logged and stor
 For more information about GitHub's security practices, see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" alt="GitHub Privacy Statement">GitHub Privacy Statement</a>
 </blockquote>
 
-<h4 id="formspree">Formspree</h4>
+<h4 id="formspree">
+<a class="anchor" href="#formspree" aria-hidden="true"><span class="octicon octicon-link"></span></a>Formspree</h4>
 <p>The email response form on the <a href="/about">About Me</a> page uses <a href="https://formspree.io/" title="Formspree">Formspree</a>.</p>
 
 <p>Any data entered into that form will be sent via Formspree’s servers and is will be covered by their <a href="https://formspree.io/legal/privacy-policy/" title="Formspree privacy policy">privacy policy.</a></p>
 
 <p>If you don’t want to share anything,  don’t use the form.</p>
 
-<h4 id="ko-fi">Ko-fi</h4>
+<h4 id="ko-fi">
+<a class="anchor" href="#ko-fi" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ko-fi</h4>
 <p>Ko-fi is used as a front door to accept donations ( if you think anything within deserves a donation )</p>
 
 <p>Unless you click on the link,  no user activity is tracked.</p>
 
 <p>As per the <a href="https://more.ko-fi.com/privacy" title="Ko-fi privacy policy">Ko-fi privacy policy</a></p>
 
-<h4 id="utterances">Utterances</h4>
-<p>The commenting system is powered by a GitHub app called <a href="https://utteranc.es/" title="Utterances">Utterances</a>.</p>
+<h4 id="giscus">
+<a class="anchor" href="#giscus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Giscus</h4>
+<p>The commenting system is powered by a GitHub app called <a href="https://giscus.app" title="Giscus">Giscus</a>.</p>
 
-<p>In and of itself, Utterances does not track user activity. But it uses the GitHub issue subsystem as a repository and so you will need to log into GitHub to leave a comment.</p>
+<p>In and of itself, Giscus does not track user activity. But it uses the GitHub discussion subsystem as a repository and so you will need to log into GitHub to leave a comment.</p>
 
 <p>If you do so,  you will be covered by GitHub privacy policies.</p>
 
-<h4 id="social-media">Social Media</h4>
+<h4 id="social-media">
+<a class="anchor" href="#social-media" aria-hidden="true"><span class="octicon octicon-link"></span></a>Social Media</h4>
 
 <p>Unless you click on any of the social media link buttons,  you will not be tracked.
 Links to respective policies below.</p>
@@ -138,7 +198,8 @@ Links to respective policies below.</p>
   </tbody>
 </table>
 
-<h2 id="disclaimer">Disclaimer</h2>
+<h2 id="disclaimer">
+<a class="anchor" href="#disclaimer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disclaimer</h2>
 
 <p>Use anything contained within this blog at your own risk.</p>
 

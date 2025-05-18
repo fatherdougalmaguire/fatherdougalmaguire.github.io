@@ -1,6 +1,6 @@
 ---
 title: "Tags and Categories"
-excerpt: "Coming soon!"
+excerpt: "Coming sojn!"
 layout: post
 tags:
  - Jekyll

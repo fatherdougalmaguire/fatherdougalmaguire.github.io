@@ -1,6 +1,7 @@
 ---
 title: "Privacy and Disclaimer"
 layout: page
+toc: true
 ---
 
 ![Talking about Privacy](/assets/images/privacy.png "Talking about Privacy")
@@ -39,10 +40,10 @@ Unless you click on the link,  no user activity is tracked.
 
 As per the [Ko-fi privacy policy](https://more.ko-fi.com/privacy "Ko-fi privacy policy")
 
-#### Utterances
-The commenting system is powered by a GitHub app called [Utterances](https://utteranc.es/ "Utterances").
+#### Giscus
+The commenting system is powered by a GitHub app called [Giscus](https://giscus.app "Giscus").
 
-In and of itself, Utterances does not track user activity. But it uses the GitHub issue subsystem as a repository and so you will need to log into GitHub to leave a comment.
+In and of itself, Giscus does not track user activity. But it uses the GitHub discussion subsystem as a repository and so you will need to log into GitHub to leave a comment.
 
 If you do so,  you will be covered by GitHub privacy policies.
 

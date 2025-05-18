@@ -61,17 +61,109 @@
     <h1 class="post-title">Microbee</h1>
   </header>
 
+<style>
+  
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: LightGray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
   <div class="post-content">
-    <p><img src="/assets/images/Microbee32K_IC.png" alt="My first computer" title="Microbee screenshot" /></p>
+    <ul id="toc" class="sidenav">
+<li class="toc-entry toc-h3"><a href="#related-posts">Related posts</a></li>
+<li class="toc-entry toc-h3"><a href="#introducing-abeja">Introducing Abeja</a></li>
+<li class="toc-entry toc-h3"><a href="#how-is-abeja-structured-">How is Abeja structured ?</a></li>
+<li class="toc-entry toc-h3"><a href="#building-a-metal-shader-for-display-output">Building a Metal shader for display output</a></li>
+<li class="toc-entry toc-h3"><a href="#ui-design">UI Design</a></li>
+<li class="toc-entry toc-h3"><a href="#decoding-cpu-instructions">Decoding CPU instructions</a></li>
+</ul><style>
+  
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: LightGray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<ul id="toc" class="sidenav">
+</ul><p><img src="/assets/images/Microbee32K_IC.png" alt="My first computer" title="Microbee screenshot"></p>
 
 <p>Photo credit : <a href="https://en.wikipedia.org/wiki/MicroBee" title="Wikipedia">Wikipedia</a></p>
 
-<p><br />
+<p><br>
 Back in distant past,  my family owned a Microbee.</p>
 
 <p>The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology ), popular during the 1980’s.</p>
 
-<div class="callout"><img src="/assets/images/info-circle.svg" style="height: 20px; margin-top: -5px;fill: darkslateblue;" /><a href="https://www.youtube.com/watch?v=c_KnOJ9JUcc" alt="Microbee promotional video"> Here is a promotional video of the era.</a></div>
+<div class="callout">
+<img src="/assets/images/info-circle.svg" style="height: 20px; margin-top: -5px;fill: darkslateblue;"><a href="https://www.youtube.com/watch?v=c_KnOJ9JUcc" alt="Microbee promotional video"> Here is a promotional video of the era.</a>
+</div>
 
 <p>It sold particularly well in the educational market.</p>
 
@@ -110,31 +202,42 @@ Back in distant past,  my family owned a Microbee.</p>
 
 
 
-<h3>Related posts</h3>
+<h3>
+<a class="anchor" href="#related-posts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Related posts</h3>
 
 <ul class="post-list">
 
 
 
 Mar 28, 2025
-      <h3><a href="/projects/microbee/2025/03/28/Introducing-Abeja.html">Introducing Abeja</a></h3>
+      <h3>
+<a class="anchor" href="#introducing-abeja" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/projects/microbee/2025/03/28/Introducing-Abeja.html">Introducing Abeja</a>
+</h3>
       <p>I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.</p>
 
       <hr>
     Apr 08, 2025
-      <h3><a href="/projects/microbee/2025/04/08/Abejas-structure.html">How is Abeja structured ?</a></h3>
+      <h3>
+<a class="anchor" href="#how-is-abeja-structured-" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/projects/microbee/2025/04/08/Abejas-structure.html">How is Abeja structured ?</a>
+</h3>
       Coming soon!
       <hr>
     Apr 09, 2025
-      <h3><a href="/projects/microbee/2025/04/09/Shaders.html">Building a Metal shader for display output</a></h3>
+      <h3>
+<a class="anchor" href="#building-a-metal-shader-for-display-output" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/projects/microbee/2025/04/09/Shaders.html">Building a Metal shader for display output</a>
+</h3>
       Coming soon!
       <hr>
     Apr 10, 2025
-      <h3><a href="/projects/microbee/2025/04/10/UI-Design.html">UI Design</a></h3>
+      <h3>
+<a class="anchor" href="#ui-design" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/projects/microbee/2025/04/10/UI-Design.html">UI Design</a>
+</h3>
       Coming soon!
       <hr>
     Apr 11, 2025
-      <h3><a href="/projects/microbee/2025/04/11/CPU.html">Decoding CPU instructions</a></h3>
+      <h3>
+<a class="anchor" href="#decoding-cpu-instructions" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="/projects/microbee/2025/04/11/CPU.html">Decoding CPU instructions</a>
+</h3>
       Coming soon!
       
     

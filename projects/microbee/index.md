@@ -2,7 +2,7 @@
 title: "Microbee"
 layout: category
 include_search : true
-youtubeId: c_KnOJ9JUcc
+toc: true
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
 

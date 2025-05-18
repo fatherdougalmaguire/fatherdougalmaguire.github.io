@@ -15,6 +15,27 @@
  border-color: #BFDBFE;
 }
 
+.card
+{
+ margin-top:1em;
+ margin-bottom:1em;  
+ background-color: #DBEAFE;
+ color: white;
+ border-radius: 8px;
+ padding: 10px;
+ border-style: solid;
+ border-width: thin; 
+ border-color: #BFDBFE;
+ width: fit-content;
+ height: fit-content;
+}
+
+.card-image
+{
+ width: 50%;
+ height: 50%;
+}
+
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color : white;
@@ -124,16 +145,6 @@
 
 #search-results a:hover {
     color: #0078d4;
-}
-
-/** overload existing fonts **/
-
-body {
-  font-family: 'Raleway', serif;
-  }
-
-h1, h2, h3, h4, h5, .site-title, .site-nav {
-  font-family: 'Raleway', sans-serif;
 }
 
 /** overload existing CSS **/

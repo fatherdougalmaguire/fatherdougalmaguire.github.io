@@ -14,16 +14,29 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-toc
 
 paginate: 5
 
-google_analytics:   
+toc:
+  min_level: 1
+  max_level: 6
+  ordered_list: false
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: sidenav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
+
+google_analytics: G-4HL20MHYZG   
 
 sass:
   quiet_deps: true
   silence_deprecations: [import]
 
-posts_limit: 1000
+feed:
+  posts_limit: 9999
 
 minima:
   # Minima skin selection. Available skins are:
