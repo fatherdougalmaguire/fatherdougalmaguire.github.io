@@ -3,6 +3,7 @@ title: "CoreWars"
 layout: category
 include_search : true
 excerpt: I first read about CoreWars in old back issues of Scientific American.
+toc: false
 ---
 
 ![pMARS screenshot](/assets/images/pmarssdl.png "pMARS screenshot")

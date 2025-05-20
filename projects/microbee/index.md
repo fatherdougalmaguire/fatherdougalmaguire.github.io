@@ -2,7 +2,7 @@
 title: "Microbee"
 layout: category
 include_search : true
-toc: true
+toc: false
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
 

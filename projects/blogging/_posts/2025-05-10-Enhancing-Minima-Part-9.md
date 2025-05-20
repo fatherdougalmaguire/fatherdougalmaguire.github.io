@@ -7,6 +7,7 @@ tags:
  - Blog
  - Minima
  - Comments
+toc: false
 ---
 
 <p style="text-align:center;">

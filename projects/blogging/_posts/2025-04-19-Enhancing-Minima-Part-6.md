@@ -10,6 +10,7 @@ tags:
  - "Contact form"
  - "Google Analytics"
  - "GitHub Pages"
+toc: false
 ---
 
 <p style="text-align:center;">

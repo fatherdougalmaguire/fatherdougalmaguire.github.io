@@ -6,6 +6,7 @@ tags:
  - Jekyll
  - Blog
  - "Github Actions"
+toc: false
 ---
 
 <p style="text-align:center;">

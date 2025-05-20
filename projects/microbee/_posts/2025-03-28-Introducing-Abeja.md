@@ -8,6 +8,7 @@ tags:
  - MacOS
  - Swift
  - SwiftUI
+toc: false
 ---
 
 I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.

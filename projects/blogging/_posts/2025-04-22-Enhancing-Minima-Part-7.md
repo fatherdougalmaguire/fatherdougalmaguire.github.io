@@ -7,6 +7,7 @@ tags:
  - Blog
  - Minima
  - "Tag cloud"
+toc: false
 ---
 
 <p style="text-align:center;">

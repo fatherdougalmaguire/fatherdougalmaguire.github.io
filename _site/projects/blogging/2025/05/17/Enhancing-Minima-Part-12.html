@@ -23,8 +23,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
 
-<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"> -->
-<link rel="stylesheet" type="text/css" href="/assets/css/raleway.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Raleway"> 
+<!-- <link rel="stylesheet" type="text/css" href="/assets/css/raleway.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-sans.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-code.css"> 
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> -->
 
 <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
@@ -56,48 +60,7 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style>
-  
-/* The sidebar menu */
-.sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: LightGray;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
-
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">Jekyll Plugins</h1>
@@ -189,17 +152,29 @@
   <!-- from  https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog -->
     
       <div>
-         <p style="text-align:center;">
-	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog" />
+         <ul id="toc" class="sidenav">
+<li class="toc-entry toc-h2"><a href="#header-1">Header 1</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#header-11">Header 1.1</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#header-2">Header 2</a></li>
+</ul><p style="text-align:center;">
+	<img src="/assets/images/under_construction.jpg" alt="Man and cat at desk writing blog">
 </p>
 
+<h2 id="header-1">
+<a class="anchor" href="#header-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Header 1</h2>
 <p>Bacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.</p>
-
+<h3 id="header-11">
+<a class="anchor" href="#header-11" aria-hidden="true"><span class="octicon octicon-link"></span></a>Header 1.1</h3>
 
       </div>
       <input type="checkbox" class="read-more-state" id="/projects/blogging/2025/05/17/Enhancing-Minima-Part-12.html"/>
       <div class="read-more">
         
+<h2 id="header-2">
+<a class="anchor" href="#header-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Header 2</h2>
 <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to.</p>
 
       </div>

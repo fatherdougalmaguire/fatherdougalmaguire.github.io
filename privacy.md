@@ -1,7 +1,7 @@
 ---
 title: "Privacy and Disclaimer"
 layout: page
-toc: true
+toc: false
 ---
 
 ![Talking about Privacy](/assets/images/privacy.png "Talking about Privacy")

@@ -8,6 +8,7 @@ tags:
  - Minima
  - "GitHub Pages"
  - CSS
+toc: false
 ---
 
 <p style="text-align:center;">

@@ -8,6 +8,7 @@ tags:
  - Minima
  - Reading Time
  - Social Media
+toc: false
 ---
 
 <p style="text-align:center;">

@@ -3,6 +3,7 @@ title: "Blogging"
 layout: category  
 include_search : true
 excerpt : I thought it my be a good idea to track the progress of my various software projects.
+toc: false
 ---
 I thought it my be a good idea to track the progress of my various software projects by way of a blog.
 

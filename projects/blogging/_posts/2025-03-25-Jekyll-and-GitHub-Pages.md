@@ -6,6 +6,7 @@ tags:
  - Blog
  - Minima
  - "GitHub Pages"
+toc: false
 ---
 
 There is a large developer community that has built some very visually appealing templates or "themes" on top of Jekyll.

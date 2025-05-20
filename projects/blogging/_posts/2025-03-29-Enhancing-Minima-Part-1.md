@@ -6,6 +6,7 @@ tags:
  - Blog
  - Minima
  - "GitHub Pages"
+toc: false
 ---
 
 On the face of it,  Minima is a fairly boring theme.

@@ -7,6 +7,7 @@ tags:
  - Blog
  - Hugo
  - SSG
+toc: false
 ---
 
 <p style="text-align:center;">
