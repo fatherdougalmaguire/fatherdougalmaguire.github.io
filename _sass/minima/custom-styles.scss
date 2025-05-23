@@ -149,9 +149,9 @@
 
 figure {
   border: 1px #cccccc solid;
-  padding: 4px;
   margin: auto;
   align-items: center;
+  object-fit: cover;
 }
 
 figcaption {
@@ -164,6 +164,9 @@ figcaption {
   float: left;
   width: 33.33%;
   padding: 5px;
+  border-radius: 15px;
+  background-color: #edf8d8;
+  
 }
 
 /* Clear floats after image containers */
@@ -307,7 +310,7 @@ a {
   margin: 0;
   padding: 0;
 }
-**/
+
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -315,7 +318,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+**/
 button,
 input,
 optgroup,

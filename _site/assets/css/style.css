@@ -111,7 +111,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  font: 250 16px/1.5 "Fira Sans", "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(65.25, 65.25, 65.25);
   background-color: WhiteSmoke;
   -webkit-text-size-adjust: 100%;
@@ -232,7 +232,7 @@ blockquote i, blockquote em {
  */
 pre,
 code {
-  font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  font-family: "Fira Code", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
   background-color: #f6f8fa;
 }
 @media screen and (max-width: 600px) {
@@ -631,7 +631,7 @@ table td {
 .post-content h1 {
   margin-bottom: 10px;
   font-size: 2.625rem;
-  font-weight: 400;
+  font-weight: 250;
   letter-spacing: -1px;
   line-height: 1.15;
 }
@@ -869,9 +869,9 @@ table td {
 
 figure {
   border: 1px #cccccc solid;
-  padding: 4px;
   margin: auto;
   align-items: center;
+  object-fit: cover;
 }
 
 figcaption {
@@ -884,6 +884,8 @@ figcaption {
   float: left;
   width: 33.33%;
   padding: 5px;
+  border-radius: 15px;
+  background-color: #edf8d8;
 }
 
 /* Clear floats after image containers */
@@ -1020,14 +1022,15 @@ a:hover {
   margin: 0;
   padding: 0;
 }
-**/
+
+
 body {
   -webkit-font-smoothing: antialiased;
   font-family: var(--font-family-body);
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+**/
 button,
 input,
 optgroup,
