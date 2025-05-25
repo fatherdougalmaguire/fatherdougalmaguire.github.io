@@ -6,9 +6,9 @@ toc: false
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
 
-![My first computer](/assets/images/Microbee32K_IC.png "Microbee screenshot")
+<!--![My first computer](/assets/images/Microbee32K_IC.png "Microbee screenshot")
 
-Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
+Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")-->
 
 \
 Back in distant past,  my family owned a Microbee. 

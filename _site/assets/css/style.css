@@ -288,7 +288,7 @@ code.highlighter-rouge {
  * Wrapper
  */
 .wrapper {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -739,25 +739,6 @@ table td {
   border-color: #BFDBFE;
 }
 
-.card {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background-color: #DBEAFE;
-  color: white;
-  border-radius: 8px;
-  padding: 10px;
-  border-style: solid;
-  border-width: thin;
-  border-color: #BFDBFE;
-  width: fit-content;
-  height: fit-content;
-}
-
-.card-image {
-  width: 50%;
-  height: 50%;
-}
-
 .nav_button:link, .nav_button:visited {
   background-color: limegreen;
   color: white;
@@ -867,32 +848,67 @@ table td {
   color: #0078d4;
 }
 
-figure {
-  border: 1px #cccccc solid;
-  margin: auto;
-  align-items: center;
-  object-fit: cover;
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-figcaption {
-  font-style: italic;
-  padding: 2px;
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  overflow: hidden;
   text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  border-radius: 15px;
-  background-color: #edf8d8;
+.card-img {
+  width: 100%;
+  height: auto;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.card-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+.card-description {
+  font-size: 1em;
+  color: limegreen;
+  margin: 0 0 16px 0;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: white !important;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
 }
 
 /* The sidebar menu */

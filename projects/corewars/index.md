@@ -5,10 +5,10 @@ include_search : true
 excerpt: I first read about CoreWars in old back issues of Scientific American.
 toc: false
 ---
-
+<!--
 ![pMARS screenshot](/assets/images/pmarssdl.png "pMARS screenshot")
 
-Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
+Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")-->
 
 \
 I first read about CoreWars in old back issues of Scientific American.
