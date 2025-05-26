@@ -145,7 +145,6 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
 }
 
 .card-img {
@@ -170,7 +169,6 @@
     font-size: 1em;
     color: limegreen;
     margin: 0 0 16px 0;
-    text-align: left;
     line-height: 1.4;
 }
 
@@ -187,6 +185,23 @@
 
 .card-button:hover {
     background-color: #0056b3;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    color: red;
+    font-weight: 600;
+  }
+}
+
+pre,
+code {
+  background-color: #BFDBFE;
 }
 
 /* The sidebar menu */

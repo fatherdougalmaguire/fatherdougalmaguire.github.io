@@ -5,21 +5,23 @@ include_search : true
 toc: false
 excerpt: Back in distant past,  my family owned a Microbee. 
 ---
-
-<!--![My first computer](/assets/images/Microbee32K_IC.png "Microbee screenshot")
-
-Photo credit : [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")-->
-
-\
 Back in distant past,  my family owned a Microbee. 
 
-The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology ), popular during the 1980's.  
+<img src="/assets/images/5031201695335267856.png" width="10%" alt="Microbee logo">
+
+The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology, later known as Microbee Systems ).
+
+Based on a number of <a href="https://en.wikipedia.org/wiki/S-100_bus">S-100</a> subsystems designed by Applied Technology,  the Microbee was released in 1982, originally as a kit and later as fully assembled models.
+
+It sold particularly well in the educational market, both in Australa and Scandinavia.
+
+Around 70,000 units were made across the 1980's
 
 <div class="callout"><img src="/assets/images/info-circle.svg" style="height: 20px; margin-top: -5px;fill: darkslateblue;"><a href="https://www.youtube.com/watch?v=c_KnOJ9JUcc" alt="Microbee promotional video"> Here is a promotional video of the era.</a></div>
 
-It sold particularly well in the educational market.
+#### Specifications, scmeshifications
 
-Initially supplied as a kit ( and later as fully assembled models ),  it driven by a Z80 CPU and came with a relatively generous 16 or 32 Kb of ram.
+ it driven by a Z80 CPU and came with a relatively generous 16 or 32 Kb of ram.
 
 BASIC was installed in ROM and used audio cassettes to store programs and data. 
 
@@ -27,26 +29,32 @@ Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to 
 
 The Microbee was distinct from it's competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).
 
-This was counterbalanced by lack of colour.  And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.
+This was counterbalanced by rather poor monophonic speaker output ( compared to competitors such as the C64 )
+And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.
 
-Plus there was a rather poor monophonic speaker output ( compared to competitors such as the C64 )
- 
+#### Funway into Emulation
+
 I spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.
 
 But I have always had a soft spot for the 'Bee.
 
-I came across a truly excellent PC-based emulator called [uBee512](https://www.microbee-mspp.org/repository/ "Microbee Software Preservation Project Repository").
+A couple of years ago, I came across a truly excellent PC-based emulator called [uBee512](https://www.microbee-mspp.org/repository/ "Microbee Software Preservation Project Repository").
 
-I spent many hours trying to build the source code under MacOS.  
+It was a blast running all the old software on my shiny new Mac hardware.
 
-Whilst eventually successful, it lead me to wonder whether or not I could build my own emulator.
+However,  there wasn't a build available for MacOS so I had to run it under a VM.
 
-So I have started on this massive undertaking and documenting my progress.
+I spent many hours trying to build the source code under MacOS and eventually I succeeded.
 
-Further information can be found at :
+I then had the harebrained idea to build a native MacOS version, partly as a way to get back into programming and partly to prove that I could.
+
+These pages will document my progress on this (foolhardy) enterprise.
+
+#### On the links
 
 - [Wikipedia](https://en.wikipedia.org/wiki/MicroBee "Wikipedia")
 - [Microbee Software Preservation Project](https://microbee-mspp.org/forum/index.php "Microbee Software Preservation Project")
 - [Microbee Technology Forum](https://microbeetechnology.com.au/forum/ "Microbee Technology Forum")
 - [Microbee Users Group](https://www.facebook.com/groups/100158753790849/ "Microbee Users Group")
+- [Project Granny Smith](https://www.smh.com.au/technology/secret-of-project-granny-smith-20050712-gdlo0m.html "Project Granny Smith")
 
