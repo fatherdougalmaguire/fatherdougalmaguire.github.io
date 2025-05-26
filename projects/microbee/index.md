@@ -7,7 +7,7 @@ excerpt: Back in distant past,  my family owned a Microbee.
 ---
 Back in distant past,  my family owned a Microbee. 
 
-<img src="/assets/images/5031201695335267856.png" width="10%" alt="Microbee logo">
+<img src="/assets/images/microbee_64.webp" alt="Microbee CIAB">
 
 The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology, later known as Microbee Systems ).
 
@@ -22,6 +22,7 @@ Around 70,000 units were made across the 1980's
 #### Specifications, scmeshifications
 
 The Microbee was driven by a Z80 CPU @ 3.375Mhz and came with a relatively generous 16 or 32 Kb of RAM.
+
 Further the memory was static ram,  allowing the Microbee to preserve memory state even after power-off ( thanks to an inbuilt battery )
 
 BASIC was installed in ROM and used audio cassettes to store programs and data.
