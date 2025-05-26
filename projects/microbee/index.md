@@ -21,9 +21,11 @@ Around 70,000 units were made across the 1980's
 
 #### Specifications, scmeshifications
 
- it driven by a Z80 CPU and came with a relatively generous 16 or 32 Kb of ram.
+The Microbee was driven by a Z80 CPU @ 3.375Mhz and came with a relatively generous 16 or 32 Kb of RAM.
+Further the memory was static ram,  allowing the Microbee to preserve memory state even after power-off ( thanks to an inbuilt battery )
 
-BASIC was installed in ROM and used audio cassettes to store programs and data. 
+BASIC was installed in ROM and used audio cassettes to store programs and data.
+You could optionally have a word processor ( Wordbee ) and editor/assembler ( EDASM ) in ROM as well. 
 
 Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to facilitate running CP/M 2.2.
 

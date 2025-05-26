@@ -45,7 +45,9 @@ Within this framework, these programs need to rely on complex strategies to defe
 
 Further,  genetic programming can be used to evolve warriors without human intervention.
 
-I decided to roll my own MARS environment as my second major project.
+Again,  I found that there were a dearth of MacOS based MARS environments.
+ 
+So I decided to roll my own as my second major project.
 
 #### On the links
 
