@@ -13,8 +13,6 @@ dl, dd, ol, ul, figure {
 
 }
 
-
-
 /**
  * Basic styling
  */
@@ -119,7 +117,7 @@ a {
   &:visited {
     color: $link-visited-color;
   }
-
+ 
   &:hover {
     color: $link-hover-color;
     text-decoration: underline $brand-color;

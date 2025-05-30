@@ -1,11 +1,25 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
-.button {
-  background-color: #F0F3F4;
-  max-width: 150px;
-  text-overflow: ellipsis;
-  padding: 20px;
+.callout
+{
+ margin-top:1em;
+ margin-bottom:1em;  
+ background-color: #DBEAFE;
+ color : white;
+ width : 100%;
+ border-radius: 8px;
+ padding: 10px;
+ border-style: solid;
+ border-width: thin; 
+ border-color: #BFDBFE;
+}
+
+.nav_button:link, .nav_button:visited {
+  background-color: $top-menu-colour;
+  color : white;
+  width : 33%;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -17,16 +31,53 @@
   white-space: nowrap;
 }
 
-.tag-highlight {
-  background-color: limegreen;
+.nav_button:hover, .nav_button:active {
+  background-color: $top-menu-colour-highlight;
+}
+
+.tag-highlight:link, .tag-highlight:visited {
+  background-color: $top-menu-colour;
   color: white;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   margin: 2px 2px;
   border-radius: 0px;
+}
+
+.tag-highlight:hover, .tag-hightlight:active {
+  background-color: $top-menu-colour-highlight;
+}
+
+.cookie_button {
+  background-color: dodgerblue ! important;
+  color: white ! important;
+  padding: 5px ! important;
+  text-align: center ! important;
+  text-decoration: none! important;
+  display: inline-block ! important;
+  font-size: 14px ! important;
+  margin: 2px 2px ! important;
+  border-radius: 5px ! important;
+}
+
+.archive_title
+{
+  text-indent: 30px ! important;
+  max-width:100% ! important;
+  white-space: nowrap;
+  overflow:hidden ! important;
+  text-overflow: ellipsis ! important;
+}
+
+.normal_title
+{
+  max-width:50% ! important;
+  white-space: nowrap;
+  overflow:hidden ! important;
+  text-overflow: ellipsis ! important;
 }
 
 /* Styling for the search box */
@@ -75,14 +126,130 @@
     color: #0078d4;
 }
 
-/** overload existing fonts **/
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
-body {
-  font-family: 'Raleway', serif;
+/* Card styles */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    flex: 1;
+    //padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+}
+
+.card-description {
+    font-size: 1em;
+    color: $top-menu-colour;
+    margin: 0 0 16px 0;
+    line-height: 1.4;
+}
+
+.card-button {
+    background-color: #007bff;
+    color: white ! important;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    text-decoration: none ! important;
+}
+
+.card-bar {
+    background-color : $top-menu-colour;
+    height:1em;
+    margin-bottom:0;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    color: red;
+    font-weight: 600;
   }
+}
 
-h1, h2, h3, h4, h5, .site-title, .site-nav {
-  font-family: 'Raleway', sans-serif;
+pre,
+code {
+  background-color: #BFDBFE;
+}
+
+.title-image {
+  height:50%;
+  object-fit:cover;
+}
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: LightGray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 
 /** overload existing CSS **/
@@ -90,7 +257,7 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 .site-title {
   @include relative-font-size(1.8);
   font-weight: 600;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   margin-bottom: 0;
   float: left;
 
@@ -100,18 +267,61 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
 
   &,
   &:visited {
-    color: limegreen;
+    color: $top-menu-colour;
   }
 }
 
-/** not working for some reason **/
+.site-title:hover {
+    text-decoration: none ! important;
+    font-weight : bold ! important; 
+  }
+
+a {
+  color: $link-base-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+   /* text-decoration: none ! important;
+    font-weight : bold ! important; */
+    text-decoration: underline;
+    text-decoration-style: dashed;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
 
 .nav-item {
     display: block;
     padding: 5px 0;
-    color: limegreen;
+    color: $top-menu-colour ! important;
     line-height: $base-line-height;
   }
+
+.nav-item:hover {
+    text-decoration: none ! important;
+    font-weight : bold ! important; 
+  }
+
+.nav-search
+
+{
+  color:$top-menu-colour ! important;
+  font-weight : bold ! important; 
+  font-size: 110%;
+  position: relative;
+  top: 2px;
+  text-decoration: none ! important;
+}
 
 /** Formspree **/
 
@@ -121,18 +331,18 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   --color-background: #e7e7e7;
   --color-background-alt: #888888;
   /** --color-border-active: #da7105; **/
-  --color-border-active: limegreen;
+  --color-border-active: $top-menu-colour;
   --color-border-default: #d1d1d1;
   --color-highlight: #fdcf4c;
   /** --color-primary: #b64e08; **/
-  --color-primary: limegreen    ;
+  --color-primary: $top-menu-colour;
   /** --color-primary-active: #79320e; **/
-  --color-primary-active: #008000;
+  --color-primary-active: $top-menu-colour-highlight;
   --color-text-default: #262626;
   --color-text-muted: #4f4f4f;
 
-  --font-family-body: "Raleway", system-ui, sans-serif;
-  --font-family-display: "Raleway", system-ui, sans-serif;
+  /**--font-family-body: "Raleway", system-ui, sans-serif;
+  --font-family-display: "Raleway", system-ui, sans-serif; **/
 }
 
 /** Base **/
@@ -143,11 +353,13 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   box-sizing: border-box;
 }
 
+/** removed from Formspree default CSS
 * {
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -155,7 +367,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+**/
 button,
 input,
 optgroup,
@@ -252,10 +464,12 @@ fieldset {
 }
 
 .fs-button {
-  background-color: var(--color-primary);
+  //background-color: var(--color-primary);
+  background-color: $top-menu-colour;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
+  border: none;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -266,7 +480,8 @@ fieldset {
 }
 
 .fs-button:hover {
-  background-color: var(--color-primary-active);
+  //background-color: var(--color-primary-active);
+  background-color: $top-menu-colour-highlight;
 }
 
 .fs-button:focus-visible {
@@ -472,4 +687,146 @@ fieldset {
 
 .fs-textarea::placeholder {
   color: var(--color-text-muted);
+}
+
+/*!
+ * jQCloud 2.0.3
+ * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
+ * Copyright 2013 Daniel White (http://www.developerdan.com)
+ * Copyright 2014-2017 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ */
+.jqcloud {
+  font: 10px "Raleway","Helvetica", "Arial", sans-serif;
+  line-height: normal;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer ! important;
+}
+
+.jqcloud-word {
+  margin: 0;
+  padding: 0;
+}
+.jqcloud-word.w1 {
+  color: #00BFFF;
+  font-size: 150%;
+}
+.jqcloud-word.w2 {
+  color: #00ace6;
+  font-size: 175%;
+}
+.jqcloud-word.w3 {
+  color: #0099cc;
+  font-size: 200%;
+}
+.jqcloud-word.w4 {
+  color: #0086b3;
+  font-size: 225%;
+}
+.jqcloud-word.w5 {
+  color: #007399;
+  font-size: 250%;
+}
+.jqcloud-word.w6 {
+  color: #006080;
+  font-size: 275%;
+}
+.jqcloud-word.w7 {
+  color: #004c66;
+  font-size: 300%;
+}
+.jqcloud-word.w8 {
+  color: #00394d;
+  font-size: 325%;
+}
+.jqcloud-word.w9 {
+  color: #00BFFF;
+  font-size: 350%;
+}
+.jqcloud-word.w10 {
+  color: #001319;
+  font-size: 375%;
+}
+
+.jqcloud-word.w1plus {
+  color: red;
+  font-size: 150%;
+}
+.jqcloud-word.w2plus {
+  color: red;
+  font-size: 175%;
+}
+.jqcloud-word.w3plus {
+  color: red;
+  font-size: 200%;
+}
+.jqcloud-word.w4plus {
+  color: red;
+  font-size: 225%;
+}
+.jqcloud-word.w5plus {
+  color: red;
+  font-size: 250%;
+}
+.jqcloud-word.w6plus {
+  color: red;
+  font-size: 275%;
+}
+.jqcloud-word.w7plus {
+  color: red;
+  font-size: 300%;
+}
+.jqcloud-word.w8plus {
+  color: red;
+  font-size: 325%;
+}
+.jqcloud-word.w9plus {
+  color: red;
+  font-size: 350%;
+}
+.jqcloud-word.w10plus {
+  color: red;
+  font-size: 375%;
+}
+
+/* from  https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog */
+
+.read-more {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+    display: none;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  display: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Continue reading...';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less...';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  padding: 1em .5em;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid $top-menu-colour;
+  border-radius: .25em;
+  font-weight: 500;
+  display: grid;
+  text-align: center;
 }

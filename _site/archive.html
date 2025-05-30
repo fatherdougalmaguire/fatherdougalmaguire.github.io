@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Archive | An ecumenical matter</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Archive" />
+<meta name="author" content="Tony Sanchez" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is my site. It’s nothing fancy." />
+<meta property="og:description" content="This is my site. It’s nothing fancy." />
+<link rel="canonical" href="http://localhost:4000/archive.html" />
+<meta property="og:url" content="http://localhost:4000/archive.html" />
+<meta property="og:site_name" content="An ecumenical matter" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Archive" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Tony Sanchez"},"description":"This is my site. It’s nothing fancy.","headline":"Archive","url":"http://localhost:4000/archive.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
+
+<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+<link rel="stylesheet" type="text/css" href="/assets/css/raleway.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-sans.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-code.css"> 
+
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> -->
+
+<link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/images/site.webmanifest" />
+
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script src="/assets/js/cookie.js"></script></head>
+
+<body><header class="site-header">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">An ecumenical matter</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon"></span>
+        </label>
+
+        <div class="drawer-container">
+          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a class="nav-search fa-solid fa-magnifying-glass" href="/search.html"></a>
+          </div>
+        </div>
+        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a class="nav-search fa-solid fa-magnifying-glass" href="/search.html"></a>
+        </div>
+      </nav>
+  </div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Archive</h1>
+  </header>
+
+  <div class="post-content">
+    <!--  old CDN list
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+-->
+
+<script src="/assets/js/jquery-3.7.1.min.js"></script>
+
+<!-- from https://github.com/mistic100/jQCloud -->
+<script src="/assets/js/jqcloud.min.js"></script>
+
+<p align="center"><b>Click on one or more tags to display matching posts.</b></p>
+
+<div class="wordcloud" style="height: 400px; width: 90%"></div>
+
+<div hidden="" id="tag_list"></div>
+
+<div id="selectedtags"></div>
+
+<script>
+  
+  $(document).ready(
+
+    function() 
+    {
+
+      function multiSort(arr, fields) 
+      {
+       arr.sort((a, b) => 
+      {
+        for (let field of fields) 
+        {
+        const [fieldName, order] = field.split(':');
+        const aValue = a[fieldName];
+        const bValue = b[fieldName];
+
+        if (aValue < bValue) return order === 'desc' ? 1 : -1;
+        if (aValue > bValue) return order === 'desc' ? -1 : 1;
+       }
+      return 0;
+       });
+    }
+
+  function BuildAllPostList() 
+    {
+      /*debugger;*/
+      var alltags = [];
+        alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Introducing Abeja", excerpt: "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",date : "2025-03-28T00:00:00Z", url : "/projects/microbee/2025/03/28/Introducing-Abeja.html", month_date : "March 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "How is Abeja structured ?", excerpt: "Coming soon!",date : "2025-04-08T00:00:00Z", url : "/projects/microbee/2025/04/08/Abejas-structure.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI", "Metal", "Shader"]', title: "Building a Metal shader for display output", excerpt: "Coming soon!",date : "2025-04-09T00:00:00Z", url : "/projects/microbee/2025/04/09/Shaders.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "UI Design", excerpt: "Coming soon!",date : "2025-04-10T00:00:00Z", url : "/projects/microbee/2025/04/10/UI-Design.html", month_date : "April 2025"});alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI"]', title: "Decoding CPU instructions", excerpt: "Coming soon!",date : "2025-04-11T00:00:00Z", url : "/projects/microbee/2025/04/11/CPU.html", month_date : "April 2025"});
+        alltags.push({category: "Corewars", tag : '["Redcode", "MARS", "Warriors", "MacOS", "Swift", "SwiftUI"]', title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});
+        alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Jekyll and GitHub pages", excerpt: "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.",date : "2025-03-25T00:00:00Z", url : "/projects/blogging/2025/03/25/Jekyll-and-GitHub-Pages.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Navigation and Content", excerpt: "On the face of it,  Minima is a fairly boring theme.",date : "2025-03-29T00:00:00Z", url : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages", "CSS"]', title: "Fun with CSS", excerpt: "Coming soon!",date : "2025-03-30T00:00:00Z", url : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html", month_date : "March 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Tags and Categories", excerpt: "Coming sojn!",date : "2025-04-01T00:00:00Z", url : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Search", excerpt: "Coming soon!",date : "2025-04-02T00:00:00Z", url : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "GitHub Pages"]', title: "Pagination", excerpt: "Coming soon!",date : "2025-04-18T00:00:00Z", url : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Email", "Contact form", "Google Analytics", "GitHub Pages"]', title: "Google Analytics and Cookie Consent and Contact Forms", excerpt: "Coming soon!",date : "2025-04-19T00:00:00Z", url : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Tag cloud"]', title: "Tag Cloud", excerpt: "Coming soon!",date : "2025-04-22T00:00:00Z", url : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html", month_date : "April 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Reading Time", "Social Media"]', title: "Reading Time and Social Media Sharing and continue reading", excerpt: "Coming soon!",date : "2025-05-09T00:00:00Z", url : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html", month_date : "May 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Minima", "Comments"]', title: "Comments", excerpt: "Coming soon!",date : "2025-05-10T00:00:00Z", url : "/projects/blogging/2025/05/10/Enhancing-Minima-Part-9.html", month_date : "May 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Hugo", "SSG"]', title: "Jekyll vs Hugo", excerpt: "Coming soon!",date : "2025-05-15T00:00:00Z", url : "/projects/blogging/2025/05/15/Enhancing-Minima-Part-10.html", month_date : "May 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Github Actions"]', title: "GitHub Actions", excerpt: "Coming soon!",date : "2025-05-16T00:00:00Z", url : "/projects/blogging/2025/05/16/Enhancing-Minima-Part-11.html", month_date : "May 2025"});alltags.push({category: "Blogging", tag : '["Jekyll", "Blog", "Plugins"]', title: "Jekyll Plugins", excerpt: "Coming soon!",date : "2025-05-17T00:00:00Z", url : "/projects/blogging/2025/05/17/Enhancing-Minima-Part-12.html", month_date : "May 2025"});return alltags;
+    }
+
+  function BuildPostList() 
+    {
+      var selectedtags = document.getElementById("selectedtags");
+      selectedtags.innerHTML = "";
+      var arrayLength = listotags.length;
+      var currentCategory = "";
+      var currentMonth = "";
+      var retrieve_selected_tags= document.getElementById("tag_list").innerText.slice(0,-1);
+      var selected_tags_array = retrieve_selected_tags.split("|").sort();
+      for (var i = 0; i < arrayLength; i++)
+      {
+        var sorted_tags= listotags[i].tag.replace('[','').replace(']','').replace(/"/g,'').replace(/, /g,',').split(",").sort();
+        var sorted_tags_length= selected_tags_array.filter(el => sorted_tags.includes(el)).length;
+        if (sorted_tags_length != 0)
+       {
+          if (currentCategory != listotags[i].category )
+          {
+            currentCategory = listotags[i].category;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<h3>" + currentCategory + '</h3><ul class="post-list">';
+            currentMonth = listotags[i].month_date;
+            selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
+          }
+          if ( currentMonth != listotags[i].month_date )
+          {
+           currentMonth = listotags[i].month_date;
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p style="+'"'+"text-indent: 15px;"+'"'+">"+currentMonth+"</p>";
+          }
+           selectedtags.innerHTML = selectedtags.innerHTML + "<p class="+'"'+"archive_title"+'"'+"><a href="+'"'+listotags[i].url+'"'+" title="+'"'+listotags[i].excerpt+'"'+">"+listotags[i].title+"</a></p>";
+      }
+        selectedtags.innerHTML = selectedtags.innerHTML + "</ul>";
+      }
+    }
+
+      function BuildTagList(passed_tag,first_run)
+        {
+  
+          if (first_run)
+            {
+              var tag_match = passed_tag;
+            }
+            else
+            {
+              var tag_match = passed_tag.currentTarget.innerText;
+            }
+          var allListElements = $( "[id*='_word_']" );
+          for (var i = 0; i < allListElements.length; i++)
+          {
+            var tagindex = tags.findIndex(x => x.text === tag_match );
+            if (allListElements[i].innerText == tag_match)
+              {
+                if (tags[tagindex].selected == 0 || first_run )
+                {
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class);
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class+"plus");
+                  tags[tagindex].selected = 1;
+                }
+                else
+                {
+                  $(allListElements[i]).removeClass(tags[tagindex].tag_class+"plus");
+                  $(allListElements[i]).addClass(tags[tagindex].tag_class);
+                  tags[tagindex].selected = 0;
+                }
+              } 
+          }
+          var selected_tags = "";
+          if (first_run)
+          {
+            selected_tags = document.getElementById("tag_list").innerHTML;
+          }
+          for (var i = 0; i < tags.length; i++)
+          {
+           if (tags[i].selected == 1)
+             {
+              selected_tags = selected_tags+tags[i].text+"|"; 
+             }
+          }
+          document.getElementById("tag_list").innerHTML = selected_tags; 
+          BuildPostList();
+        }
+  
+      function firsttag()
+      {
+        const searchParams = new URLSearchParams(window.location.search);
+        var allspan = $( "[id*='_word_']" );
+          for (var i = 0; i < allspan.length; i++)
+          {
+            for (var j = 0; j < tags.length; j++)
+            if (allspan[i].innerText == tags[j].text)
+              {
+                tags[j].tag_class = allspan[i].className;
+              } 
+          }
+        if (searchParams.has('id'))
+        {
+          document.getElementById("tag_list").innerHTML = searchParams.get('id')+"|";
+          BuildTagList(searchParams.get('id'),true);
+          /* set tag selected */
+        }
+      }
+
+      var tags = [];
+      var listotags = [];
+      var current_tag_name = "";
+      
+      current_tag_name = "Jekyll";
+        tags.push({text: "Jekyll", weight: 13, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Blog";
+        tags.push({text: "Blog", weight: 13, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Minima";
+        tags.push({text: "Minima", weight: 10, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "GitHub Pages";
+        tags.push({text: "GitHub Pages", weight: 7, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Redcode";
+        tags.push({text: "Redcode", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "MARS";
+        tags.push({text: "MARS", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Warriors";
+        tags.push({text: "Warriors", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "MacOS";
+        tags.push({text: "MacOS", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Swift";
+        tags.push({text: "Swift", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "SwiftUI";
+        tags.push({text: "SwiftUI", weight: 6, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Z80";
+        tags.push({text: "Z80", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Emulation";
+        tags.push({text: "Emulation", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Retro Computing";
+        tags.push({text: "Retro Computing", weight: 5, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "CSS";
+        tags.push({text: "CSS", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Metal";
+        tags.push({text: "Metal", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Shader";
+        tags.push({text: "Shader", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Email";
+        tags.push({text: "Email", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Contact form";
+        tags.push({text: "Contact form", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Google Analytics";
+        tags.push({text: "Google Analytics", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Tag cloud";
+        tags.push({text: "Tag cloud", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Reading Time";
+        tags.push({text: "Reading Time", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Social Media";
+        tags.push({text: "Social Media", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Comments";
+        tags.push({text: "Comments", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Hugo";
+        tags.push({text: "Hugo", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "SSG";
+        tags.push({text: "SSG", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Github Actions";
+        tags.push({text: "Github Actions", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      current_tag_name = "Plugins";
+        tags.push({text: "Plugins", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+      
+      multiSort(listotags, ['category:desc','date:asc']);
+      $(".wordcloud").jQCloud(tags, {removeOverflowing: true, afterCloudRender: function() { firsttag() }} );
+      listotags = BuildAllPostList();
+    });
+</script>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </main><style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: limegreen; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
+    <a id="cookie-notice-accept" class="cookie_button">Approve</a>
+    <a id="cookie-notice-reject" class="cookie_button">Reject</a>
+    <a href="/privacy" class="cookie_button">More info</a>
+</div>
+
+<script>
+    if(readCookie('cookie-type') != 'accept' && readCookie('cookie-type') != 'reject' ) 
+    {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-type','accept',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-reject').addEventListener("click",function() {
+        createCookie('cookie-type','reject',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+</script>
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="http://localhost:4000/feed.xml">
+            <svg class="svg-icon orange">
+              <path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194
+                11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0
+                13.806c0-1.21.983-2.195 2.194-2.195zM10.606
+                16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"
+              />
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+        <ul class="contact-list">
+          <li class="p-name">&copy; 2025 Tony Sanchez</li>
+            <li class="p-name">Licenced under Creative Commons</li>
+            <li class="p-name" style="margin-top: 1em;margin-bottom: 1em;"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" alt="Creative Commons 4.0 BY-NC-SA licence"><img src="/assets/images/by-nc-sa.svg"></img></a></li>
+          
+          <li class="p-name">Based on the <a href="https://github.com/jekyll/minima">Minima</a> theme.</li>
+          <li>&nbsp;</li>
+          <li class="p-name"><a href="/privacy">Privacy Statement and Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p>This is my site. It&#39;s nothing fancy.</p>
+      </div>
+    </div>
+    <div class="social-links"><ul class="social-media-list"><li>
+    <a rel="me" href="https://github.com/fatherdougalmaguire" target="_blank" title="My GitHub repositories">
+      <span class="fa-brands fa-github fa-lg"></span>
+    </a>
+  </li><li>
+    <a rel="me" href="https://bsky.app/profile/fathertedcrilly.bsky.social" target="_blank" title="Bluesky">
+      <span class="fa-brands fa-bluesky fa-lg"></span>
+    </a>
+  </li><li>
+    <a rel="me" href="https://mastodon.social/@Fathertedcrilly" target="_blank" title="Mastadon">
+      <span class="fa-brands fa-mastodon fa-lg"></span>
+    </a>
+  </li></ul>
+</div>
+    <div align=center style="margin-top: 1em;">
+     <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#ffa500', 'Y8Y31ET6AR');kofiwidget2.draw();</script> 
+    </div>
+  </div>
+
+</footer>
+
+</body>
+
+</html>

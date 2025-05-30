@@ -9,19 +9,18 @@ Contrary to what the the site title may lead you to believe, I am not an Irish p
 
 I live in Sydney, Australia and work for the technology arm of a large financial institution.    
 
-That being said, my skills are more technology adjacent.    
+That being said, my skills are more technology adjacent.  
+So when it comes to HTML/CSS/JS et al,  I am entirely self-taught.
 
-But I do own a beautiful black cat.
+Which will become pretty obvious if you page through the blog,
 
-This isn't him.  
+On the plus side, I do own a beautiful black cat.
 
-![](/assets/images/andreea-popa-6ST6S6i9IGM-unsplash-original.jpg "A black cat")
+![A black cat](/assets/images/aboutme.jpg "A black cat")
 
-Photo credit : [Andreea Popa](https://unsplash.com/@elfcodobelf "Unsplash")
-
-<br>
-### Drop me a line
-<br>
+<div style="margin-top:1em;margin-bottom:1em;">
+  <h3>Drop me a line</h3>
+</div>
 
 <form
   action="https://formspree.io/f/mqaqzpgo"

@@ -3,17 +3,18 @@
  */
 .site-header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
   background-color: $background-color;
-  border-top: 5px solid $border-color-03;
+  //border-top: 5px solid $border-color-03;
   border-bottom: 1px solid $border-color-01;
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -85,7 +86,7 @@
       transition: width 0.5s;
       overflow: hidden;
       background-color: $background-color;
-      border-left: 1px solid;
+      border-left: 1px solid; 
       border-left-color: transparent;
       .drawer { opacity: 0 }
     }

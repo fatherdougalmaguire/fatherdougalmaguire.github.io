@@ -1,23 +1,83 @@
 [
   
     {
-      "title"    : "Enhancing Minima Part 6 - Google Analytics and Contact Forms",
+      "title"    : "Jekyll Plugins",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Plugins",
+      "url"      : "/projects/blogging/2025/05/17/Enhancing-Minima-Part-12.html",
+      "date"     : "May 17, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tHeader 1Bacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Header 1.1Header 2Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "GitHub Actions",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Github Actions",
+      "url"      : "/projects/blogging/2025/05/16/Enhancing-Minima-Part-11.html",
+      "date"     : "May 16, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "Jekyll vs Hugo",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Hugo, SSG",
+      "url"      : "/projects/blogging/2025/05/15/Enhancing-Minima-Part-10.html",
+      "date"     : "May 15, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "Comments",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Comments",
+      "url"      : "/projects/blogging/2025/05/10/Enhancing-Minima-Part-9.html",
+      "date"     : "May 10, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "Reading Time and Social Media Sharing and continue reading",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Reading Time, Social Media",
+      "url"      : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html",
+      "date"     : "May  9, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "Tag Cloud",
+      "category" : "projects, blogging",
+      "tags"     : "Jekyll, Blog, Minima, Tag cloud",
+      "url"      : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
+      "date"     : "April 22, 2025",
+      "excerpt"  :  "Coming soon!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
+    } ,
+  
+    {
+      "title"    : "Google Analytics and Cookie Consent and Contact Forms",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, Email, Contact form, Google Analytics, GitHub Pages",
       "url"      : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
       "date"     : "April 19, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
-      "title"    : "Enhancing Minima Part 5 - Pagination",
+      "title"    : "Pagination",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
       "url"      : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
       "date"     : "April 18, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -27,7 +87,7 @@
       "url"      : "/projects/microbee/2025/04/11/CPU.html",
       "date"     : "April 11, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -37,7 +97,7 @@
       "url"      : "/projects/microbee/2025/04/10/UI-Design.html",
       "date"     : "April 10, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -47,7 +107,7 @@
       "url"      : "/projects/microbee/2025/04/09/Shaders.html",
       "date"     : "April  9, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -57,47 +117,47 @@
       "url"      : "/projects/microbee/2025/04/08/Abejas-structure.html",
       "date"     : "April  8, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
-      "title"    : "Enhancing Minima Part 4 - Search",
+      "title"    : "Search",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
       "url"      : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
       "date"     : "April  2, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
-      "title"    : "Enhancing Minima Part 3 - Tags and Categories",
+      "title"    : "Tags and Categories",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
       "url"      : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
       "date"     : "April  1, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "excerpt"  :  "Coming sojn!",
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
-      "title"    : "Enhancing Minima Part 2 - Fonts and Colours",
+      "title"    : "Fun with CSS",
       "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
+      "tags"     : "Jekyll, Blog, Minima, GitHub Pages, CSS",
       "url"      : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
       "date"     : "March 30, 2025",
       "excerpt"  :  "Coming soon!",
-      "content"  :  "Coming soon!\t"
+      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
-      "title"    : "Enhancing Minima Part 1 - Navigation and Content",
+      "title"    : "Navigation and Content",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
       "url"      : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
       "date"     : "March 29, 2025",
       "excerpt"  :  "On the face of it,  Minima is a fairly boring theme.",
-      "content"  :  "On the face of it,  Minima is a fairly boring theme."
+      "content"  :  "On the face of it,  Minima is a fairly boring theme.\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
     } ,
   
     {
@@ -121,23 +181,13 @@
     } ,
   
     {
-      "title"    : "Getting started with Minima and GitHub pages",
+      "title"    : "Jekyll and GitHub pages",
       "category" : "projects, blogging",
       "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/26/Github-pages.html",
-      "date"     : "March 26, 2025",
-      "excerpt"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.",
-      "content"  :  "I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.But I got hopelessly lost trying to modify the complex and visually appealing options.And it was taking me away from actually publishing any content.Not to mention actually working on said content.So how did I do it ?Coming soon!\t"
-    } ,
-  
-    {
-      "title"    : "Jekyll",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/25/Jekyll.html",
+      "url"      : "/projects/blogging/2025/03/25/Jekyll-and-GitHub-Pages.html",
       "date"     : "March 25, 2025",
-      "excerpt"  :  "  The instructions and code within are current as of 25th March 2025.",
-      "content"  :  "  The instructions and code within are current as of 25th March 2025."
+      "excerpt"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.",
+      "content"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io  The instructions and code within are current as of 25th March 2025."
     } 
   
 
@@ -155,11 +205,14 @@
       "url"      : "/about",
       "date"     : "",
       "excerpt"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.",
-      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.But I do own a beautiful black cat.This isn’t him.Photo credit : Andreea PopaDrop me a line      Your Name            Email              This will help me respond to your query via an email.            Message        What would you like to discuss?        Submit  "
+      "content"  :  "Contrary to what the the site title may lead you to believe, I am not an Irish priest living in exile on a windswept island.I live in Sydney, Australia and work for the technology arm of a large financial institution.That being said, my skills are more technology adjacent.So when it comes to HTML/CSS/JS et al,  I am entirely self-taught.Which will become pretty obvious if you page through the blog,On the plus side, I do own a beautiful black cat.  Drop me a line      Your Name            Email              This will help me respond to your query via an email.            Message        What would you like to discuss?        Submit  "
     } 
     
      
     
+
+  
+   
 
   
    
@@ -172,41 +225,7 @@
       "url"      : "/",
       "date"     : "",
       "excerpt"  :  "As a teenager, I spent a lot of my free time mucking about with the family&#39;s home computer.",
-      "content"  :  "Photo credit: Daniele FranchiAs a teenager, I spent a lot of my free time mucking about with the family&#39;s home computer.  I built a bunch of cool things ( since lost to the ages )  Life ( as it is want to do ) takes you different places and coding fell by the way side.  In recent times,  I have wanted to pick up the baton again and get my head around how things have changed.  A few projects have been bubbling around in my mind and I wanted to document what I will be doing so things don&#39;t ( once again ) fall down the back of the metaphorical couch.  I thought about a YouTube channel.  And then a podcast.  Recognising that I would be terrible at either of these options, I quickly came to my senses and decided that a blog might be the way to go.  These pages will attempt to track my journey into this new world.  I&#39;m concentrating on three main projects at the moment.\tMicrobee - Revisiting a computer from my youth by way of a emulator.\tCorewars - Programs battle for supremacy inside a virtual computer. \tBlogging - Using Jekyll to build my own blog.Latest Posts"
-    } 
-    
-     
-    
-
-  
-   
-   
-   
-   ,{
-      "title"    : "Microbee",
-      "category" : "",
-      "tags"     : "true",
-      "url"      : "/projects/microbee/",
-      "date"     : "",
-      "excerpt"  :  "Back in distant past,  my family owned a Microbee.",
-      "content"  :  "Photo credit : WikipediaBack in distant past,  my family owned a Microbee.The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology ), popular during the 1980’s.It sold particularly well in the educational market.Initially supplied as a kit ( and later as fully assembled models ),  it driven by a Z80 CPU and came with a relatively generous 16 or 32 Kb of ram.BASIC was installed in ROM and used audio cassettes to store programs and data.Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to facilitate running CP/M 2.2.The Microbee was distinct from it’s competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).This was counterbalanced by lack of colour.  And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.Plus there was a rather poor monophonic speaker output ( compared to competitors such as the C64 )I spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.But I have always had a soft spot for the ‘Bee.I came across a truly excellent PC-based emulator called uBee512.I spent many hours trying to build the source code under MacOS.Whilst eventually successful, it lead me to wonder whether or not I could build my own emulator.So I have started on this massive undertaking and documenting my progress.Further information can be found at :  Wikipedia  Microbee Software Preservation Project  Microbee Technology Forum  Microbee Users GroupRelated postsMar 28, 2025      Introducing Abeja      I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.          Apr 08, 2025      How is Abeja structured ?      Coming soon!          Apr 09, 2025      Building a Metal shader for display output      Coming soon!          Apr 10, 2025      UI Design      Coming soon!          Apr 11, 2025      Decoding CPU instructions      Coming soon!          "
-    } 
-    
-     
-    
-
-  
-   
-   
-   
-   ,{
-      "title"    : "CoreWars",
-      "category" : "",
-      "tags"     : "true",
-      "url"      : "/projects/corewars/",
-      "date"     : "",
-      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
-      "content"  :  "I first read about CoreWars in old back issues of Scientific American.And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )Each program battles each other in attempt to stop the other executing and essentially win the battle.Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.I decided to roll my own MARS environment as my second major project.Further information can be found at :  Wikipedia  Core War - the Ultimate Programming GameRelated postsMar 27, 2025      Is there LifeOnMars ?      I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.          "
+      "content"  :  "As a teenager, I spent a lot of my free time mucking about with the family&#39;s home computer. I built a bunch of cool things ( since lost to the ages ) Life ( as it is want to do ) takes you different places and coding fell by the way side. In recent times,  I have wanted to pick up the baton again and get my head around how things have changed. A few projects have been bubbling around in my mind and I wanted to document what I will be doing so things don&#39;t ( once again ) fall down the back of the metaphorical couch. I thought about a YouTube channel.  And then a podcast.   Recognising that I would be terrible at either of these options, I quickly came to my senses and decided that a blog might be the way to go. These pages will attempt to track my journey into this new world. I&#39;m concentrating on three main projects at the moment:                                                                                  Microbee                                                    Revisiting a computer from my youth by way of a emulator.                                                                                                                                                         Corewars                                                    Programs battle for supremacy inside a virtual computer.                                                                                                                                                     Blogging                                                    Using Jekyll to build my own blog.                                                                     Latest Posts"
     } 
     
      
@@ -223,7 +242,41 @@
       "url"      : "/projects/blogging/",
       "date"     : "",
       "excerpt"  :  "I thought it my be a good idea to track the progress of my various software projects.",
-      "content"  :  "I thought it my be a good idea to track the progress of my various software projects.Mainly as I am notoriously bad at documentationBut also give me a way to track my progress.Or lack thereof.I had thought of using Google Sites ( as it already came with Google Workspace ) but I found the limitations of a turnkey solution a little frustrating.After checking out the various bogging options available ( and being a little frustrated by the limitations of the turnkey options such as Google Sites I stumbled across GitHub Pages.Not withstanding the fact that it is free, I was intrigued by the ability to use Jekyll, an open source static site generator created especially with blogging in mind.There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.ioRelated postsMar 25, 2025      Jekyll        The instructions and code within are current as of 25th March 2025.          Mar 26, 2025      Getting started with Minima and GitHub pages      I’ve ended up building this site using the default Jekyll theme Minima.On the face of it,  Minima is a fairly boring theme.          Mar 29, 2025      Enhancing Minima Part 1 - Navigation and Content      On the face of it,  Minima is a fairly boring theme.          Mar 30, 2025      Enhancing Minima Part 2 - Fonts and Colours      Coming soon!          Apr 01, 2025      Enhancing Minima Part 3 - Tags and Categories      Coming soon!          Apr 02, 2025      Enhancing Minima Part 4 - Search      Coming soon!          Apr 18, 2025      Enhancing Minima Part 5 - Pagination      Coming soon!          Apr 19, 2025      Enhancing Minima Part 6 - Google Analytics and Contact Forms      Coming soon!          "
+      "content"  :  "I thought it my be a good idea to track the progress of my various software projects by way of a blog.Mainly as I am notoriously bad at documentation.But also give me a way to track my progress.Or lack thereof.This then begs the questions:  How do you build a blog ?  Where to host it ?  How much will it cost ?Questions, Questions, QuestionsGiven that this is a vanity project,cost became the prime consideration.After all, zero dollar options were the easiest to justify to the good lady her indoors.So it then becane a decision on whether I went with a turnkey solution like Google Sites, start from scratch or find some happy medium in-between.I became somewhat frustrated with Google Sites as I couldn’t style it the way I wanted ( notwithstanding I had access to an unused instance just hanging around) .Starting from scratch seemed to be a fool’s errand.I didn’t know one end of a CSS from another and the last time I created a web page, the BLINK tag was de rigueur.Then I stumbled across my goldilocks solution.Static Site GeneratorsFor those not familar with the term, a static site generator (SSG) takes fixed textual content, applies an HTML template to it and generates web pages.The resultant pages are uploaded to a hosting site and bob’s your uncle, you have a blog.And because you can choose different HTML templates, you can achieve a multiplicity of output styles without having to know much about web design.I chose Jekyll as my starting point as it seem to have the largest user community.But there are a number of different options out there:  Hugo  Eleventy  Next.jsamongst othersMein HostMy software projects use GitHub to host their source code.As part of a GitHub account, I have access to GitHub Pages.You get one site aligned to your GitHub username ( known as a “user site” ) and any number of subsidary sites ( known as “project sites” ).And GitHub Pages supports Jekyll out of the box.As with SSG’s, there are other hosting alternatives out there ( i.e. Netlify)As much as I dislike the phrase “journey”, as I build out my blog, I’ll post some explanation of what I did along the way in the hope it may be of use to someone.Or a cautionary tale of being sucked into the futzing swamp."
+    } 
+    
+     
+    
+
+  
+   
+   
+   
+   ,{
+      "title"    : "Microbee",
+      "category" : "",
+      "tags"     : "true",
+      "url"      : "/projects/microbee/",
+      "date"     : "",
+      "excerpt"  :  "Back in distant past,  my family owned a Microbee.",
+      "content"  :  "Back in distant past,  my family owned a Microbee.The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology, later known as Microbee Systems ).Based on a number of S-100 subsystems designed by Applied Technology,  the Microbee was released in 1982, originally as a kit and later as fully assembled models.It sold particularly well in the educational market, both in Australia and Scandinavia.Around 70,000 units were made across the 1980’s Here is a promotional video of the era.Specifications, scmeshificationsThe Microbee was driven by a Z80A CPU @ 3.375Mhz and came with a relatively generous 16 or 32 Kb of RAM.Further the memory was static, allowing the Microbee to preserve memory state even after power-off ( thanks to an inbuilt battery )BASIC was installed in ROM and used audio cassettes to store programs and data.You could optionally have a word processor ( Wordbee ) and editor/assembler ( EDASM ) in ROM as well.Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to facilitate running CP/M 2.2.The Microbee was distinct from it’s competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).This was counterbalanced by rather poor monophonic speaker output ( compared to competitors such as the C64 )And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.Funway into EmulationI spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.But I have always had a soft spot for the ‘Bee.A couple of years ago, I came across a truly excellent PC-based emulator called uBee512.It was a blast running all the old software on my shiny new Mac hardware.However,  there wasn’t a build available for MacOS so I had to run it under a VM.I spent many hours trying to build the source code under MacOS and eventually I succeeded.I then had the harebrained idea to build a native MacOS version, partly as a way to get back into programming and partly to prove that I could.These pages will document my progress on this (foolhardy) enterprise.On the links  Wikipedia  Microbee Software Preservation Project  Microbee Technology Forum  Microbee Users Group  Project Granny Smith"
+    } 
+    
+     
+    
+
+  
+   
+   
+   
+   ,{
+      "title"    : "CoreWars",
+      "category" : "",
+      "tags"     : "true",
+      "url"      : "/projects/corewars/",
+      "date"     : "",
+      "excerpt"  :  "I first read about CoreWars in old back issues of Scientific American.",
+      "content"  :  "I first read about CoreWars back when I was at university.( I was avoiding studying for a physics exam by reading old back issues of Scientific American )And I was hooked.CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual machine ( called MARS or Memory Array Redcode Simulator )Photo credit : WikipediaLet the battle commenceEach program ( or warrior ) takes turn in executing their code in a circular memory space or core ( when you reach the end of the core,  executing wraps around to the start ).The program that executes the NOP instruction is deemed the loser.Redcode itself closely resembles assembly language.The code below is a particularly famous Redcode warrior called an ImpMOV 0, 1An Imp simply copies itself one instruction ahead in the virtual machine ( using relative addressing )And when it gets to that instruction, it copies itself again.  And so on.A more complex warrior is known as a DwarfADD #4, 3        MOV 2, @2JMP -2DAT #0, #0I won’t delve into the details of a Dwarf but essentially it writes a NOP every 4 address spaces,  ‘bombing’ the core and hopefully eliminating the opponent.Within this framework, these programs need to rely on complex strategies to defeat their opponents.Further,  genetic programming can be used to evolve warriors without human intervention.Roll my ownWhilst there were more options viz-a-viz MARS environments,  they were mostly CLI versions that needed to be built from source.I was interested in something a little more graphical and that could be extended with GenAI capability for warrior creation/evolution.So I decided to roll my own as my second major project.On the links  Wikipedia  Core War - the Ultimate Programming Game"
     } 
     
      
@@ -234,6 +287,12 @@
 
   
    
+
+  
+   
+   
+    
+    
 
   
    

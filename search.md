@@ -1,6 +1,6 @@
 ---
 title: "Search"
-layout: post
+layout: page
 ---
 
 <p style="text-align:center;">Can't find what you are looking for ?</p>

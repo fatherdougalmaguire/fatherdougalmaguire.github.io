@@ -111,9 +111,9 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 400 16px/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  font: 250 16px/1.5 "Fira Sans", "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(65.25, 65.25, 65.25);
-  background-color: #fdfdfd;
+  background-color: WhiteSmoke;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -232,7 +232,7 @@ blockquote i, blockquote em {
  */
 pre,
 code {
-  font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+  font-family: "Fira Code", "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
   background-color: #f6f8fa;
 }
 @media screen and (max-width: 600px) {
@@ -288,7 +288,7 @@ code.highlighter-rouge {
  * Wrapper
  */
 .wrapper {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -366,17 +366,17 @@ table td {
  */
 .site-header {
   position: fixed;
+  z-index: 1;
   width: 100%;
   min-height: 55.95px;
   line-height: 54px;
-  background-color: #fdfdfd;
-  border-top: 5px solid rgb(65.25, 65.25, 65.25);
+  background-color: WhiteSmoke;
   border-bottom: 1px solid #e7e7e7;
 }
 
 .site-title {
   font-size: 1.625rem;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -394,7 +394,7 @@ table td {
   position: absolute;
   top: 9px;
   right: 18px;
-  background-color: #fdfdfd;
+  background-color: WhiteSmoke;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
   text-align: right;
@@ -438,7 +438,7 @@ table td {
   height: calc(100vh - 60px);
   transition: width 0.5s;
   overflow: hidden;
-  background-color: #fdfdfd;
+  background-color: WhiteSmoke;
   border-left: 1px solid;
   border-left-color: transparent;
 }
@@ -631,7 +631,7 @@ table td {
 .post-content h1 {
   margin-bottom: 10px;
   font-size: 2.625rem;
-  font-weight: 400;
+  font-weight: 250;
   letter-spacing: -1px;
   line-height: 1.15;
 }
@@ -726,11 +726,24 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
-.button {
-  background-color: #F0F3F4;
-  max-width: 150px;
-  text-overflow: ellipsis;
-  padding: 20px;
+.callout {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #DBEAFE;
+  color: white;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #BFDBFE;
+}
+
+.nav_button:link, .nav_button:visited {
+  background-color: Orange;
+  color: white;
+  width: 33%;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -742,16 +755,51 @@ table td {
   white-space: nowrap;
 }
 
-.tag-highlight {
-  background-color: limegreen;
+.nav_button:hover, .nav_button:active {
+  background-color: DarkOrange;
+}
+
+.tag-highlight:link, .tag-highlight:visited {
+  background-color: Orange;
   color: white;
   padding: 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   margin: 2px 2px;
   border-radius: 0px;
+}
+
+.tag-highlight:hover, .tag-hightlight:active {
+  background-color: DarkOrange;
+}
+
+.cookie_button {
+  background-color: dodgerblue !important;
+  color: white !important;
+  padding: 5px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  display: inline-block !important;
+  font-size: 14px !important;
+  margin: 2px 2px !important;
+  border-radius: 5px !important;
+}
+
+.archive_title {
+  text-indent: 30px !important;
+  max-width: 100% !important;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.normal_title {
+  max-width: 50% !important;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 /* Styling for the search box */
@@ -800,20 +848,139 @@ table td {
   color: #0078d4;
 }
 
-/** overload existing fonts **/
-body {
-  font-family: "Raleway", serif;
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-h1, h2, h3, h4, h5, .site-title, .site-nav {
-  font-family: "Raleway", sans-serif;
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0 0 8px 0;
+}
+
+.card-description {
+  font-size: 1em;
+  color: Orange;
+  margin: 0 0 16px 0;
+  line-height: 1.4;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: white !important;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-decoration: none !important;
+}
+
+.card-bar {
+  background-color: Orange;
+  height: 1em;
+  margin-bottom: 0;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+    color: red;
+    font-weight: 600;
+  }
+}
+pre,
+code {
+  background-color: #BFDBFE;
+}
+
+.title-image {
+  height: 50%;
+  object-fit: cover;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: LightGray;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
 /** overload existing CSS **/
 .site-title {
   font-size: 1.8rem;
   font-weight: 600;
-  letter-spacing: -1px;
+  /*letter-spacing: -1px;*/
   margin-bottom: 0;
   float: left;
 }
@@ -823,15 +990,53 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   }
 }
 .site-title, .site-title:visited {
-  color: limegreen;
+  color: Orange;
 }
 
-/** not working for some reason **/
+.site-title:hover {
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(22.9483471074, 86.2541322314, 168.5516528926);
+}
+a:hover {
+  /* text-decoration: none ! important;
+   font-weight : bold ! important; */
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+.social-media-list a:hover, .pagination a:hover {
+  text-decoration: none;
+}
+.social-media-list a:hover .username, .pagination a:hover .username {
+  text-decoration: underline;
+}
+
 .nav-item {
   display: block;
   padding: 5px 0;
-  color: limegreen;
+  color: Orange !important;
   line-height: 1.5;
+}
+
+.nav-item:hover {
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.nav-search {
+  color: Orange !important;
+  font-weight: bold !important;
+  font-size: 110%;
+  position: relative;
+  top: 2px;
+  text-decoration: none !important;
 }
 
 /** Formspree **/
@@ -840,17 +1045,17 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   --color-background: #e7e7e7;
   --color-background-alt: #888888;
   /** --color-border-active: #da7105; **/
-  --color-border-active: limegreen;
+  --color-border-active: $top-menu-colour;
   --color-border-default: #d1d1d1;
   --color-highlight: #fdcf4c;
   /** --color-primary: #b64e08; **/
-  --color-primary: limegreen ;
+  --color-primary: $top-menu-colour;
   /** --color-primary-active: #79320e; **/
-  --color-primary-active: #008000;
+  --color-primary-active: $top-menu-colour-highlight;
   --color-text-default: #262626;
   --color-text-muted: #4f4f4f;
-  --font-family-body: "Raleway", system-ui, sans-serif;
-  --font-family-display: "Raleway", system-ui, sans-serif;
+  /**--font-family-body: "Raleway", system-ui, sans-serif;
+  --font-family-display: "Raleway", system-ui, sans-serif; **/
 }
 
 /** Base **/
@@ -860,11 +1065,13 @@ h1, h2, h3, h4, h5, .site-title, .site-nav {
   box-sizing: border-box;
 }
 
+/** removed from Formspree default CSS
 * {
   border: 0;
   margin: 0;
   padding: 0;
 }
+
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -872,7 +1079,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
 }
-
+**/
 button,
 input,
 optgroup,
@@ -968,10 +1175,11 @@ fieldset {
 }
 
 .fs-button {
-  background-color: var(--color-primary);
+  background-color: Orange;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
+  border: none;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -982,7 +1190,7 @@ fieldset {
 }
 
 .fs-button:hover {
-  background-color: var(--color-primary-active);
+  background-color: DarkOrange;
 }
 
 .fs-button:focus-visible {
@@ -1188,6 +1396,166 @@ fieldset {
 
 .fs-textarea::placeholder {
   color: var(--color-text-muted);
+}
+
+/*!
+ * jQCloud 2.0.3
+ * Copyright 2011 Luca Ongaro (http://www.lucaongaro.eu)
+ * Copyright 2013 Daniel White (http://www.developerdan.com)
+ * Copyright 2014-2017 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ */
+.jqcloud {
+  font: 10px "Raleway", "Helvetica", "Arial", sans-serif;
+  line-height: normal;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer !important;
+}
+
+.jqcloud-word {
+  margin: 0;
+  padding: 0;
+}
+
+.jqcloud-word.w1 {
+  color: #00BFFF;
+  font-size: 150%;
+}
+
+.jqcloud-word.w2 {
+  color: #00ace6;
+  font-size: 175%;
+}
+
+.jqcloud-word.w3 {
+  color: #0099cc;
+  font-size: 200%;
+}
+
+.jqcloud-word.w4 {
+  color: #0086b3;
+  font-size: 225%;
+}
+
+.jqcloud-word.w5 {
+  color: #007399;
+  font-size: 250%;
+}
+
+.jqcloud-word.w6 {
+  color: #006080;
+  font-size: 275%;
+}
+
+.jqcloud-word.w7 {
+  color: #004c66;
+  font-size: 300%;
+}
+
+.jqcloud-word.w8 {
+  color: #00394d;
+  font-size: 325%;
+}
+
+.jqcloud-word.w9 {
+  color: #00BFFF;
+  font-size: 350%;
+}
+
+.jqcloud-word.w10 {
+  color: #001319;
+  font-size: 375%;
+}
+
+.jqcloud-word.w1plus {
+  color: red;
+  font-size: 150%;
+}
+
+.jqcloud-word.w2plus {
+  color: red;
+  font-size: 175%;
+}
+
+.jqcloud-word.w3plus {
+  color: red;
+  font-size: 200%;
+}
+
+.jqcloud-word.w4plus {
+  color: red;
+  font-size: 225%;
+}
+
+.jqcloud-word.w5plus {
+  color: red;
+  font-size: 250%;
+}
+
+.jqcloud-word.w6plus {
+  color: red;
+  font-size: 275%;
+}
+
+.jqcloud-word.w7plus {
+  color: red;
+  font-size: 300%;
+}
+
+.jqcloud-word.w8plus {
+  color: red;
+  font-size: 325%;
+}
+
+.jqcloud-word.w9plus {
+  color: red;
+  font-size: 350%;
+}
+
+.jqcloud-word.w10plus {
+  color: red;
+  font-size: 375%;
+}
+
+/* from  https://jonnylangefeld.com/blog/how-to-add-a-read-more-button-that-doesnt-suck-to-your-jekyll-blog */
+.read-more {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+  display: none;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  display: inherit;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Continue reading...";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Show less...";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  padding: 1em 0.5em;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid Orange;
+  border-radius: 0.25em;
+  font-weight: 500;
+  display: grid;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

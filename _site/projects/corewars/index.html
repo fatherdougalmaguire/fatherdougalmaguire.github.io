@@ -22,7 +22,12 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="An ecumenical matter" />
 
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+<link rel="stylesheet" type="text/css" href="/assets/css/raleway.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-sans.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/fira-code.css"> 
+
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> -->
 
 <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
@@ -30,7 +35,9 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
 <link rel="manifest" href="/assets/images/site.webmanifest" />
 
-<script src="/assets/js/simple-jekyll-search.min.js"></script></head>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script src="/assets/js/cookie.js"></script></head>
+
 <body><header class="site-header">
 
   <div class="wrapper">
@@ -42,95 +49,134 @@
         </label>
 
         <div class="drawer-container">
-          <div class="drawer"><a style="color:limegreen;" class="nav-item" href="/projects/microbee/">Microbee</a><a style="color:limegreen;" class="nav-item" href="/projects/corewars/">CoreWars</a><a style="color:limegreen;" class="nav-item" href="/projects/blogging/">Blogging</a><a style="color:limegreen;" class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+          <div class="drawer"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a class="nav-search fa-solid fa-magnifying-glass" href="/search.html"></a>
           </div>
         </div>
-        <div class="slab"><a style="color:limegreen;" class="nav-item" href="/projects/microbee/">Microbee</a><a style="color:limegreen;" class="nav-item" href="/projects/corewars/">CoreWars</a><a style="color:limegreen;" class="nav-item" href="/projects/blogging/">Blogging</a><a style="color:limegreen;" class="nav-item" href="/about">About Me</a><a style="color:limegreen;font-size: 110%;" class="fa-solid fa-magnifying-glass" href="/search.html"></a>
+        <div class="slab"><a class="nav-item" href="/projects/microbee/">Microbee</a><a class="nav-item" href="/projects/corewars/">CoreWars</a><a class="nav-item" href="/projects/blogging/">Blogging</a><a class="nav-item" href="/archive.html">Archive</a><a class="nav-item" href="/about">About Me</a><a class="nav-search fa-solid fa-magnifying-glass" href="/search.html"></a>
         </div>
       </nav>
   </div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+        <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">CoreWars</h1>
-    <div class="post-meta">
-      <time class="dt-published" datetime="" itemprop="datePublished">
-        
-      </time>
-    </div>
+    <h1 class="post-title">CoreWars</h1>
   </header>
 
-  <!-- from https://mmpataki.github.io/programming/2020/09/06/adding-a-tag-cloud-page-to-jekyll-blog.html -->
-
-  <div style="text-align:center;">
-    
-  </div>
-
-  <br>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <p><img src="/assets/images/pmarssdl.png" alt="pMARS screenshot" title="pMARS screenshot" /></p>
-
-<p><br />
-I first read about CoreWars in old back issues of Scientific American.</p>
+  <div class="post-content">
+    <p>I first read about CoreWars back when I was at university.
+( I was avoiding studying for a physics exam by reading old back issues of Scientific American )</p>
 
 <p>And I was hooked.</p>
 
-<p>CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual computer ( called MARS or Memory Array Redcode Simulator )</p>
+<p>CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual machine ( called MARS or Memory Array Redcode Simulator )</p>
 
-<p>Each program battles each other in attempt to stop the other executing and essentially win the battle.</p>
+<p><img src="/assets/images/pmarssdl.png" alt="pMARS screenshot" title="pMARS screenshot" />
+<br />
+Photo credit : <a href="https://en.wikipedia.org/wiki/Corewars" title="Wikipedia">Wikipedia</a></p>
 
-<p>Within this framework, these programs ( or warriors ) need to rely on complex strategies to defeat their opponents.</p>
+<h4 id="let-the-battle-commence">Let the battle commence</h4>
+
+<p>Each program ( or warrior ) takes turn in executing their code in a circular memory space or <em>core</em> ( when you reach the end of the core,  executing wraps around to the start ).
+The program that executes the NOP instruction is deemed the loser.</p>
+
+<p>Redcode itself closely resembles assembly language.</p>
+
+<p>The code below is a particularly famous Redcode warrior called an <em>Imp</em></p>
+
+<pre><code class="language-redcode">MOV 0, 1
+</code></pre>
+<p>An Imp simply copies itself one instruction ahead in the virtual machine ( using relative addressing )
+And when it gets to that instruction, it copies itself again.  And so on.</p>
+
+<p>A more complex warrior is known as a <em>Dwarf</em></p>
+
+<pre><code class="language-redcode">ADD #4, 3        
+MOV 2, @2
+JMP -2
+DAT #0, #0
+</code></pre>
+
+<p>I won’t delve into the details of a Dwarf but essentially it writes a NOP every 4 address spaces,  ‘bombing’ the core and hopefully eliminating the opponent.</p>
+
+<p>Within this framework, these programs need to rely on complex strategies to defeat their opponents.</p>
 
 <p>Further,  genetic programming can be used to evolve warriors without human intervention.</p>
 
-<p>I decided to roll my own MARS environment as my second major project.</p>
+<h4 id="roll-my-own">Roll my own</h4>
 
-<p>Further information can be found at :</p>
+<p>Whilst there were more options viz-a-viz MARS environments,  they were mostly CLI versions that needed to be built from source.</p>
+
+<p>I was interested in something a little more graphical and that could be extended with GenAI capability for warrior creation/evolution.</p>
+
+<p>So I decided to roll my own as my second major project.</p>
+
+<h4 id="on-the-links">On the links</h4>
 
 <ul>
   <li><a href="https://en.wikipedia.org/wiki/Core_War" title="Wikipedia">Wikipedia</a></li>
   <li><a href="https://corewar.co.uk/" title="Core War - the Ultimate Programming Game">Core War - the Ultimate Programming Game</a></li>
 </ul>
 
-<h3 id="related-posts">Related posts</h3>
+
+
+<h3>Related posts</h3>
 
 <ul class="post-list">
+
+
 
 Mar 27, 2025
       <h3><a href="/projects/corewars/2025/03/27/Is-there-LifeOnMars.html">Is there LifeOnMars ?</a></h3>
       <p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
 
-      <hr />
+      
     
 </ul>
 
-  </div><a class="u-url" href="/projects/corewars/" hidden></a>
 
-  <!-- 
-  <div class="PageNavigation">
-    
-    
+
   </div>
-  -->
 
-  <!-- from https://github.com/jekyll/jekyll/issues/260#issuecomment-171553586 -->
-  <div class="PageNavigation">
-    
-
-    
-    
-  </div>
 </article>
 
-
-
-
       </div>
-    </main><footer class="site-footer h-card">
+    </main><style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: limegreen; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to improve the functionality of this website.</span>
+    <a id="cookie-notice-accept" class="cookie_button">Approve</a>
+    <a id="cookie-notice-reject" class="cookie_button">Reject</a>
+    <a href="/privacy" class="cookie_button">More info</a>
+</div>
+
+<script>
+    if(readCookie('cookie-type') != 'accept' && readCookie('cookie-type') != 'reject' ) 
+    {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-type','accept',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+    document.getElementById('cookie-notice-reject').addEventListener("click",function() {
+        createCookie('cookie-type','reject',180);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+</script>
+<footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <div class="wrapper">
@@ -149,30 +195,37 @@ Mar 27, 2025
           </a>
         </p>
         <ul class="contact-list">
-          <li class="p-name">Tony Sanchez</li>
+          <li class="p-name">&copy; 2025 Tony Sanchez</li>
+            <li class="p-name">Licenced under Creative Commons</li>
+            <li class="p-name" style="margin-top: 1em;margin-bottom: 1em;"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" alt="Creative Commons 4.0 BY-NC-SA licence"><img src="/assets/images/by-nc-sa.svg"></img></a></li>
           
+          <li class="p-name">Based on the <a href="https://github.com/jekyll/minima">Minima</a> theme.</li>
+          <li>&nbsp;</li>
+          <li class="p-name"><a href="/privacy">Privacy Statement and Disclaimer</a></li>
         </ul>
       </div>
+
       <div class="footer-col">
         <p>This is my site. It&#39;s nothing fancy.</p>
       </div>
     </div>
-
     <div class="social-links"><ul class="social-media-list"><li>
     <a rel="me" href="https://github.com/fatherdougalmaguire" target="_blank" title="My GitHub repositories">
-      <span class="grey fa-brands fa-github fa-lg"></span>
+      <span class="fa-brands fa-github fa-lg"></span>
     </a>
   </li><li>
     <a rel="me" href="https://bsky.app/profile/fathertedcrilly.bsky.social" target="_blank" title="Bluesky">
-      <span class="grey fa-brands fa-bluesky fa-lg"></span>
+      <span class="fa-brands fa-bluesky fa-lg"></span>
     </a>
   </li><li>
     <a rel="me" href="https://mastodon.social/@Fathertedcrilly" target="_blank" title="Mastadon">
-      <span class="grey fa-brands fa-mastodon fa-lg"></span>
+      <span class="fa-brands fa-mastodon fa-lg"></span>
     </a>
   </li></ul>
 </div>
-
+    <div align=center style="margin-top: 1em;">
+     <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#ffa500', 'Y8Y31ET6AR');kofiwidget2.draw();</script> 
+    </div>
   </div>
 
 </footer>
