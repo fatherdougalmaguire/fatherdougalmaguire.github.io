@@ -1,10 +1,10 @@
 {% assign num_min = content | number_of_words | divided_by: 150 | to_i %}
 {% if num_min == 0 %}
-	<i class="fa-solid fa-clock" style="color: red;"></i> Less than 1 minute to read
+	<i class="fa-solid fa-clock" style="color: limegreen;"></i> Less than 1 minute to read
 {%else%}
 	{%if num_min == 1 %}
-		<i class="fa-solid fa-clock" style="color: red;"></i> 1 minute to read
+		<i class="fa-solid fa-clock" style="color: limegreen;"></i> 1 minute to read
 	{%else%}
-		<i class="fa-solid fa-clock" style="color: red;"></i>{{ num_min | prepend: ' ' | append: ' minutes to read' }}
+		<i class="fa-solid fa-clock" style="color: limegreen;"></i>{{ num_min | prepend: ' ' | append: ' minutes to read' }}
 	{% endif %}
 {% endif %}

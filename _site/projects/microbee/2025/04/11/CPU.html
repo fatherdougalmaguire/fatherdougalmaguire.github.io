@@ -69,7 +69,7 @@
         Apr 11, 2025
       </time><div>
 
-	<i class="fa-solid fa-clock" style="color: red;"></i> Less than 1 minute to read
+	<i class="fa-solid fa-clock" style="color: limegreen;"></i> Less than 1 minute to read
 
 </div>
     </div>
@@ -97,53 +97,44 @@
       
 
   <script>
-   function showPopup(message, duration = 3000) 
+   function showPopup() 
   {
   // Create the popup element
-  const popup = document.createElement('div');
-  popup.textContent = message;
-  popup.style.position = 'fixed';
-  popup.style.bottom = '20px';
-  popup.style.right = '20px';
-  popup.style.padding = '10px 20px';
-  popup.style.backgroundColor = '#333';
-  popup.style.color = '#fff';
-  popup.style.borderRadius = '5px';
-  popup.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-  popup.style.zIndex = '1000';
-  popup.style.opacity = '0';
-  popup.style.transition = 'opacity 0.3s ease';
-
-  // Append to the body
-  document.body.appendChild(popup);
-
-  // Fade in
+  //debugger;
+  const frank = document.querySelector('#copy_message');
+  //const currentElement = document.querySelector('#link_target');
+  //const popup = document.createElement('div');
+  //const popup = document.getElementById("link_target");
+ // popup.textContent = message;
+  //popup.style.position = 'fixed';
+    frank.style.position = 'relative';
+    frank.style.top= "0.5em";
+  //  frank.style.right = '20px';
+  frank.style.width = '6em';
+  frank.style.height = '1.5em';
+  frank.style.fontSize = "small";
+  frank.style.backgroundColor = 'orange';
+  frank.style.color = '#fff';
+  frank.style.borderRadius = '5px';
+  frank.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+  frank.textContent = "Link copied.";
   setTimeout(() => {
-    popup.style.opacity = '1';
-  }, 10);
-
-  // Remove after the specified duration
-  setTimeout(() => {
-    popup.style.opacity = '0';
-    setTimeout(() => {
-      popup.remove();
-    }, 300); // Match the fade-out transition
-  }, duration);
+    frank.textContent = "";
+    frank.style.width = "0em";
+    }, 2000);
 }
 
-    function copyToClipboard(text) 
-    {
-      var inputc = document.body.appendChild(document.createElement("input"));
-      inputc.value = window.location.href;
-      inputc.focus();
-      inputc.select();
-      document.execCommand('copy');
-      inputc.parentNode.removeChild(inputc);
-      showPopup('This is a transient popup!', 5000);
-
-    }
-
-
+function copyURLToClipboard() {
+  const url = window.location.href; // Get the current URL
+  navigator.clipboard.writeText(url)
+    .then(() => {
+      console.log('URL copied to clipboard!');
+    })
+    .catch(err => {
+      console.error('Failed to copy URL: ', err);
+    });
+    showPopup();
+}
 
   </script>
 
@@ -166,7 +157,7 @@
 #share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;fill: #0A66C2;}
 #share-buttons > div.bluesky > svg {height: 20px; margin-top: 9px; fill: #1185FE;}
 #share-buttons > div.mastadon > svg {height: 20px; margin-top: 9px; fill: #6364FF;}
-#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;fill: turquoise;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;fill: seagreen;}
 #share-buttons > div.reddit > svg {height: 14px; margin-top: 11px;fill: #FF4500;}
 </style>
 
@@ -196,11 +187,11 @@
     <div class="reddit" title="Share this on Reddit" onclick="window.open('https://reddit.com/submit?url=http://localhost:4000/projects/microbee/2025/04/11/CPU.html');">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 256C0 114.6 114.6 0 256 0S512 114.6 512 256s-114.6 256-256 256L37.1 512c-13.7 0-20.5-16.5-10.9-26.2L75 437C28.7 390.7 0 326.7 0 256zM349.6 153.6c23.6 0 42.7-19.1 42.7-42.7s-19.1-42.7-42.7-42.7c-20.6 0-37.8 14.6-41.8 34c-34.5 3.7-61.4 33-61.4 68.4l0 .2c-37.5 1.6-71.8 12.3-99 29.1c-10.1-7.8-22.8-12.5-36.5-12.5c-33 0-59.8 26.8-59.8 59.8c0 24 14.1 44.6 34.4 54.1c2 69.4 77.6 125.2 170.6 125.2s168.7-55.9 170.6-125.3c20.2-9.6 34.1-30.2 34.1-54c0-33-26.8-59.8-59.8-59.8c-13.7 0-26.3 4.6-36.4 12.4c-27.4-17-62.1-27.7-100-29.1l0-.2c0-25.4 18.9-46.5 43.4-49.9l0 0c4.4 18.8 21.3 32.8 41.5 32.8zM177.1 246.9c16.7 0 29.5 17.6 28.5 39.3s-13.5 29.6-30.3 29.6s-31.4-8.8-30.4-30.5s15.4-38.3 32.1-38.3zm190.1 38.3c1 21.7-13.7 30.5-30.4 30.5s-29.3-7.9-30.3-29.6c-1-21.7 11.8-39.3 28.5-39.3s31.2 16.6 32.1 38.3zm-48.1 56.7c-10.3 24.6-34.6 41.9-63 41.9s-52.7-17.3-63-41.9c-1.2-2.9 .8-6.2 3.9-6.5c18.4-1.9 38.3-2.9 59.1-2.9s40.7 1 59.1 2.9c3.1 .3 5.1 3.6 3.9 6.5z"/></svg>
     </div>
-    <!--<div class="mail" title="Share this through email" onclick="window.open('mailto:?&body=http://localhost:4000/projects/microbee/2025/04/11/CPU.html');"> -->
-        <div class="mail" title="Share this through email" onclick="copyToClipboard();">
-        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/>
+    <div class="mail" title="Copy link to clipboard" onclick="copyURLToClipboard();">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
         </svg>
     </div>
+    <div id="copy_message"></div>
 </div>
 
     </div>

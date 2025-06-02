@@ -5,10 +5,12 @@ include_search : true
 excerpt: I first read about CoreWars in old back issues of Scientific American.
 toc: false
 ---
-I first read about CoreWars back when I was at university.
-( I was avoiding studying for a physics exam by reading old back issues of Scientific American )
+I first read about CoreWars back when I was at university
+I was avoiding studying for a physics exam by flicking through old back issues of Scientific American.
 
-And I was hooked.
+In the [March 1984 issue](https://www.scientificamerican.com/issue/sa/1984/03-01/), A.K. Dewdney first described Core Wars in his *Computer Recreations* column
+
+I was hooked.
 
 CoreWars pits two programs ( written in simplified programming language called RedCode ) against each other in a virtual machine ( called MARS or Memory Array Redcode Simulator )
 
