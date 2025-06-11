@@ -52,7 +52,7 @@
 }
 
 .cookie_button {
-  background-color: dodgerblue ! important;
+  background-color: limegreen ! important;
   color: white ! important;
   padding: 5px ! important;
   text-align: center ! important;
@@ -149,27 +149,29 @@
 
 .card-img {
     width: 100%;
-    height: auto;
+    height: 220px;
+    object-fit: cover;
+    object-position : 10%;
 }
 
 .card-content {
     flex: 1;
-    //padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    //justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .card-title {
     font-size: 1.5em;
-    margin: 0 0 8px 0;
 }
 
 .card-description {
     font-size: 1em;
     color: $top-menu-colour;
-    margin: 0 0 16px 0;
     line-height: 1.4;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .card-button {
@@ -186,7 +188,8 @@
 .card-bar {
     background-color : $top-menu-colour;
     height:1em;
-    margin-bottom:0;
+    position:relative;
+    //top: 10px;
 }
 
 .card-button:hover {
