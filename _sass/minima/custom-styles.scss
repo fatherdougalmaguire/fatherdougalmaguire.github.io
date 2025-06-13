@@ -52,7 +52,7 @@
 }
 
 .cookie_button {
-  background-color: limegreen ! important;
+  background-color: royalblue ! important;
   color: white ! important;
   padding: 5px ! important;
   text-align: center ! important;
@@ -257,8 +257,19 @@ code {
 
 /** overload existing CSS **/
 
+.site-header {
+    background-color: $banner-background;
+}
+
+.drawer-container
+{ background-color: $banner-background ! important;
+border-left : 0px ! important;
+border-left-color: $banner-background ! important;
+}
+
 .site-title {
   @include relative-font-size(1.8);
+  //background-color: $banner-background;
   font-weight: 600;
   /*letter-spacing: -1px;*/
   margin-bottom: 0;
@@ -306,6 +317,7 @@ a {
 .nav-item {
     display: block;
     padding: 5px 0;
+    background-color: $banner-background;
     color: $top-menu-colour ! important;
     line-height: $base-line-height;
   }
