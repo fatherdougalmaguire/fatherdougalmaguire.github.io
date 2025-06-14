@@ -168,7 +168,7 @@
 
 .card-description {
     font-size: 1em;
-    color: $top-menu-colour;
+    color: $banner-background;
     line-height: 1.4;
     margin-right: 1em;
     margin-left: 1em;
@@ -186,7 +186,7 @@
 }
 
 .card-bar {
-    background-color : $top-menu-colour;
+    background-color : $banner-background ! important;
     height:1em;
     position:relative;
     //top: 10px;
@@ -261,7 +261,7 @@ code {
     background-color: $banner-background;
 }
 
-.drawer-container
+ .drawer-container
 { background-color: $banner-background ! important;
 border-left : 0px ! important;
 border-left-color: $banner-background ! important;

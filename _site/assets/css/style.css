@@ -424,10 +424,13 @@ table td {
   height: 36px;
   z-index: 2;
   cursor: pointer;
+  background-color: Orange;
 }
 .site-nav #nav-trigger ~ label[for=nav-trigger] .menu-icon::before {
   content: "\f0c9";
   font-size: 1.25em;
+  background-color: Orange;
+  color: white;
 }
 .site-nav #nav-trigger ~ .drawer-container {
   position: absolute;
@@ -436,9 +439,9 @@ table td {
   clear: both;
   width: 0;
   height: calc(100vh - 60px);
-  transition: width 0.5s;
+  transition: height 0.5s;
   overflow: hidden;
-  background-color: WhiteSmoke;
+  background-color: Orange;
   border-left: 1px solid;
   border-left-color: transparent;
 }
@@ -450,9 +453,9 @@ table td {
   font-size: 1.5em;
 }
 .site-nav #nav-trigger:checked ~ .drawer-container {
-  width: 180px;
+  width: 400px;
   padding-bottom: 5px;
-  transition: width 0.5s;
+  transition: height 0.5s;
   overflow: auto;
   border-left-color: #e7e7e7;
 }
@@ -889,7 +892,7 @@ table td {
 
 .card-description {
   font-size: 1em;
-  color: White;
+  color: Orange;
   line-height: 1.4;
   margin-right: 1em;
   margin-left: 1em;
@@ -907,7 +910,7 @@ table td {
 }
 
 .card-bar {
-  background-color: White;
+  background-color: Orange !important;
   height: 1em;
   position: relative;
 }

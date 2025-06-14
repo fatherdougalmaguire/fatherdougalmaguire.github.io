@@ -67,6 +67,7 @@
     height: 36px;
     z-index: 2;
     cursor: pointer;
+    background-color:$banner-background;
   }
 
   #nav-trigger {
@@ -74,6 +75,10 @@
       &::before {
         content: "\f0c9";
         font-size: 1.25em;
+        
+        background-color:$banner-background;
+        color : white;
+
       }
     }
     ~ .drawer-container {
@@ -83,9 +88,11 @@
       clear: both;
       width: 0;
       height: calc(100vh - 60px);
-      transition: width 0.5s;
+      //transition: width 0.5s;
+        transition: height 0.5s;
       overflow: hidden;
-      background-color: $background-color;
+      //background-color: $background-color;
+      background-color:$banner-background;
       border-left: 1px solid; 
       border-left-color: transparent;
       .drawer { opacity: 0 }
@@ -98,9 +105,11 @@
       }
     }
       ~ .drawer-container {
-        width: 180px;
+       // width: 180px;
+        width: 400px;
         padding-bottom: 5px;
-        transition: width 0.5s;
+        //transition: width 0.5s;
+        transition: height 0.5s;
         overflow: auto;
         border-left-color: $border-color-01;
         .drawer {
