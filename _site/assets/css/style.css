@@ -729,6 +729,28 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
+.quote {
+  background: #f7f7f7;
+  border: thin gray solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px #999;
+  color: #5d5b5b;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1.2rem;
+  padding-top: 1rem;
+  position: relative;
+  quotes: "“" "”";
+  width: 70%; /* space for the quotes */
+  text-align: center;
+  text-indent: 0;
+}
+
 .callout {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -910,7 +932,7 @@ table td {
 }
 
 .card-bar {
-  background-color: Orange !important;
+  background-color: Orange;
   height: 1em;
   position: relative;
 }

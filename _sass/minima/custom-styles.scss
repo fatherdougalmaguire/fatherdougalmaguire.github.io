@@ -1,6 +1,28 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+.quote {
+  background: #f7f7f7;
+  border: thin gray solid;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px #999;
+  color: #5d5b5b;
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1.2rem;
+  padding-top: 1rem;
+  position: relative;
+  quotes: '\201c' '\201d';
+  width: 70%;  /* space for the quotes */
+  text-align: center;
+  text-indent: 0;
+}
+
 .callout
 {
  margin-top:1em;
@@ -186,7 +208,7 @@
 }
 
 .card-bar {
-    background-color : $banner-background ! important;
+    background-color : $banner-background;
     height:1em;
     position:relative;
     //top: 10px;
