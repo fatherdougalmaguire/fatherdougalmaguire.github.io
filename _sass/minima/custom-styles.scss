@@ -38,7 +38,7 @@
 }
 
 .nav_button:link, .nav_button:visited {
-  background-color: $top-menu-colour;
+  background-color: $banner-background;
   color : white;
   width : 33%;
   padding: 10px;
@@ -54,11 +54,11 @@
 }
 
 .nav_button:hover, .nav_button:active {
-  background-color: $top-menu-colour-highlight;
+  background-color: $banner-background-highlight;
 }
 
 .tag-highlight:link, .tag-highlight:visited {
-  background-color: $top-menu-colour;
+  background-color:$banner-background;
   color: white;
   padding: 5px;
   text-align: center;
@@ -70,7 +70,7 @@
 }
 
 .tag-highlight:hover, .tag-hightlight:active {
-  background-color: $top-menu-colour-highlight;
+  background-color: $banner-background-highlight;
 }
 
 .cookie_button {
@@ -214,8 +214,8 @@
     //top: 10px;
 }
 
-.card-button:hover {
-    background-color: #0056b3;
+.card:hover {
+    box-shadow: 5px 5px 6px #999;
 }
 
 .blinking {
@@ -502,7 +502,7 @@ fieldset {
 
 .fs-button {
   //background-color: var(--color-primary);
-  background-color: $top-menu-colour;
+  background-color: $banner-background;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
@@ -518,7 +518,7 @@ fieldset {
 
 .fs-button:hover {
   //background-color: var(--color-primary-active);
-  background-color: $top-menu-colour-highlight;
+  background-color: $banner-background-highlight;
 }
 
 .fs-button:focus-visible {

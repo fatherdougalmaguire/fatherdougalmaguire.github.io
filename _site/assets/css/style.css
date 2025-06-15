@@ -765,7 +765,7 @@ table td {
 }
 
 .nav_button:link, .nav_button:visited {
-  background-color: White;
+  background-color: Orange;
   color: white;
   width: 33%;
   padding: 10px;
@@ -781,11 +781,11 @@ table td {
 }
 
 .nav_button:hover, .nav_button:active {
-  background-color: White;
+  background-color: DarkOrange;
 }
 
 .tag-highlight:link, .tag-highlight:visited {
-  background-color: White;
+  background-color: Orange;
   color: white;
   padding: 5px;
   text-align: center;
@@ -797,7 +797,7 @@ table td {
 }
 
 .tag-highlight:hover, .tag-hightlight:active {
-  background-color: White;
+  background-color: DarkOrange;
 }
 
 .cookie_button {
@@ -937,8 +937,8 @@ table td {
   position: relative;
 }
 
-.card-button:hover {
-  background-color: #0056b3;
+.card:hover {
+  box-shadow: 5px 5px 6px #999;
 }
 
 .blinking {
@@ -1213,7 +1213,7 @@ fieldset {
 }
 
 .fs-button {
-  background-color: White;
+  background-color: Orange;
   border-radius: 9999px;
   color: white;
   cursor: pointer;
@@ -1228,7 +1228,7 @@ fieldset {
 }
 
 .fs-button:hover {
-  background-color: White;
+  background-color: DarkOrange;
 }
 
 .fs-button:focus-visible {
