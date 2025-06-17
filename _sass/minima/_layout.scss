@@ -34,8 +34,9 @@
   top: 9px;
   right: $spacing-unit * 0.6;
   background-color: $background-color;
-  border: 1px solid $border-color-01;
+  //border: 1px solid $border-color-01;
   border-radius: 5px;
+  //text-align: right;
   text-align: right;
 
   .nav-trigger, .slab {
@@ -84,7 +85,8 @@
     ~ .drawer-container {
       position: absolute;
       top: 47px;
-      right: -16px;
+      //right: -16px;
+      right: -19px;
       clear: both;
       width: 0;
       height: calc(100vh - 60px);
@@ -92,8 +94,10 @@
         transition: height 0.5s;
       overflow: hidden;
       //background-color: $background-color;
+
       background-color:$banner-background;
-      border-left: 1px solid; 
+      
+      //border-left: 1px solid; 
       border-left-color: transparent;
       .drawer { opacity: 0 }
     }
@@ -106,8 +110,9 @@
     }
       ~ .drawer-container {
        // width: 180px;
-        width: 400px;
-        padding-bottom: 5px;
+        width: 100vw;
+        height: auto; // new
+        // padding-bottom: 5px;
         //transition: width 0.5s;
         transition: height 0.5s;
         overflow: auto;
@@ -115,7 +120,7 @@
         .drawer {
           padding: $spacing-unit * 0.5;
           opacity: 1;
-          transition: opacity 1.5s;
+          transition: opacity 0.5s;
         }
       }
     }

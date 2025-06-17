@@ -395,7 +395,6 @@ table td {
   top: 9px;
   right: 18px;
   background-color: WhiteSmoke;
-  border: 1px solid #e7e7e7;
   border-radius: 5px;
   text-align: right;
 }
@@ -435,14 +434,13 @@ table td {
 .site-nav #nav-trigger ~ .drawer-container {
   position: absolute;
   top: 47px;
-  right: -16px;
+  right: -19px;
   clear: both;
   width: 0;
   height: calc(100vh - 60px);
   transition: height 0.5s;
   overflow: hidden;
   background-color: Orange;
-  border-left: 1px solid;
   border-left-color: transparent;
 }
 .site-nav #nav-trigger ~ .drawer-container .drawer {
@@ -453,8 +451,8 @@ table td {
   font-size: 1.5em;
 }
 .site-nav #nav-trigger:checked ~ .drawer-container {
-  width: 400px;
-  padding-bottom: 5px;
+  width: 100vw;
+  height: auto;
   transition: height 0.5s;
   overflow: auto;
   border-left-color: #e7e7e7;
@@ -462,7 +460,7 @@ table td {
 .site-nav #nav-trigger:checked ~ .drawer-container .drawer {
   padding: 15px;
   opacity: 1;
-  transition: opacity 1.5s;
+  transition: opacity 0.5s;
 }
 .site-nav .nav-item {
   display: block;
