@@ -15,7 +15,7 @@ Based on a number of <a href="https://en.wikipedia.org/wiki/S-100_bus">S-100</a>
 
 It sold particularly well in the educational market, both in Australia and Scandinavia.
 
-Around 70,000 units were made across the 1980's
+Although only 70,000 units were shipped throughout the 1980's,  the Microbee had an outsize impact on the Australian personal computer scene.
 
 <div class="callout"><img src="/assets/images/info-circle.svg" style="height: 20px; margin-top: -5px;fill: darkslateblue;"><a href="https://www.youtube.com/watch?v=c_KnOJ9JUcc" alt="Microbee promotional video"> Here is a promotional video of the era.</a></div>
 
@@ -61,4 +61,3 @@ These pages will document my progress on this (foolhardy) enterprise.
 - [Microbee Technology Forum](https://microbeetechnology.com.au/forum/ "Microbee Technology Forum")
 - [Microbee Users Group](https://www.facebook.com/groups/100158753790849/ "Microbee Users Group")
 - [Project Granny Smith](https://www.smh.com.au/technology/secret-of-project-granny-smith-20050712-gdlo0m.html "Project Granny Smith")
-

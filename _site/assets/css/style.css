@@ -94,7 +94,7 @@
   color: #bbbbbb;
 }
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /**
@@ -111,7 +111,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: 250 16px/1.5 "Fira Sans", "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
+  font: 250 18px/1.5 "Fira Sans", "Raleway", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif;
   color: rgb(65.25, 65.25, 65.25);
   background-color: WhiteSmoke;
   -webkit-text-size-adjust: 100%;
@@ -165,7 +165,7 @@ figure > img {
 }
 
 figcaption {
-  font-size: 14px;
+  font-size: 15.75px;
 }
 
 /**
@@ -369,7 +369,7 @@ table td {
   z-index: 1;
   width: 100%;
   min-height: 55.95px;
-  line-height: 54px;
+  line-height: 60.75px;
   background-color: WhiteSmoke;
   border-bottom: 1px solid #e7e7e7;
 }
@@ -592,7 +592,7 @@ table td {
 }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 15.75px;
   color: #818181;
 }
 

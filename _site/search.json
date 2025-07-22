@@ -1,173 +1,13 @@
 [
   
     {
-      "title"    : "Jekyll Plugins",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Plugins",
-      "url"      : "/projects/blogging/2025/05/17/Enhancing-Minima-Part-12.html",
-      "date"     : "May 17, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tHeader 1Bacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Header 1.1Header 2Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "GitHub Actions",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Github Actions",
-      "url"      : "/projects/blogging/2025/05/16/Enhancing-Minima-Part-11.html",
-      "date"     : "May 16, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Jekyll vs Hugo",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Hugo, SSG",
-      "url"      : "/projects/blogging/2025/05/15/Enhancing-Minima-Part-10.html",
-      "date"     : "May 15, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Comments",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, Comments",
-      "url"      : "/projects/blogging/2025/05/10/Enhancing-Minima-Part-9.html",
-      "date"     : "May 10, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Reading Time and Social Media Sharing and continue reading",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, Reading Time, Social Media",
-      "url"      : "/projects/blogging/2025/05/09/Enhancing-Minima-Part-8.html",
-      "date"     : "May  9, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Tag Cloud",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, Tag cloud",
-      "url"      : "/projects/blogging/2025/04/22/Enhancing-Minima-Part-7.html",
-      "date"     : "April 22, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Google Analytics and Cookie Consent and Contact Forms",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, Email, Contact form, Google Analytics, GitHub Pages",
-      "url"      : "/projects/blogging/2025/04/19/Enhancing-Minima-Part-6.html",
-      "date"     : "April 19, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Pagination",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/04/18/Enhancing-Minima-Part-5.html",
-      "date"     : "April 18, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Decoding CPU instructions",
+      "title"    : "Introducing Abeja - the first iteration of a Microbee emulator",
       "category" : "projects, microbee",
-      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url"      : "/projects/microbee/2025/04/11/CPU.html",
-      "date"     : "April 11, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "UI Design",
-      "category" : "projects, microbee",
-      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url"      : "/projects/microbee/2025/04/10/UI-Design.html",
-      "date"     : "April 10, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Building a Metal shader for display output",
-      "category" : "projects, microbee",
-      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI, Metal, Shader",
-      "url"      : "/projects/microbee/2025/04/09/Shaders.html",
-      "date"     : "April  9, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "How is Abeja structured ?",
-      "category" : "projects, microbee",
-      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url"      : "/projects/microbee/2025/04/08/Abejas-structure.html",
-      "date"     : "April  8, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Search",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/04/02/Enhancing-Minima-Part-4.html",
-      "date"     : "April  2, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Tags and Categories",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/04/01/Enhancing-Minima-Part-3.html",
-      "date"     : "April  1, 2025",
-      "excerpt"  :  "Coming sojn!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Fun with CSS",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages, CSS",
-      "url"      : "/projects/blogging/2025/03/30/Enhancing-Minima-Part-2.html",
-      "date"     : "March 30, 2025",
-      "excerpt"  :  "Coming soon!",
-      "content"  :  "\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Navigation and Content",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/29/Enhancing-Minima-Part-1.html",
-      "date"     : "March 29, 2025",
-      "excerpt"  :  "On the face of it,  Minima is a fairly boring theme.",
-      "content"  :  "On the face of it,  Minima is a fairly boring theme.\tBacon ipsum dolor amet corned beef short loin flank tail meatloaf shoulder jowl alcatra landjaeger biltong beef ribs boudin turkey hamburger bresaola. Meatball kevin brisket ham hock, spare ribs picanha ribeye chuck flank. Brisket landjaeger andouille pancetta spare ribs turkey drumstick ground round short ribs bacon. Pork chop beef chicken, jowl doner alcatra tri-tip pig. Strip steak turducken doner, boudin burgdoggen cow kielbasa kevin corned beef ham hock buffalo biltong picanha ham.Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors. Bring a spring upon her cable holystone blow the man down spanker Shiver me timbers to go on account lookout wherry doubloon chase. Belay yo-ho-ho keelhaul squiffy black spot yardarm spyglass sheet transom heave to."
-    } ,
-  
-    {
-      "title"    : "Introducing Abeja",
-      "category" : "projects, microbee",
-      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI",
-      "url"      : "/projects/microbee/2025/03/28/Introducing-Abeja.html",
-      "date"     : "March 28, 2025",
-      "excerpt"  :  "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.",
-      "content"  :  "I only ever found a handful of emulators built for the Microbee and none were targeted at MacOS.So I decided to roll my ownMy implementation is called AbejaWhich is Spanish for bee ( a nod to my heritage ).It is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.Currently state of play :  It will attempt to start executing the BASIC interpreter in ROM  It will show the contents of memory and registers during execution  It show show a disassembly of the executing code  You can step through executing code.  A Metal shader is used to write output to the screenHowever :  Only 1/3 of the Z80 instruction set is currently emulated.  So the CPU emulation quickly goes pear shaped  No I/O functionality has been emulated. So there is no sound/keyboard/data storage as of yet.  It’s particularly slow.Subsequent posts will document how to got to this point.And the challenges in moving forward to a fully working implementation."
+      "tags"     : "Z80, Emulation, Retro Computing, MacOS, Swift, SwiftUI, Abeja, Novato",
+      "url"      : "/projects/microbee/2025/07/21/Introducing-Abeja.html",
+      "date"     : "July 21, 2025",
+      "excerpt"  :  "Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.  And these were primarily targeted at Windows and Linux platforms.",
+      "content"  :  "Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.  And these were primarily targeted at Windows and Linux platforms.Since I use a Macintosh at home, I decided to roll my own.  And in a further act of bravado,  I attempted to do it completely scratch without studying any existing emulators.This proved challenging on many fronts.  The last time I had seriously coded was using Turbo Pascal on my early 90’s PC ( I think it was a 386SX-25 ).  Swift was a whole new ballgame language wise.  I had absolutely no idea how to code GUI apps.  I had only the vaguest clue about the hardware design and build of the Microbee.But I perservered and manage to knock out the first iteration, which I’ve named Abeja.For those that don’t know Abeja is Spanish for bee ( a little nod to my heritage ).Abeja will run on Intel and Apple Silicon Macintoshes running MacOS Sonoma or later.After much swearing and pulling of hair,  Abeja has gotten to the point that :  It will attempt to start executing the BASIC interpreter in ROM  It will show the contents of memory and registers during execution  It show show a disassembly of the executing code  You can start/stop/pause and step through executing code.  A Metal shader is used to write output to the screenHowever the ahoc nature of Abeja’s development has led to a less than optimal structure.1) There is a lot of code for a barely functioning emulator.2) Only 1/3 of the Z80 instruction set is currently emulated.3) The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output )4) Challenges with SwiftUI’s MVVM framework results in major performance issuesSo I’m going to take the ( many ) lessons learnt and start afresh.Novato is the second attempt at the project.Novato is Spanish for newbie ( which is a terrible pun but also kind of apt ).I’m going to use this blog to document the build of Novato step-by-step,  starting with first principles."
     } ,
   
     {
@@ -178,16 +18,6 @@
       "date"     : "March 27, 2025",
       "excerpt"  :  "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",
       "content"  :  "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.So I decided to bite the bullet and finally complete one.My implementation is called LifeOnMarsIt is written for MacOS Sonoma ( v14.0+ ) using Swift/SwiftUI.It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other projects."
-    } ,
-  
-    {
-      "title"    : "Jekyll and GitHub pages",
-      "category" : "projects, blogging",
-      "tags"     : "Jekyll, Blog, Minima, GitHub Pages",
-      "url"      : "/projects/blogging/2025/03/25/Jekyll-and-GitHub-Pages.html",
-      "date"     : "March 25, 2025",
-      "excerpt"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.",
-      "content"  :  "There is a large developer community that has built some very visually appealing templates or “themes” on top of Jekyll.Samples of these can be found at Jekyllthemes.io  The instructions and code within are current as of 25th March 2025."
     } 
   
 
@@ -259,7 +89,7 @@
       "url"      : "/projects/microbee/",
       "date"     : "",
       "excerpt"  :  "Back in distant past,  my family owned a Microbee.",
-      "content"  :  "Back in distant past,  my family owned a Microbee.The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology, later known as Microbee Systems ).Based on a number of S-100 subsystems designed by Applied Technology,  the Microbee was released in 1982, originally as a kit and later as fully assembled models.It sold particularly well in the educational market, both in Australia and Scandinavia.Around 70,000 units were made across the 1980’s Here is a promotional video of the era.Specifications, scmeshificationsThe Microbee was driven by a Z80A CPU @ 3.375Mhz and came with a relatively generous 16 or 32 Kb of RAM.Further the memory was static, allowing the Microbee to preserve memory state even after power-off ( thanks to an inbuilt battery )BASIC was installed in ROM and used audio cassettes to store programs and data.You could optionally have a word processor ( Wordbee ) and editor/assembler ( EDASM ) in ROM as well.Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to facilitate running CP/M 2.2.The Microbee was distinct from it’s competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).This was counterbalanced by rather poor monophonic speaker output ( compared to competitors such as the C64 )And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.Funway into EmulationI spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.But I have always had a soft spot for the ‘Bee.A couple of years ago, I came across a truly excellent PC-based emulator called uBee512.It was a blast running all the old software on my shiny new Mac hardware.However,  there wasn’t a build available for MacOS so I had to run it under a VM.I spent many hours trying to build the source code under MacOS and eventually I succeeded.I then had the harebrained idea to build a native MacOS version, partly as a way to get back into programming and partly to prove that I could.These pages will document my progress on this (foolhardy) enterprise.On the links  Wikipedia  Microbee Software Preservation Project  Microbee Technology Forum  Microbee Users Group  Project Granny Smith"
+      "content"  :  "Back in distant past,  my family owned a Microbee.The Microbee was an Australian designed and manufactured home computer ( by a company called Applied Technology, later known as Microbee Systems ).Based on a number of S-100 subsystems designed by Applied Technology,  the Microbee was released in 1982, originally as a kit and later as fully assembled models.It sold particularly well in the educational market, both in Australia and Scandinavia.Although only 70,000 units were shipped throughout the 1980’s,  the Microbee had an outsize impact on the Australian personal computer scene. Here is a promotional video of the era.Specifications, scmeshificationsThe Microbee was driven by a Z80A CPU @ 3.375Mhz and came with a relatively generous 16 or 32 Kb of RAM.Further the memory was static, allowing the Microbee to preserve memory state even after power-off ( thanks to an inbuilt battery )BASIC was installed in ROM and used audio cassettes to store programs and data.You could optionally have a word processor ( Wordbee ) and editor/assembler ( EDASM ) in ROM as well.Later models included floppy disk drives as well as upgrades to 64 or 128 Kb to facilitate running CP/M 2.2.The Microbee was distinct from it’s competitors in having a relatively high resolution video output ( 64x16/80x24 characters or 512x256 pixels ).This was counterbalanced by rather poor monophonic speaker output ( compared to competitors such as the C64 )And the hi-res video mode was only partially bit-mapped due to a lack of screen RAM.Funway into EmulationI spent many happy hours messing about with it before time marched on and I ( and everyone else ) moved onto PC compatibles.But I have always had a soft spot for the ‘Bee.A couple of years ago, I came across a truly excellent PC-based emulator called uBee512.It was a blast running all the old software on my shiny new Mac hardware.However,  there wasn’t a build available for MacOS so I had to run it under a VM.I spent many hours trying to build the source code under MacOS and eventually I succeeded.I then had the harebrained idea to build a native MacOS version, partly as a way to get back into programming and partly to prove that I could.These pages will document my progress on this (foolhardy) enterprise.On the links  Wikipedia  Microbee Software Preservation Project  Microbee Technology Forum  Microbee Users Group  Project Granny Smith"
     } 
     
      
@@ -287,24 +117,6 @@
 
   
    
-
-  
-   
-   
-    
-    
-
-  
-   
-   
-    
-    
-
-  
-   
-   
-    
-    
 
   
 ]
