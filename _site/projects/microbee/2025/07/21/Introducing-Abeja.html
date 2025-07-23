@@ -70,7 +70,7 @@
       </time><div>
 
 	
-		<i class="fa-solid fa-clock" style="color: limegreen;"></i> 2 minutes to read
+		<i class="fa-solid fa-clock" style="color: limegreen;"></i> 3 minutes to read
 	
 
 </div>
@@ -240,17 +240,16 @@ For those that don’t know Abeja is Spanish for <strong>bee</strong> ( a little
 
 <p>However the ahoc nature of Abeja’s development has led to a less than optimal structure.</p>
 
-<p>1) There is a lot of code for a barely functioning emulator.<br />
-2) Only 1/3 of the Z80 instruction set is currently emulated.<br />
-3) The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output )<br />
-4) Challenges with SwiftUI’s <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM</a> framework results in major performance issues</p>
+<p>1) There is a <strong>lot</strong> of code present for an as yet barely functioning emulator ( especially since only 1/3 of the Z80 instruction set is currently emulated ).<br />
+2) SwiftUI is a declarative UI framework ( more properly an <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM</a> framework ).  The UI code is defined separately from the application code and changes in the application data are automatically reflected by the UI code.  This leads to performance issues in the emulator because the UI code runs on the main thread and stealing too many CPU cycles for emulation causes UI sluggishness, even on a Apple Silicon desktop.<br />
+3) The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output ) and integrate this into SwiftUI,  not to mention adding to performance issues.</p>
 
 <p>So I’m going to take the ( many ) lessons learnt and start afresh.</p>
 
 <p><a href="https://github.com/fatherdougalmaguire/novato">Novato</a> is the second attempt at the project.<br />
 Novato is Spanish for <strong>newbie</strong> ( which is a terrible pun but also kind of apt ).</p>
 
-<p>I’m going to use this blog to document the build of Novato step-by-step,  starting with first principles.</p>
+<p>I’m going to use this blog to document the build of Novato step-by-step,  starting from first principles and trying to get the basics right.</p>
 
 
     

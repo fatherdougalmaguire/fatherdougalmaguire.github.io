@@ -40,19 +40,16 @@ After much swearing and pulling of hair,  Abeja has gotten to the point that :
 
 However the ahoc nature of Abeja's development has led to a less than optimal structure.
 
-1) There is a lot of code for a barely functioning emulator.  
-2) Only 1/3 of the Z80 instruction set is currently emulated.  
-3) The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output )  
-4) Challenges with SwiftUI's [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) framework results in major performance issues
+1) There is a **lot** of code present for an as yet barely functioning emulator ( especially since only 1/3 of the Z80 instruction set is currently emulated ).  
+2) SwiftUI is a declarative UI framework ( more properly an [MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) framework ).  The UI code is defined separately from the application code and changes in the application data are automatically reflected by the UI code.  This leads to performance issues in the emulator because the UI code runs on the main thread and stealing too many CPU cycles for emulation causes UI sluggishness, even on a Apple Silicon desktop.  
+3) The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output ) and integrate this into SwiftUI,  not to mention adding to performance issues.  
 
 So I'm going to take the ( many ) lessons learnt and start afresh.
 
 [Novato](https://github.com/fatherdougalmaguire/novato) is the second attempt at the project.  
 Novato is Spanish for **newbie** ( which is a terrible pun but also kind of apt ).
 
-
-
-I'm going to use this blog to document the build of Novato step-by-step,  starting with first principles.
+I'm going to use this blog to document the build of Novato step-by-step,  starting from first principles and trying to get the basics right.
 
 
 
