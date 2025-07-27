@@ -111,7 +111,6 @@
     {
       /*debugger;*/
       var alltags = [];
-        alltags.push({category: "Microbee", tag : '["Z80", "Emulation", "Retro Computing", "MacOS", "Swift", "SwiftUI", "Abeja", "Novato"]', title: "Introducing Abeja - the first iteration of a Microbee emulator", excerpt: "Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.  And these were primarily targeted at Windows and Linux platforms.",date : "2025-07-21T00:00:00Z", url : "/projects/microbee/2025/07/21/Introducing-Abeja.html", month_date : "July 2025"});
         alltags.push({category: "Corewars", tag : '["Redcode", "MARS", "Warriors", "MacOS", "Swift", "SwiftUI"]', title: "Is there LifeOnMars ?", excerpt: "I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.",date : "2025-03-27T00:00:00Z", url : "/projects/corewars/2025/03/27/Is-there-LifeOnMars.html", month_date : "March 2025"});return alltags;
     }
 
@@ -226,21 +225,11 @@
       current_tag_name = "Warriors";
         tags.push({text: "Warriors", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       current_tag_name = "MacOS";
-        tags.push({text: "MacOS", weight: 2, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+        tags.push({text: "MacOS", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       current_tag_name = "Swift";
-        tags.push({text: "Swift", weight: 2, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+        tags.push({text: "Swift", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       current_tag_name = "SwiftUI";
-        tags.push({text: "SwiftUI", weight: 2, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
-      current_tag_name = "Z80";
-        tags.push({text: "Z80", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
-      current_tag_name = "Emulation";
-        tags.push({text: "Emulation", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
-      current_tag_name = "Retro Computing";
-        tags.push({text: "Retro Computing", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
-      current_tag_name = "Abeja";
-        tags.push({text: "Abeja", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
-      current_tag_name = "Novato";
-        tags.push({text: "Novato", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
+        tags.push({text: "SwiftUI", weight: 1, handlers: {click: function(current_tag_name) { BuildTagList(current_tag_name,false)}}, selected : 0, tag_class : ""});
       
       multiSort(listotags, ['category:desc','date:asc']);
       $(".wordcloud").jQCloud(tags, {removeOverflowing: true, afterCloudRender: function() { firsttag() }} );
