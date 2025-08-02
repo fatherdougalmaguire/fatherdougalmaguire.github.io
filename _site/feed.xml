@@ -1,4 +1,172 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-27T20:38:11+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-02T17:30:39+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja - the first iteration of a Microbee emulator</title><link href="http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja.html" rel="alternate" type="text/html" title="Introducing Abeja - the first iteration of a Microbee emulator" /><published>2025-07-21T00:00:00+10:00</published><updated>2025-07-21T00:00:00+10:00</updated><id>http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja.html"><![CDATA[<p>Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.</p>
+
+<p>Those I know of are :</p>
+
+<ul>
+  <li>A browser implementation of a Microbee 32IC called <a href="http://nanowasp.org/">NanoWasp</a> “NanoWasp”</li>
+  <li>The gold standard of Microbee emulators is <a href="https://www.microbee-mspp.org/repository/" title="uBee512">uBee512</a> ( Follow the instructions to obtain access to the <em>public</em> repository )</li>
+  <li>A DOS and Windows version called PicoMozzy.  Available from the <a href="https://discord.gg/FTe93hNw" title="Microbee Programmers Discord server">Microbee Programmers Discord server</a></li>
+  <li>The retro-arcade emulator <a href="https://www.mamedev.org/" title="Mame">Mame</a> can be used as well ( although it was a bit hit and miss in terms of Microbee models supported ).</li>
+</ul>
+
+<p>As mentioned before, I decided to roll my own.  And in a further act of bravado,  I attempted to do it completely from scratch without studying the source of existing emulators or getting an LLM to write the code for me.</p>
+
+<p>This proved challenging on many fronts.</p>
+
+<ul>
+  <li>The last time I had seriously coded was using Turbo Pascal on my early 90’s PC. ( which I think it was a 386SX-25 )
+Swift was a whole new ballgame language wise.</li>
+  <li>I had absolutely no idea how to code GUI apps.</li>
+  <li>I had only the vaguest clue about the hardware design and build of the Microbee.</li>
+  <li>I had only the vaguest clue about how to write an emulator.</li>
+</ul>
+
+<h4 id="5-minutes-later">5 minutes later</h4>
+
+<p>But there is nothing like a stretch goal.  So I perservered.  Over the course of twelve months ( on and off ) and a reasonable amount of swearing, gnashing of teeth and pulling of hair, I managed to knock out the first iteration, which I’ve named <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a>.</p>
+
+<p>For those that don’t know, Abeja is Spanish for <strong>bee</strong> ( a little nod to my heritage ).</p>
+
+<p>Looks pretty shmick, no ?</p>
+
+<p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>
+
+<p>Abeja will run on Intel and Apple Silicon Macintoshes running MacOS Sonoma or later.</p>
+
+<p>Abeja has gotten to the point that :</p>
+
+<ul>
+  <li>It will attempt to start executing the BASIC interpreter in ROM ( many thanks to Ewan Wordsworth of <a href="https://microbeetechnology.com.au">Microbee Technology</a> for permission to use and include this ROM in the emulator )</li>
+  <li>About 1/3 of the Z80 instruction set is implemented.</li>
+  <li>It will show the contents of memory and registers during execution.</li>
+  <li>It show show a disassembly of the executing code.</li>
+  <li>You can start/stop/pause and step through executing code.</li>
+  <li>A Metal shader is used to write output to the screen.</li>
+</ul>
+
+<p>All in all, it’s a pretty good start from a very low baseline.</p>
+
+<h4 id="there-is-always-a-but">There is always a but</h4>
+
+<p>Pausing to reflect,  I came to the realisation that the nature of Abeja’s development has been somewhat adhoc.  This is lack of planning ( and detailed knowledge of emulation ) has led to a less-than-optimal structure.</p>
+
+<p>Specifically there are a few things that became apparent.</p>
+
+<h5 id="shaky-foundations">Shaky foundations</h5>
+
+<p>The video output routines were written first</p>
+
+<h5 id="pulling-a-swifty">Pulling a swifty</h5>
+
+<p>My knowledge of Swift is fairly rudimentary.</p>
+
+<h5 id="i-do-declare">I do declare</h5>
+
+<p>SwiftUI is a declarative UI framework.  That is,  you define what the UI interface should look like and the framework will handle any updates.</p>
+
+<p>Below is the standard <em>Hello World</em> app in SwiftUI</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kt">Import</span> <span class="kt">SwiftUI</span>
+
+<span class="kd">@main</span>
+<span class="kd">struct</span> <span class="kt">HelloWorldApp</span><span class="p">:</span> <span class="kt">App</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">Scene</span> <span class="p">{</span>
+        <span class="kt">WindowGroup</span> <span class="p">{</span>
+            <span class="kt">ContentView</span><span class="p">()</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+        <span class="kt">Text</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span>
+            <span class="o">.</span><span class="nf">padding</span><span class="p">()</span>
+            <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">largeTitle</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Constrast this with a imperative UI framework like AppKit.  Here,  you define exactly what the UI interface and how it handles updates.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">import</span> <span class="kt">Cocoa</span>
+
+<span class="kd">@main</span>
+<span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSApplicationDelegate</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">window</span><span class="p">:</span> <span class="kt">NSWindow</span><span class="o">!</span>
+
+    <span class="kd">func</span> <span class="nf">applicationDidFinishLaunching</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">screenSize</span> <span class="o">=</span> <span class="kt">NSScreen</span><span class="o">.</span><span class="n">main</span><span class="p">?</span><span class="o">.</span><span class="n">frame</span> <span class="p">??</span> <span class="kt">NSRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">600</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">windowSize</span> <span class="o">=</span> <span class="kt">NSMakeRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">windowOrigin</span> <span class="o">=</span> <span class="kt">NSMakeRect</span><span class="p">(</span>
+            <span class="p">(</span><span class="n">screenSize</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">windowSize</span><span class="o">.</span><span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="p">(</span><span class="n">screenSize</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">windowSize</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="n">windowSize</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
+            <span class="n">windowSize</span><span class="o">.</span><span class="n">height</span>
+        <span class="p">)</span>
+
+        <span class="n">window</span> <span class="o">=</span> <span class="kt">NSWindow</span><span class="p">(</span>
+            <span class="nv">contentRect</span><span class="p">:</span> <span class="n">windowOrigin</span><span class="p">,</span>
+            <span class="nv">styleMask</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">titled</span><span class="p">,</span> <span class="o">.</span><span class="n">closable</span><span class="p">,</span> <span class="o">.</span><span class="n">resizable</span><span class="p">],</span>
+            <span class="nv">backing</span><span class="p">:</span> <span class="o">.</span><span class="n">buffered</span><span class="p">,</span>
+            <span class="nv">defer</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">)</span>
+        <span class="n">window</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s">"Hello AppKit"</span>
+        <span class="n">window</span><span class="o">.</span><span class="nf">makeKeyAndOrderFront</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+
+        <span class="k">let</span> <span class="nv">label</span> <span class="o">=</span> <span class="kt">NSTextField</span><span class="p">(</span><span class="nv">labelWithString</span><span class="p">:</span> <span class="s">"Hello, World!"</span><span class="p">)</span>
+        <span class="n">label</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="kt">NSFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">24</span><span class="p">)</span>
+        <span class="n">label</span><span class="o">.</span><span class="nf">sizeToFit</span><span class="p">()</span>
+        <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="p">(</span>
+            <span class="nv">x</span><span class="p">:</span> <span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="o">!.</span><span class="n">frame</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
+            <span class="nv">y</span><span class="p">:</span> <span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="o">!.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="p">)</span>
+
+        <span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="p">?</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Patently,  the SwiftUI version is a lot cleaner.  But this ease of coding comes at a cost.</p>
+
+<p>Back of the envelope calculations suggest the emulator is executing at roughly 75µ secs per instruction ( some 10x slower than a standard Microbee ).
+The reason for this less than fabulous performance lies in the mechanism for implementing the main application loop in SwiftUI.</p>
+
+<p>Take this notional psuedo-code for an emulator loop.</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="n">emulator</span> <span class="k">is</span> <span class="n">running</span>
+<span class="p">{</span>
+    <span class="o">*</span><span class="n">read</span> <span class="n">next</span> <span class="n">instruction</span> <span class="n">from</span> <span class="n">memory</span><span class="o">*</span>
+    <span class="o">*</span><span class="n">execute</span> <span class="n">instruction</span><span class="o">*</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>SwiftUI</p>
+
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">TimelineView</span><span class="p">(</span><span class="o">.</span><span class="n">animation</span><span class="p">)</span>
+    <span class="p">{</span> <span class="n">context</span> <span class="k">in</span>
+        <span class="o">*</span><span class="n">draw</span> <span class="n">screen</span> <span class="n">size</span> <span class="n">rectangle</span><span class="o">*</span>
+        <span class="o">*</span><span class="n">apply</span> <span class="n">shader</span> <span class="n">to</span> <span class="n">update</span> <span class="n">pixels</span> <span class="k">in</span> <span class="n">rectangle</span><span class="o">*</span>
+        <span class="o">.</span><span class="nf">onChange</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="n">context</span><span class="o">.</span><span class="n">date</span><span class="p">)</span>
+            <span class="p">{</span>
+             <span class="o">*</span><span class="n">execute</span> <span class="n">instruction</span> <span class="n">bundle</span><span class="o">*</span>
+            <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div></div>
+
+<h5 id="very-hardware">Very hardware</h5>
+
+<p>The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output ) and integrate this into SwiftUI,  not to mention adding to performance issues.</p>
+
+<h4 id="novato-or-once-more-with-feeling">Novato or once more with feeling</h4>
+
+<p>So I’m going to take the ( many ) lessons learnt and start afresh.</p>
+
+<p><a href="https://github.com/fatherdougalmaguire/novato">Novato</a> is the second attempt at the project.<br />
+Novato is Spanish for <strong>newbie</strong> ( which is a terrible pun but also kind of apt ).</p>
+
+<p>I’m going to use this blog to document the build of Novato step-by-step,  starting from first principles and trying to get the basics right.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><category term="Abeja" /><category term="Novato" /><summary type="html"><![CDATA[Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64, there were only ever a handful of emulators built for the Microbee.]]></summary></entry><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
 
 <p>So I decided to bite the bullet and finally complete one.</p>
 

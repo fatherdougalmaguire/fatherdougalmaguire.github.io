@@ -1,6 +1,10 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
+.hidden-element {
+  display: none;
+}
+
 .quote {
   background: #f7f7f7;
   border: thin gray solid;

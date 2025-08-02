@@ -61,7 +61,11 @@ Links to respective policies below.
 |[Mastadon](https://mastodon.social/privacy-policy "Mastadon")   
 |[Reddit](https://www.reddit.com/en-us/policies/privacy-policy?rdt=44089 "Reddit")  
 
-## Disclaimer
+## No AI Training Disclaimer
+
+Without in any way limiting the author’s exclusive rights under copyright, any use of this publication to “train” generative artificial intelligence (AI) technologies to generate text is expressly prohibited. The author reserves all rights to license uses of this work for generative AI training and development of machine learning language models.
+
+## General Disclaimer
 
 Use anything contained within this blog at your own risk.
 

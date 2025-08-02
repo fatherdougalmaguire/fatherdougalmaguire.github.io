@@ -410,7 +410,7 @@ table td {
   text-align: center;
 }
 .site-nav .menu-icon::before {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 7 Free";
   font-weight: 900;
 }
 .site-nav .menu-icon > svg path {
@@ -428,7 +428,7 @@ table td {
 .site-nav #nav-trigger ~ label[for=nav-trigger] .menu-icon::before {
   content: "\f0c9";
   font-size: 1.25em;
-  background-color: Orange;
+  /* background-color:$banner-background; */
   color: white;
 }
 .site-nav #nav-trigger ~ .drawer-container {
@@ -727,6 +727,10 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
+.hidden-element {
+  display: none;
+}
+
 .quote {
   background: #f7f7f7;
   border: thin gray solid;

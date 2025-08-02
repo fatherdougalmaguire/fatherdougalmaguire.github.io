@@ -139,8 +139,34 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 }
 ```
 
-Patently,  the SwiftUI version is a lot cleaner.  But there is a snag here.
-It's a lot slower, executing at roughly 0.013 MIPS ( on an M2 Mac mini ) vs 0.489 MIPS for a real Microbee.   
+Patently,  the SwiftUI version is a lot cleaner.  But this ease of coding comes at a cost.
+
+Back of the envelope calculations suggest the emulator is executing at roughly 75µ secs per instruction ( some 10x slower than a standard Microbee ).
+The reason for this less than fabulous performance lies in the mechanism for implementing the main application loop in SwiftUI.
+
+Take this notional psuedo-code for an emulator loop.
+
+```swift
+while emulator is running
+{
+    *read next instruction from memory*
+    *execute instruction*
+}
+```
+
+SwiftUI
+
+```swift
+TimelineView(.animation)
+    { context in
+        *draw screen size rectangle*
+        *apply shader to update pixels in rectangle*
+        .onChange(of: context.date)
+            {
+             *execute instruction bundle*
+            }
+    }
+```
 
 ##### Very hardware
 
