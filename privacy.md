@@ -75,4 +75,4 @@ It will not cause your computer to explode, your hair to fall out or your cat to
 
 No representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the blog or the information, products, services, or related graphics contained therein for any purpose.
 
-In no event will any liablility be borne for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this blog.
+In no event will any liability be borne for any loss or damage including, without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this blog.

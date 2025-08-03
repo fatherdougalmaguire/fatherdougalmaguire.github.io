@@ -39,7 +39,7 @@ It's instructive to map out the components of the target Microbee model (32IC) f
 - ROM : Microworld Basic
 - ROM : Optional ( shipped with WordBee Word Processor or EDASM editor assembler )
 - ROM : Telcom ( Terminal emulator )
-- Storage :  Files and programs loaded and saved to audio casette.
+- Storage :  Files and programs loaded and saved to audio cassette.
 - Video : Uses Synertek 6545 CRT controller. Monochrome output at 64\*16 characters or 80\*24 characters. 
 - Sound : Internal speaker driven directly from the CPU.
 - Keyboard : 60 key QWERTY layout.

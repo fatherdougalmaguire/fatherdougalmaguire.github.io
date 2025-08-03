@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-02T17:30:39+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja - the first iteration of a Microbee emulator</title><link href="http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja.html" rel="alternate" type="text/html" title="Introducing Abeja - the first iteration of a Microbee emulator" /><published>2025-07-21T00:00:00+10:00</published><updated>2025-07-21T00:00:00+10:00</updated><id>http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/projects/microbee/2025/07/21/Introducing-Abeja.html"><![CDATA[<p>Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-03T17:19:26+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">An ecumenical matter</title><subtitle>This is my site. It&apos;s nothing fancy.</subtitle><author><name>Tony Sanchez</name></author><entry><title type="html">Introducing Abeja - the first iteration of a Microbee emulator</title><link href="http://localhost:4000/projects/microbee/2025/08/03/Introducing-Abeja.html" rel="alternate" type="text/html" title="Introducing Abeja - the first iteration of a Microbee emulator" /><published>2025-08-03T00:00:00+10:00</published><updated>2025-08-03T00:00:00+10:00</updated><id>http://localhost:4000/projects/microbee/2025/08/03/Introducing-Abeja</id><content type="html" xml:base="http://localhost:4000/projects/microbee/2025/08/03/Introducing-Abeja.html"><![CDATA[<p>Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64,  there were only ever a handful of emulators built for the Microbee.</p>
 
 <p>Those I know of are :</p>
 
@@ -23,11 +23,9 @@ Swift was a whole new ballgame language wise.</li>
 
 <h4 id="5-minutes-later">5 minutes later</h4>
 
-<p>But there is nothing like a stretch goal.  So I perservered.  Over the course of twelve months ( on and off ) and a reasonable amount of swearing, gnashing of teeth and pulling of hair, I managed to knock out the first iteration, which I’ve named <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a>.</p>
+<p>But there is nothing like a stretch goal.  So I persevered.  Over the course of twelve months ( on and off ) and a reasonable amount of swearing, gnashing of teeth and pulling of hair, I managed to knock out the first iteration, which I’ve named <a href="https://github.com/fatherdougalmaguire/Abeja" title="Abeja GitHub repository">Abeja</a>.</p>
 
-<p>For those that don’t know, Abeja is Spanish for <strong>bee</strong> ( a little nod to my heritage ).</p>
-
-<p>Looks pretty shmick, no ?</p>
+<p>For those that don’t know, Abeja is Spanish for <strong>bee</strong> ( otherwise I would have to think up some variation of bee-related pun ).</p>
 
 <p><img src="/assets/images/abeja-0.195.png" alt="Abeja" /></p>
 
@@ -41,130 +39,133 @@ Swift was a whole new ballgame language wise.</li>
   <li>It will show the contents of memory and registers during execution.</li>
   <li>It show show a disassembly of the executing code.</li>
   <li>You can start/stop/pause and step through executing code.</li>
-  <li>A Metal shader is used to write output to the screen.</li>
+  <li>A Metal fragment shader is used to write output to the screen.</li>
 </ul>
 
-<p>All in all, it’s a pretty good start from a very low baseline.</p>
+<p>All in all, it’s a pretty good start from a very low baseline.<br />
+And it looks quite nice,  especially from someone without much of a design sensibility.</p>
 
 <h4 id="there-is-always-a-but">There is always a but</h4>
 
-<p>Pausing to reflect,  I came to the realisation that the nature of Abeja’s development has been somewhat adhoc.  This is lack of planning ( and detailed knowledge of emulation ) has led to a less-than-optimal structure.</p>
+<p>Pausing to reflect,  I came to the realization that the nature of Abeja’s development has been somewhat ad-hoc.  This is lack of planning ( coupled with a fairly low knowledge of the intricacies of emulation ) has led to a less-than-optimal structure.</p>
 
 <p>Specifically there are a few things that became apparent.</p>
 
 <h5 id="shaky-foundations">Shaky foundations</h5>
 
-<p>The video output routines were written first</p>
+<p>I started a little arse-backwards.  The video output routines were written before the Z80 emulation core was even started.  And even those concentrated on getting something to appear on the screen that looked familiar, rather than faithfully modelling ( at least from a functional viewpoint ) the Microbee video hardware.</p>
+
+<p>Which is not to say the experience was wasted ( I taught myself how to write a fragment shader after all ).  But you don’t put up the walls and the roof of a house without pouring a concrete slab first.</p>
 
 <h5 id="pulling-a-swifty">Pulling a swifty</h5>
 
-<p>My knowledge of Swift is fairly rudimentary.</p>
+<p>My programming <strong>paradigm</strong> ( so to speak ) lies back in the Turbo Pascal days.   And things have moved on quite a bit since then.</p>
+
+<p>Things like :</p>
+
+<ul>
+  <li>Concurrency</li>
+  <li>Memory safety</li>
+  <li>Extensions</li>
+  <li>Protocols</li>
+  <li>Generics</li>
+</ul>
+
+<p>Which are all documented here (<a href="https://docs.swift.org/swift-book/documentation/the-swift-programming-language" title="The Swift Programming Language">The Swift Programming Language</a>) in a much better manner than I could do.</p>
+
+<p>But the upshot is that there is a lot of cool language functionality that I should be taking advantage of to make the code base cleaner and easier to manage.</p>
 
 <h5 id="i-do-declare">I do declare</h5>
 
-<p>SwiftUI is a declarative UI framework.  That is,  you define what the UI interface should look like and the framework will handle any updates.</p>
+<p>As mentioned before,  GUI coding is something I no clear idea how to do.  Which is why SwiftUI seemed so appealing.</p>
 
-<p>Below is the standard <em>Hello World</em> app in SwiftUI</p>
+<p>SwiftUI is a declarative UI framework.  That is,  you define what the UI interface should look like and the framework will reflect any updates to the application data based on UI interaction.</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kt">Import</span> <span class="kt">SwiftUI</span>
+<p>Take the following code which will generate a random Father Ted quote every time you press a button.</p>
 
-<span class="kd">@main</span>
-<span class="kd">struct</span> <span class="kt">HelloWorldApp</span><span class="p">:</span> <span class="kt">App</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">Scene</span> <span class="p">{</span>
-        <span class="kt">WindowGroup</span> <span class="p">{</span>
-            <span class="kt">ContentView</span><span class="p">()</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<p>This is the interface bit that fetches a quote based on a button press.</p>
 
-<span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
-        <span class="kt">Text</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span>
-            <span class="o">.</span><span class="nf">padding</span><span class="p">()</span>
-            <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">largeTitle</span><span class="p">)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">import</span> <span class="kt">SwiftUI</span>
 
-<p>Constrast this with a imperative UI framework like AppKit.  Here,  you define exactly what the UI interface and how it handles updates.</p>
+<span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kd">import</span> <span class="kt">Cocoa</span>
-
-<span class="kd">@main</span>
-<span class="kd">class</span> <span class="kt">AppDelegate</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSApplicationDelegate</span> <span class="p">{</span>
-    <span class="k">var</span> <span class="nv">window</span><span class="p">:</span> <span class="kt">NSWindow</span><span class="o">!</span>
-
-    <span class="kd">func</span> <span class="nf">applicationDidFinishLaunching</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">let</span> <span class="nv">screenSize</span> <span class="o">=</span> <span class="kt">NSScreen</span><span class="o">.</span><span class="n">main</span><span class="p">?</span><span class="o">.</span><span class="n">frame</span> <span class="p">??</span> <span class="kt">NSRect</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">800</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">600</span><span class="p">)</span>
-        <span class="k">let</span> <span class="nv">windowSize</span> <span class="o">=</span> <span class="kt">NSMakeRect</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-        <span class="k">let</span> <span class="nv">windowOrigin</span> <span class="o">=</span> <span class="kt">NSMakeRect</span><span class="p">(</span>
-            <span class="p">(</span><span class="n">screenSize</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">windowSize</span><span class="o">.</span><span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
-            <span class="p">(</span><span class="n">screenSize</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">windowSize</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
-            <span class="n">windowSize</span><span class="o">.</span><span class="n">width</span><span class="p">,</span>
-            <span class="n">windowSize</span><span class="o">.</span><span class="n">height</span>
-        <span class="p">)</span>
-
-        <span class="n">window</span> <span class="o">=</span> <span class="kt">NSWindow</span><span class="p">(</span>
-            <span class="nv">contentRect</span><span class="p">:</span> <span class="n">windowOrigin</span><span class="p">,</span>
-            <span class="nv">styleMask</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">titled</span><span class="p">,</span> <span class="o">.</span><span class="n">closable</span><span class="p">,</span> <span class="o">.</span><span class="n">resizable</span><span class="p">],</span>
-            <span class="nv">backing</span><span class="p">:</span> <span class="o">.</span><span class="n">buffered</span><span class="p">,</span>
-            <span class="nv">defer</span><span class="p">:</span> <span class="kc">false</span>
-        <span class="p">)</span>
-        <span class="n">window</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s">"Hello AppKit"</span>
-        <span class="n">window</span><span class="o">.</span><span class="nf">makeKeyAndOrderFront</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
-
-        <span class="k">let</span> <span class="nv">label</span> <span class="o">=</span> <span class="kt">NSTextField</span><span class="p">(</span><span class="nv">labelWithString</span><span class="p">:</span> <span class="s">"Hello, World!"</span><span class="p">)</span>
-        <span class="n">label</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="kt">NSFont</span><span class="o">.</span><span class="nf">systemFont</span><span class="p">(</span><span class="nv">ofSize</span><span class="p">:</span> <span class="mi">24</span><span class="p">)</span>
-        <span class="n">label</span><span class="o">.</span><span class="nf">sizeToFit</span><span class="p">()</span>
-        <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="kt">CGPoint</span><span class="p">(</span>
-            <span class="nv">x</span><span class="p">:</span> <span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="o">!.</span><span class="n">frame</span><span class="o">.</span><span class="n">width</span> <span class="o">-</span> <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">width</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span>
-            <span class="nv">y</span><span class="p">:</span> <span class="p">(</span><span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="o">!.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span> <span class="o">-</span> <span class="n">label</span><span class="o">.</span><span class="n">frame</span><span class="o">.</span><span class="n">height</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
-        <span class="p">)</span>
-
-        <span class="n">window</span><span class="o">.</span><span class="n">contentView</span><span class="p">?</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>Patently,  the SwiftUI version is a lot cleaner.  But this ease of coding comes at a cost.</p>
-
-<p>Back of the envelope calculations suggest the emulator is executing at roughly 75µ secs per instruction ( some 10x slower than a standard Microbee ).
-The reason for this less than fabulous performance lies in the mechanism for implementing the main application loop in SwiftUI.</p>
-
-<p>Take this notional psuedo-code for an emulator loop.</p>
-
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">while</span> <span class="n">emulator</span> <span class="k">is</span> <span class="n">running</span>
 <span class="p">{</span>
-    <span class="o">*</span><span class="n">read</span> <span class="n">next</span> <span class="n">instruction</span> <span class="n">from</span> <span class="n">memory</span><span class="o">*</span>
-    <span class="o">*</span><span class="n">execute</span> <span class="n">instruction</span><span class="o">*</span>
+    <span class="c1">// Create an instance of QuoteGenerator</span>
+    <span class="kd">@State</span> <span class="kd">private</span> <span class="k">var</span> <span class="nv">quoteGenerator</span> <span class="o">=</span> <span class="kt">QuoteGenerator</span><span class="p">()</span>
+    
+    <span class="c1">// State variable to hold the current quote</span>
+    <span class="kd">@State</span> <span class="kd">private</span> <span class="k">var</span> <span class="nv">currentQuote</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span>
+    
+    <span class="c1">// Function to fetch a new random quote from the generator</span>
+    <span class="kd">func</span> <span class="nf">fetchRandomQuote</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">currentQuote</span> <span class="o">=</span> <span class="n">quoteGenerator</span><span class="o">.</span><span class="nf">getRandomQuote</span><span class="p">()</span>
+    <span class="p">}</span>
+    
+    <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span>
+    <span class="p">{</span>
+        <span class="kt">VStack</span><span class="p">(</span><span class="nv">spacing</span><span class="p">:</span> <span class="mi">20</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="kt">Text</span><span class="p">(</span><span class="s">"Father Ted Quotes"</span><span class="p">)</span>
+                <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">largeTitle</span><span class="p">)</span>
+            
+            <span class="kt">Text</span><span class="p">(</span><span class="n">currentQuote</span><span class="p">)</span>
+            
+            <span class="kt">Button</span><span class="p">(</span><span class="nv">action</span><span class="p">:</span> <span class="n">fetchRandomQuote</span><span class="p">)</span>
+            <span class="p">{</span>
+                <span class="kt">Text</span><span class="p">(</span><span class="s">"Get a Quote"</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="o">.</span><span class="nf">frame</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">400</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">#Preview {</span>
+    <span class="kt">ContentView</span><span class="p">()</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>SwiftUI</p>
+<p>And this is the bit that stores the quotes and returns a random one.</p>
 
-<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">TimelineView</span><span class="p">(</span><span class="o">.</span><span class="n">animation</span><span class="p">)</span>
-    <span class="p">{</span> <span class="n">context</span> <span class="k">in</span>
-        <span class="o">*</span><span class="n">draw</span> <span class="n">screen</span> <span class="n">size</span> <span class="n">rectangle</span><span class="o">*</span>
-        <span class="o">*</span><span class="n">apply</span> <span class="n">shader</span> <span class="n">to</span> <span class="n">update</span> <span class="n">pixels</span> <span class="k">in</span> <span class="n">rectangle</span><span class="o">*</span>
-        <span class="o">.</span><span class="nf">onChange</span><span class="p">(</span><span class="nv">of</span><span class="p">:</span> <span class="n">context</span><span class="o">.</span><span class="n">date</span><span class="p">)</span>
-            <span class="p">{</span>
-             <span class="o">*</span><span class="n">execute</span> <span class="n">instruction</span> <span class="n">bundle</span><span class="o">*</span>
-            <span class="p">}</span>
+<div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="kd">class</span> <span class="kt">QuoteGenerator</span> <span class="p">{</span>
+    <span class="c1">// Array of quotes from Father Ted</span>
+    <span class="kd">private</span> <span class="k">let</span> <span class="nv">quotes</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s">"May your sheep grow big and strong, and may all the boys become popes."</span><span class="p">,</span>
+        <span class="s">"I think this is the beginning of a beautiful friendship!"</span><span class="p">,</span>
+        <span class="s">"The trouble with having an open mind is that people will insist on coming along and filling it up with their own stuff."</span><span class="p">,</span>
+        <span class="s">"Father Ted is going commando. It’s like when you’ve got one sock and no idea where your other one has gone."</span><span class="p">,</span>
+        <span class="s">"It's not the size of the gift, but the thought that counts... until Christmas morning, then it's all about the size of the gift."</span><span class="p">,</span>
+        <span class="s">"I'm sorry, I didn't mean to be rude. It's just that sometimes when you're a priest and you can't even get into heaven, it makes you question everything."</span>
+    <span class="p">]</span>
+    
+    <span class="c1">// Function to fetch a random quote</span>
+    <span class="kd">func</span> <span class="nf">getRandomQuote</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">randomIndex</span> <span class="o">=</span> <span class="kt">Int</span><span class="o">.</span><span class="nf">random</span><span class="p">(</span><span class="nv">in</span><span class="p">:</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">quotes</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">quotes</span><span class="p">[</span><span class="n">randomIndex</span><span class="p">]</span>
     <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
+<p>You’ll probably notice something important here.</p>
 
-<h5 id="very-hardware">Very hardware</h5>
+<p>There is no execution loop.  The button is pushed, a new quote is returned and the framework updates the display.</p>
 
-<p>The hardware ( apart from the screen output ) is not emulated at all ( mainly because I have no idea how to capture keyboard input, interface with storage devices or enable audio output ) and integrate this into SwiftUI,  not to mention adding to performance issues.</p>
+<p>This would work for stepping through an emulator but isn’t really useful for running code.</p>
+
+<p>Abeja solved for this issue using something like called a <strong>TimeLineView</strong>.  This is a display object that fires on a given schedule and updates the display.  This allows a bundle of instructions to be executed during the schedule period and then display the result.</p>
+
+<p>The main problem lies in the speed.  An 8 core M2 Mac Mini is averaging 50 micro-seconds per instruction.  This is 10x slower than a real Microbee.</p>
+
+<p>Now I don’t know if this is a limitation of SwiftUI and the TimeLineView functionality or the way that I have implemented it ( I suspect the latter ).
+But it’s an issue to be solved ( and hopefully without having to scrap using SwiftUI altogether)</p>
 
 <h4 id="novato-or-once-more-with-feeling">Novato or once more with feeling</h4>
 
-<p>So I’m going to take the ( many ) lessons learnt and start afresh.</p>
+<p>Taking into account everything discussed above, I’m going to take the ( many ) lessons learnt and start afresh rather than try to beat the existing code base into submission.</p>
 
-<p><a href="https://github.com/fatherdougalmaguire/novato">Novato</a> is the second attempt at the project.<br />
-Novato is Spanish for <strong>newbie</strong> ( which is a terrible pun but also kind of apt ).</p>
+<p><a href="https://github.com/fatherdougalmaguire/novato">Novato</a> is the second attempt at the project.</p>
+
+<p>And once again, I’m treading down a familiar naming path.  Novato is Spanish for <strong>newbie</strong> ( which is a terrible pun but also kind of apt ).</p>
 
 <p>I’m going to use this blog to document the build of Novato step-by-step,  starting from first principles and trying to get the basics right.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="microbee" /><category term="Z80" /><category term="Emulation" /><category term="Retro Computing" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><category term="Abeja" /><category term="Novato" /><summary type="html"><![CDATA[Given that the Microbee range never sold in the same numbers as contemporary home computers such as the ZX Spectrum or Commodore 64, there were only ever a handful of emulators built for the Microbee.]]></summary></entry><entry><title type="html">Is there LifeOnMars ?</title><link href="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html" rel="alternate" type="text/html" title="Is there LifeOnMars ?" /><published>2025-03-27T00:00:00+11:00</published><updated>2025-03-27T00:00:00+11:00</updated><id>http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars</id><content type="html" xml:base="http://localhost:4000/projects/corewars/2025/03/27/Is-there-LifeOnMars.html"><![CDATA[<p>I had made abortive attempts at building MARS environments for the <a href="\microbee">Microbee</a> ( and later the PC ) but nothing ever came to fruition.</p>
 
@@ -176,4 +177,4 @@ Novato is Spanish for <strong>newbie</strong> ( which is a terrible pun but also
 
 <p><img src="/assets/images/lifeonmars-0.25.png" alt="LifeOnMars" /></p>
 
-<p>It is more of a UI framework at this point but it will serve as a testbed for code patterns required for my other projects.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="corewars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.]]></summary></entry></feed>
+<p>It is more of a UI framework at this point but it will serve as a test bed for code patterns required for my other projects.</p>]]></content><author><name>Tony Sanchez</name></author><category term="projects" /><category term="corewars" /><category term="Redcode" /><category term="MARS" /><category term="Warriors" /><category term="MacOS" /><category term="Swift" /><category term="SwiftUI" /><summary type="html"><![CDATA[I had made abortive attempts at building MARS environments for the Microbee ( and later the PC ) but nothing ever came to fruition.]]></summary></entry></feed>
